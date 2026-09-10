@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.finance.service.TaxRateServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:10.857Z" hostname="runnervmgx7h7" time="0.468">
+  <properties/>
+  <testcase name="update percentage should cascade to tax groups()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxRateServiceTest" time="0.441"/>
+  <testcase name="create should save tax rate with correct fields()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxRateServiceTest" time="0.008"/>
+  <testcase name="get should throw ResourceNotFoundException for wrong org()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxRateServiceTest" time="0.001"/>
+  <testcase name="delete should soft-delete when not in any group()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxRateServiceTest" time="0.001"/>
+  <testcase name="update percentage should fail-fast when cascade encounters missing rate()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxRateServiceTest" time="0.005"/>
+  <testcase name="delete should throw when rate is in active group()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxRateServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

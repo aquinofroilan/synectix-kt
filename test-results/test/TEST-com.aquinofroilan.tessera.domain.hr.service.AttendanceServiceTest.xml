@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.hr.service.AttendanceServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:58.923Z" hostname="runnervmgx7h7" time="0.296">
+  <properties/>
+  <testcase name="manual entry rejects clock-out before clock-in()" classname="com.aquinofroilan.tessera.domain.hr.service.AttendanceServiceTest" time="0.257"/>
+  <testcase name="clock-out sets worked minutes()" classname="com.aquinofroilan.tessera.domain.hr.service.AttendanceServiceTest" time="0.003"/>
+  <testcase name="clock-in creates a present record()" classname="com.aquinofroilan.tessera.domain.hr.service.AttendanceServiceTest" time="0.004"/>
+  <testcase name="get rejects cross-org access()" classname="com.aquinofroilan.tessera.domain.hr.service.AttendanceServiceTest" time="0.004"/>
+  <testcase name="clock-in rejects a second clock-in the same day()" classname="com.aquinofroilan.tessera.domain.hr.service.AttendanceServiceTest" time="0.001"/>
+  <testcase name="clock-out without a clock-in is rejected()" classname="com.aquinofroilan.tessera.domain.hr.service.AttendanceServiceTest" time="0.004"/>
+  <testcase name="manual entry computes worked minutes and defaults to present()" classname="com.aquinofroilan.tessera.domain.hr.service.AttendanceServiceTest" time="0.002"/>
+  <testcase name="clock-out twice is rejected()" classname="com.aquinofroilan.tessera.domain.hr.service.AttendanceServiceTest" time="0.001"/>
+  <testcase name="timesheet rejects an inverted date range()" classname="com.aquinofroilan.tessera.domain.hr.service.AttendanceServiceTest" time="0.001"/>
+  <testcase name="clock-in is rejected for a terminated employee()" classname="com.aquinofroilan.tessera.domain.hr.service.AttendanceServiceTest" time="0.001"/>
+  <system-out><![CDATA[2026-09-01 23:44:59.207 [ForkJoinPool-1-worker-1] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

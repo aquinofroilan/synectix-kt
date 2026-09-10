@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.config.OrganizationStatusInterceptorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:47.640Z" hostname="runnervmgx7h7" time="2.918">
+  <properties/>
+  <testcase name="preHandle allows read GET request when org is ARCHIVED()" classname="com.aquinofroilan.tessera.config.OrganizationStatusInterceptorTest" time="2.726"/>
+  <testcase name="preHandle allows request when org is ACTIVE()" classname="com.aquinofroilan.tessera.config.OrganizationStatusInterceptorTest" time="0.02"/>
+  <testcase name="preHandle allows exempt paths without checking org status()" classname="com.aquinofroilan.tessera.config.OrganizationStatusInterceptorTest" time="0.085"/>
+  <testcase name="preHandle allows SUPER_ADMIN even when org is SUSPENDED()" classname="com.aquinofroilan.tessera.config.OrganizationStatusInterceptorTest" time="0.014"/>
+  <testcase name="preHandle allows status endpoint path for suspended org to allow reactivation()" classname="com.aquinofroilan.tessera.config.OrganizationStatusInterceptorTest" time="0.003"/>
+  <testcase name="preHandle blocks mutating POST request with 403 when org is ARCHIVED()" classname="com.aquinofroilan.tessera.config.OrganizationStatusInterceptorTest" time="0.02"/>
+  <testcase name="preHandle blocks request with 403 when org is SUSPENDED()" classname="com.aquinofroilan.tessera.config.OrganizationStatusInterceptorTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+]]></system-err>
+</testsuite>

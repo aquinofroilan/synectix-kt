@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.project.service.ProjectBudgetServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:14.971Z" hostname="runnervmgx7h7" time="0.376">
+  <properties/>
+  <testcase name="set budget updates an existing category budget()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectBudgetServiceTest" time="0.369"/>
+  <testcase name="set budget creates a new category budget()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectBudgetServiceTest" time="0.004"/>
+  <testcase name="budget vs actual computes labor actual from approved time entries()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectBudgetServiceTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.mfg.service.StandardCostServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:12.731Z" hostname="runnervmgx7h7" time="1.165">
+  <properties/>
+  <testcase name="rollup fails when a component has no standard cost()" classname="com.aquinofroilan.tessera.domain.mfg.service.StandardCostServiceTest" time="0.971"/>
+  <testcase name="manual override sets source to manual and clears bom-routing refs()" classname="com.aquinofroilan.tessera.domain.mfg.service.StandardCostServiceTest" time="0.002"/>
+  <testcase name="rollup applies overhead rate()" classname="com.aquinofroilan.tessera.domain.mfg.service.StandardCostServiceTest" time="0.09"/>
+  <testcase name="rollup computes material cost including scrap()" classname="com.aquinofroilan.tessera.domain.mfg.service.StandardCostServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

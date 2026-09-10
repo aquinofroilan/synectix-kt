@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.mfg.service.WorkOrderServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:12.926Z" hostname="runnervmgx7h7" time="0.391">
+  <properties/>
+  <testcase name="release rejects non-DRAFT work orders()" classname="com.aquinofroilan.tessera.domain.mfg.service.WorkOrderServiceTest" time="0.377"/>
+  <testcase name="cancel is idempotent for already-cancelled()" classname="com.aquinofroilan.tessera.domain.mfg.service.WorkOrderServiceTest" time="0.001"/>
+  <testcase name="create rejects when no default ACTIVE bom and none specified()" classname="com.aquinofroilan.tessera.domain.mfg.service.WorkOrderServiceTest" time="0.002"/>
+  <testcase name="create snapshots components with scrap-adjusted quantity and stamps WO number()" classname="com.aquinofroilan.tessera.domain.mfg.service.WorkOrderServiceTest" time="0.003"/>
+  <testcase name="cancel rejects COMPLETED work orders()" classname="com.aquinofroilan.tessera.domain.mfg.service.WorkOrderServiceTest" time="0.001"/>
+  <testcase name="release flips DRAFT to RELEASED and stamps audit fields()" classname="com.aquinofroilan.tessera.domain.mfg.service.WorkOrderServiceTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

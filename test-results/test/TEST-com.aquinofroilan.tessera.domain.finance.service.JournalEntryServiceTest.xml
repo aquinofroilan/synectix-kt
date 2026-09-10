@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:58.288Z" hostname="runnervmgx7h7" time="0.256">
+  <properties/>
+  <testcase name="create should throw when entry is unbalanced()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.148"/>
+  <testcase name="post should throw when entry is not DRAFT()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.009"/>
+  <testcase name="void should change status to VOIDED and create reversing entry()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.006"/>
+  <testcase name="create should throw when account is in different org()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.003"/>
+  <testcase name="create should succeed when no fiscal year exists()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.002"/>
+  <testcase name="create should throw when account is inactive()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.002"/>
+  <testcase name="getTrialBalance should return all account balances()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.007"/>
+  <testcase name="getAccountBalance should sum debits and credits from posted entries()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.003"/>
+  <testcase name="create should throw when less than 2 lines()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.001"/>
+  <testcase name="create should save balanced journal entry as DRAFT()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.005"/>
+  <testcase name="create should reject when fiscal period is closed()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.028"/>
+  <testcase name="create should succeed when fiscal period is open()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.003"/>
+  <testcase name="create should throw when account not found()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.003"/>
+  <testcase name="create should throw when line has zero debit and credit()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.001"/>
+  <testcase name="void should throw when entry is not POSTED()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.001"/>
+  <testcase name="create should throw when line has both debit and credit()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.002"/>
+  <testcase name="post should change status from DRAFT to POSTED()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.002"/>
+  <testcase name="post should reject when fiscal period is closed()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.001"/>
+  <testcase name="create should generate sequential entry number()" classname="com.aquinofroilan.tessera.domain.finance.service.JournalEntryServiceTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

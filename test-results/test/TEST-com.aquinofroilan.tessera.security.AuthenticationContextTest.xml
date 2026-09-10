@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.security.AuthenticationContextTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:51.627Z" hostname="runnervmgx7h7" time="0.08">
+  <properties/>
+  <testcase name="userId should return null when principal is not User()" classname="com.aquinofroilan.tessera.security.AuthenticationContextTest" time="0.014"/>
+  <testcase name="organizationId should return null when details is null()" classname="com.aquinofroilan.tessera.security.AuthenticationContextTest" time="0.004"/>
+  <testcase name="userId should return null when no authentication()" classname="com.aquinofroilan.tessera.security.AuthenticationContextTest" time="0.0"/>
+  <testcase name="userId should return uuid from User principal()" classname="com.aquinofroilan.tessera.security.AuthenticationContextTest" time="0.002"/>
+  <testcase name="organizationId should return id from ApiKeyContext()" classname="com.aquinofroilan.tessera.security.AuthenticationContextTest" time="0.001"/>
+  <testcase name="organizationId should return null when no authentication()" classname="com.aquinofroilan.tessera.security.AuthenticationContextTest" time="0.0"/>
+  <testcase name="unauthorized should return 401 with error message()" classname="com.aquinofroilan.tessera.security.AuthenticationContextTest" time="0.031"/>
+  <testcase name="organizationId should return id from SessionContext()" classname="com.aquinofroilan.tessera.security.AuthenticationContextTest" time="0.001"/>
+  <testcase name="organizationId should return null when details is not SessionContext or ApiKeyContext()" classname="com.aquinofroilan.tessera.security.AuthenticationContextTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.notification.service.NotificationPreferenceServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:59.102Z" hostname="runnervmgx7h7" time="0.406">
+  <properties/>
+  <testcase name="upsertAll writes nothing when enabled=true matches the default()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationPreferenceServiceTest" time="0.385"/>
+  <testcase name="upsertAll writes an opt-out row when enabled=false and no row exists()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationPreferenceServiceTest" time="0.009"/>
+  <testcase name="isEnabled defaults to true when no row exists()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationPreferenceServiceTest" time="0.001"/>
+  <testcase name="isEnabled honours a stored opt-out()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationPreferenceServiceTest" time="0.003"/>
+  <testcase name="upsertAll deletes an existing opt-out when the new value is enabled()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationPreferenceServiceTest" time="0.001"/>
+  <system-out><![CDATA[2026-09-01 23:44:59.499 [ForkJoinPool-1-worker-4] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.domain.organization.controller.OrganizationAuditLogControllerTest]: OrganizationAuditLogControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

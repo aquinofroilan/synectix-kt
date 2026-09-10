@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.crm.controller.CustomerPortalControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:51.779Z" hostname="runnervmgx7h7" time="19.064">
+  <properties/>
+  <testcase name="GET portal me returns summary()" classname="com.aquinofroilan.tessera.domain.crm.controller.CustomerPortalControllerTest" time="0.432"/>
+  <testcase name="POST portal tickets creates support ticket()" classname="com.aquinofroilan.tessera.domain.crm.controller.CustomerPortalControllerTest" time="0.31"/>
+  <testcase name="GET portal orders returns list()" classname="com.aquinofroilan.tessera.domain.crm.controller.CustomerPortalControllerTest" time="1.997"/>
+  <testcase name="GET portal invoices returns list()" classname="com.aquinofroilan.tessera.domain.crm.controller.CustomerPortalControllerTest" time="0.084"/>
+  <system-out><![CDATA[23:44:08.756 [ForkJoinPool-1-worker-1] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.graphql.QuotationGraphqlControllerTest
+2026-09-01 23:44:10.750 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.a.c.ApiKeyController - ← Exiting ApiKeyController.createApiKey (1ms)
+2026-09-01 23:44:10.753 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.a.c.InvitationController - → Entering InvitationController.validateInvitation
+2026-09-01 23:44:10.754 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.a.c.InvitationController - ← Exiting InvitationController.validateInvitation (1ms)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

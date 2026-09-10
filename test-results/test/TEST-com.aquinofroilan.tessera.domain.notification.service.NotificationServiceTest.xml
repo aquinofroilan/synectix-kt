@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.notification.service.NotificationServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:13.318Z" hostname="runnervmgx7h7" time="0.992">
+  <properties/>
+  <testcase name="unreadCountFor returns the repo count()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationServiceTest" time="0.788"/>
+  <testcase name="markRead 404s when the row belongs to a different org()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationServiceTest" time="0.008"/>
+  <testcase name="markRead is a no-op when the row is already read()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationServiceTest" time="0.095"/>
+  <testcase name="markRead 404s when the row belongs to a different user in the same org()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationServiceTest" time="0.001"/>
+  <testcase name="publish persists a notification scoped to the org and hands off to the email enqueuer()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationServiceTest" time="0.002"/>
+  <testcase name="listFor delegates to the org+recipient query ordered by createdAt()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationServiceTest" time="0.001"/>
+  <testcase name="markAllRead reports the row count touched by the repo()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationServiceTest" time="0.095"/>
+  <testcase name="markRead stamps readAt when the row is unread()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationServiceTest" time="0.001"/>
+  <system-out><![CDATA[23:45:14.107 [ForkJoinPool-1-worker-2] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.domain.organization.controller.OrganizationBillingFeatureControllerTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.organization.controller.OrganizationAuditLogControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:59.492Z" hostname="runnervmgx7h7" time="10.418">
+  <properties/>
+  <testcase name="GET audit log by id should return 200 with audit details()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationAuditLogControllerTest" time="0.098"/>
+  <testcase name="GET audit logs should return 403 when missing organization read()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationAuditLogControllerTest" time="0.053"/>
+  <testcase name="GET audit logs should return 200 with paginated audit logs()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationAuditLogControllerTest" time="0.05"/>
+  <system-out><![CDATA[2026-09-01 23:45:08.171 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.o.c.OrganizationAuditLogController - → Entering OrganizationAuditLogController.getAuditLogById
+2026-09-01 23:45:08.171 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.o.c.OrganizationAuditLogController - ← Exiting OrganizationAuditLogController.getAuditLogById (0ms)
+2026-09-01 23:45:08.207 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.m.c.SubcontractOrderController - → Entering SubcontractOrderController.receive
+2026-09-01 23:45:08.207 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.m.c.SubcontractOrderController - ← Exiting SubcontractOrderController.receive (0ms)
+2026-09-01 23:45:08.260 [ForkJoinPool-1-worker-1] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.graphql.AttendanceGraphqlControllerTest]: AttendanceGraphqlControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-01 23:45:09.912 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderController.dispatch(java.util.UUID,java.util.UUID,java.util.UUID,com.aquinofroilan.tessera.domain.mfg.dto.DispatchSubcontractOrderRequest); target is of class [com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderController]
+2026-09-01 23:45:09.912 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.m.c.SubcontractOrderController - → Entering SubcontractOrderController.dispatch
+2026-09-01 23:45:09.913 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.m.c.SubcontractOrderController - ← Exiting SubcontractOrderController.dispatch (0ms)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

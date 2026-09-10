@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.organization.service.OrganizationSettingsServiceTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:59.767Z" hostname="runnervmgx7h7" time="0.017">
+  <properties/>
+  <testcase name="updateSettings updates all fields successfully()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationSettingsServiceTest" time="0.003"/>
+  <testcase name="getSettings throws ResourceNotFoundException when org does not exist()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationSettingsServiceTest" time="0.001"/>
+  <testcase name="updateSettings allows keeping identical name without duplicate error()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationSettingsServiceTest" time="0.0"/>
+  <testcase name="updateSettings throws BusinessRuleException when name is blank()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationSettingsServiceTest" time="0.0"/>
+  <testcase name="getSettings returns settings when org exists()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationSettingsServiceTest" time="0.001"/>
+  <testcase name="updateSettings partial update preserves unmentioned fields()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationSettingsServiceTest" time="0.001"/>
+  <testcase name="updateSettings throws BusinessRuleException when currency is unsupported()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationSettingsServiceTest" time="0.001"/>
+  <testcase name="updateSettings throws BusinessRuleException when timezone is invalid()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationSettingsServiceTest" time="0.001"/>
+  <testcase name="updateSettings throws BusinessRuleException when name is duplicate()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationSettingsServiceTest" time="0.001"/>
+  <system-out><![CDATA[2026-09-01 23:44:59.777 [ForkJoinPool-1-worker-4] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.domain.organization.controller.OrganizationAuditLogControllerTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

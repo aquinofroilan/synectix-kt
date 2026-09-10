@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.sales.service.CustomerServiceTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:14.355Z" hostname="runnervmgx7h7" time="0.125">
+  <properties/>
+  <testcase name="update should reject inactive customer()" classname="com.aquinofroilan.tessera.domain.sales.service.CustomerServiceTest" time="0.007"/>
+  <testcase name="get should return customer for correct org()" classname="com.aquinofroilan.tessera.domain.sales.service.CustomerServiceTest" time="0.001"/>
+  <testcase name="update should reject blank name()" classname="com.aquinofroilan.tessera.domain.sales.service.CustomerServiceTest" time="0.001"/>
+  <testcase name="delete should reject already inactive customer()" classname="com.aquinofroilan.tessera.domain.sales.service.CustomerServiceTest" time="0.0"/>
+  <testcase name="delete should soft delete customer()" classname="com.aquinofroilan.tessera.domain.sales.service.CustomerServiceTest" time="0.002"/>
+  <testcase name="create should save customer with correct fields()" classname="com.aquinofroilan.tessera.domain.sales.service.CustomerServiceTest" time="0.003"/>
+  <testcase name="list should return active customers()" classname="com.aquinofroilan.tessera.domain.sales.service.CustomerServiceTest" time="0.0"/>
+  <testcase name="get should throw when customer belongs to different org()" classname="com.aquinofroilan.tessera.domain.sales.service.CustomerServiceTest" time="0.002"/>
+  <testcase name="update should apply partial changes()" classname="com.aquinofroilan.tessera.domain.sales.service.CustomerServiceTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

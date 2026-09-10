@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.hr.service.EmployeeServiceTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:11.328Z" hostname="runnervmgx7h7" time="0.597">
+  <properties/>
+  <testcase name="create validates an inactive department()" classname="com.aquinofroilan.tessera.domain.hr.service.EmployeeServiceTest" time="0.444"/>
+  <testcase name="create rejects linking a user already linked to another employee()" classname="com.aquinofroilan.tessera.domain.hr.service.EmployeeServiceTest" time="0.014"/>
+  <testcase name="leave and return follow the lifecycle()" classname="com.aquinofroilan.tessera.domain.hr.service.EmployeeServiceTest" time="0.08"/>
+  <testcase name="terminate sets status and date and rejects a date before hire()" classname="com.aquinofroilan.tessera.domain.hr.service.EmployeeServiceTest" time="0.002"/>
+  <testcase name="cannot place a terminated employee on leave()" classname="com.aquinofroilan.tessera.domain.hr.service.EmployeeServiceTest" time="0.012"/>
+  <testcase name="create links a user()" classname="com.aquinofroilan.tessera.domain.hr.service.EmployeeServiceTest" time="0.013"/>
+  <testcase name="assign department rejects a terminated employee()" classname="com.aquinofroilan.tessera.domain.hr.service.EmployeeServiceTest" time="0.001"/>
+  <testcase name="getEmployeeByUser resolves the linked employee or throws()" classname="com.aquinofroilan.tessera.domain.hr.service.EmployeeServiceTest" time="0.011"/>
+  <testcase name="create assigns a number and starts ACTIVE()" classname="com.aquinofroilan.tessera.domain.hr.service.EmployeeServiceTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

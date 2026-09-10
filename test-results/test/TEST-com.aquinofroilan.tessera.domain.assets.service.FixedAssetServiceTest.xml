@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.assets.service.FixedAssetServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:47.835Z" hostname="runnervmgx7h7" time="3.562">
+  <properties/>
+  <testcase name="updateAsset only overwrites fields that were sent()" classname="com.aquinofroilan.tessera.domain.assets.service.FixedAssetServiceTest" time="3.481"/>
+  <testcase name="getAsset 404s for cross-org access()" classname="com.aquinofroilan.tessera.domain.assets.service.FixedAssetServiceTest" time="0.009"/>
+  <testcase name="createAsset rejects salvage above cost()" classname="com.aquinofroilan.tessera.domain.assets.service.FixedAssetServiceTest" time="0.011"/>
+  <testcase name="createAsset assigns a sequential FA number and persists the canonical shape()" classname="com.aquinofroilan.tessera.domain.assets.service.FixedAssetServiceTest" time="0.021"/>
+  <testcase name="createAsset validates the referenced category lives in the same org()" classname="com.aquinofroilan.tessera.domain.assets.service.FixedAssetServiceTest" time="0.025"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

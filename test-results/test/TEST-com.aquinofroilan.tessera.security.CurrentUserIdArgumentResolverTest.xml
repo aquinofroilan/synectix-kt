@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.security.CurrentUserIdArgumentResolverTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:50.705Z" hostname="runnervmgx7h7" time="0.919">
+  <properties/>
+  <testcase name="resolveArgument returns userId when authenticated()" classname="com.aquinofroilan.tessera.security.CurrentUserIdArgumentResolverTest" time="0.771"/>
+  <testcase name="resolveArgument throws AuthenticationException when unauthenticated()" classname="com.aquinofroilan.tessera.security.CurrentUserIdArgumentResolverTest" time="0.013"/>
+  <testcase name="supportsParameter returns true when CurrentUserId annotation present()" classname="com.aquinofroilan.tessera.security.CurrentUserIdArgumentResolverTest" time="0.03"/>
+  <testcase name="supportsParameter returns false when annotation absent()" classname="com.aquinofroilan.tessera.security.CurrentUserIdArgumentResolverTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

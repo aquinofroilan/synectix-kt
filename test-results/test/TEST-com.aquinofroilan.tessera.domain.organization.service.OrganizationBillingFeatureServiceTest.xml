@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.organization.service.OrganizationBillingFeatureServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:59.525Z" hostname="runnervmgx7h7" time="0.242">
+  <properties/>
+  <testcase name="updatePlan updates organization plan tier()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationBillingFeatureServiceTest" time="0.205"/>
+  <testcase name="isFeatureEnabled evaluates plan defaults and overrides correctly()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationBillingFeatureServiceTest" time="0.002"/>
+  <testcase name="batchSetOverrides saves multiple overrides()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationBillingFeatureServiceTest" time="0.012"/>
+  <testcase name="setFeatureOverride creates and saves override()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationBillingFeatureServiceTest" time="0.005"/>
+  <testcase name="getPlan applies feature flag overrides over plan defaults()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationBillingFeatureServiceTest" time="0.004"/>
+  <testcase name="getPlan throws ResourceNotFoundException when org does not exist()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationBillingFeatureServiceTest" time="0.005"/>
+  <testcase name="getPlan returns ENTERPRISE plan with all features enabled()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationBillingFeatureServiceTest" time="0.003"/>
+  <testcase name="removeFeatureOverride deletes override and reverts to plan default()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationBillingFeatureServiceTest" time="0.002"/>
+  <testcase name="getPlan returns FREE plan with default flags()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationBillingFeatureServiceTest" time="0.0"/>
+  <testcase name="getPlan returns STARTER plan with enabled starter features()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationBillingFeatureServiceTest" time="0.001"/>
+  <system-out><![CDATA[2026-09-01 23:44:59.715 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.o.s.OrganizationBillingFeatureService - Updating organization 4abe9f6d-6df3-6e5c-953e-3695db9a5216 billing plan from FREE to ENTERPRISE
+2026-09-01 23:44:59.744 [ForkJoinPool-1-worker-3] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsControllerTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

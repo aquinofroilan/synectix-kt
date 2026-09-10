@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.graphql.CustomerGraphqlControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:05.255Z" hostname="runnervmgx7h7" time="5.12">
+  <properties/>
+  <testcase name="createCustomer mutation should map input and return created customer()" classname="com.aquinofroilan.tessera.graphql.CustomerGraphqlControllerTest" time="0.236"/>
+  <testcase name="customers query should return unauthorized error when organization is missing()" classname="com.aquinofroilan.tessera.graphql.CustomerGraphqlControllerTest" time="0.143"/>
+  <testcase name="createCustomer mutation should reject invalid input without calling the service()" classname="com.aquinofroilan.tessera.graphql.CustomerGraphqlControllerTest" time="0.029"/>
+  <testcase name="customers query should return mapped results()" classname="com.aquinofroilan.tessera.graphql.CustomerGraphqlControllerTest" time="0.015"/>
+  <system-out><![CDATA[2026-09-01 23:45:05.250 [ForkJoinPool-1-worker-4] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:45:10.164 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Securing PATCH /api/v1/inventory/products/00000000-0000-0000-0000-000000000199
+23:45:10.168 [ForkJoinPool-1-worker-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/inventory/warehouses/22a14436-99e0-5e9d-9396-3a670fc505c0
+23:45:10.169 [ForkJoinPool-1-worker-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/inventory/warehouses/22a14436-99e0-5e9d-9396-3a670fc505c0
+23:45:10.170 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController.getWarehouse(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController]
+23:45:10.170 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController.getWarehouse(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController]
+23:45:10.171 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.i.c.WarehouseController - → Entering WarehouseController.getWarehouse
+23:45:10.171 [ForkJoinPool-1-worker-1] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.aquinofroilan.tessera.graphql.CustomerGraphqlController.customers(); target is of class [com.aquinofroilan.tessera.graphql.CustomerGraphqlController]
+23:45:10.171 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Secured PATCH /api/v1/inventory/products/00000000-0000-0000-0000-000000000199
+23:45:10.174 [ForkJoinPool-1-worker-1] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.aquinofroilan.tessera.graphql.CustomerGraphqlController.customers(); target is of class [com.aquinofroilan.tessera.graphql.CustomerGraphqlController]
+23:45:10.175 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.i.c.WarehouseController - ← Exiting WarehouseController.getWarehouse (4ms)
+23:45:10.332 [ForkJoinPool-1-worker-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/inventory/warehouses
+23:45:10.355 [ForkJoinPool-1-worker-3] ERROR c.a.t.d.a.controller.AuthController - ✗ Exception in AuthController.register: BusinessRuleException - Username already exists
+23:45:10.353 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/inventory/products
+23:45:10.364 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/inventory/products
+23:45:10.368 [ForkJoinPool-1-worker-1] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.util.List com.aquinofroilan.tessera.graphql.CustomerGraphqlController.customers(); target is of class [com.aquinofroilan.tessera.graphql.CustomerGraphqlController]
+23:45:10.369 [ForkJoinPool-1-worker-1] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.util.List com.aquinofroilan.tessera.graphql.CustomerGraphqlController.customers(); target is of class [com.aquinofroilan.tessera.graphql.CustomerGraphqlController]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

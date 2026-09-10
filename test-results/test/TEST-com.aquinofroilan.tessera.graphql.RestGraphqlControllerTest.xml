@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.graphql.RestGraphqlControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:49.961Z" hostname="runnervmgx7h7" time="4.29">
+  <properties/>
+  <testcase name="simpleHealth query should return json payload()" classname="com.aquinofroilan.tessera.graphql.RestGraphqlControllerTest" time="0.025"/>
+  <system-out><![CDATA[2026-09-01 23:44:49.963 [ForkJoinPool-1-worker-1] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.graphql.RestGraphqlControllerTest]: RestGraphqlControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-01 23:44:49.972 [ForkJoinPool-1-worker-2] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

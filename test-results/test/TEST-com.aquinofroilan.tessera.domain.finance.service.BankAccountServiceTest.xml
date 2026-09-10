@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.finance.service.BankAccountServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:56.302Z" hostname="runnervmgx7h7" time="0.238">
+  <properties/>
+  <testcase name="applyBalanceDelta updates current balance()" classname="com.aquinofroilan.tessera.domain.finance.service.BankAccountServiceTest" time="0.202"/>
+  <testcase name="create rejects inactive GL account()" classname="com.aquinofroilan.tessera.domain.finance.service.BankAccountServiceTest" time="0.009"/>
+  <testcase name="create rejects non-ASSET GL account()" classname="com.aquinofroilan.tessera.domain.finance.service.BankAccountServiceTest" time="0.008"/>
+  <testcase name="deactivate rejects double-deactivation()" classname="com.aquinofroilan.tessera.domain.finance.service.BankAccountServiceTest" time="0.002"/>
+  <testcase name="create rejects duplicate code()" classname="com.aquinofroilan.tessera.domain.finance.service.BankAccountServiceTest" time="0.002"/>
+  <testcase name="create normalises code to upper, defaults currency, initialises balance()" classname="com.aquinofroilan.tessera.domain.finance.service.BankAccountServiceTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

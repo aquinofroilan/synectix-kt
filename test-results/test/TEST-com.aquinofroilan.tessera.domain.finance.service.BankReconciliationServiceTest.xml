@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.finance.service.BankReconciliationServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:09.068Z" hostname="runnervmgx7h7" time="0.316">
+  <properties/>
+  <testcase name="manual-match rejects an amount mismatch()" classname="com.aquinofroilan.tessera.domain.finance.service.BankReconciliationServiceTest" time="0.29"/>
+  <testcase name="manual-match rejects non-POSTED journal entry()" classname="com.aquinofroilan.tessera.domain.finance.service.BankReconciliationServiceTest" time="0.004"/>
+  <testcase name="auto-match flags ambiguous when multiple JEs match()" classname="com.aquinofroilan.tessera.domain.finance.service.BankReconciliationServiceTest" time="0.006"/>
+  <testcase name="unmatch clears reconciliation fields()" classname="com.aquinofroilan.tessera.domain.finance.service.BankReconciliationServiceTest" time="0.002"/>
+  <testcase name="auto-match unmatched when no candidate amount agrees()" classname="com.aquinofroilan.tessera.domain.finance.service.BankReconciliationServiceTest" time="0.004"/>
+  <testcase name="auto-match links a single candidate JE within drift window()" classname="com.aquinofroilan.tessera.domain.finance.service.BankReconciliationServiceTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

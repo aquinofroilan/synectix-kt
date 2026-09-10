@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.finance.service.FxAutoFetchJobTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:57.694Z" hostname="runnervmgx7h7" time="0.593">
+  <properties/>
+  <testcase name="skips updating MANUAL rates()" classname="com.aquinofroilan.tessera.domain.finance.service.FxAutoFetchJobTest" time="0.568"/>
+  <testcase name="skips inactive orgs()" classname="com.aquinofroilan.tessera.domain.finance.service.FxAutoFetchJobTest" time="0.001"/>
+  <testcase name="inserts AUTO rates for each target currency()" classname="com.aquinofroilan.tessera.domain.finance.service.FxAutoFetchJobTest" time="0.011"/>
+  <testcase name="does nothing when no orgs exist()" classname="com.aquinofroilan.tessera.domain.finance.service.FxAutoFetchJobTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

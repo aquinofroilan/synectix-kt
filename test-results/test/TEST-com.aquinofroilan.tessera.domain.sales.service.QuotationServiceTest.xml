@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.sales.service.QuotationServiceTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:12.720Z" hostname="runnervmgx7h7" time="0.985">
+  <properties/>
+  <testcase name="convert requires an accepted quote()" classname="com.aquinofroilan.tessera.domain.sales.service.QuotationServiceTest" time="0.783"/>
+  <testcase name="convert without a warehouse anywhere is rejected()" classname="com.aquinofroilan.tessera.domain.sales.service.QuotationServiceTest" time="0.001"/>
+  <testcase name="accept rejects a quote that is not sent()" classname="com.aquinofroilan.tessera.domain.sales.service.QuotationServiceTest" time="0.001"/>
+  <testcase name="convert builds a sales order from quote lines and marks it converted()" classname="com.aquinofroilan.tessera.domain.sales.service.QuotationServiceTest" time="0.003"/>
+  <testcase name="send moves a draft to sent()" classname="com.aquinofroilan.tessera.domain.sales.service.QuotationServiceTest" time="0.097"/>
+  <testcase name="get rejects cross-org access()" classname="com.aquinofroilan.tessera.domain.sales.service.QuotationServiceTest" time="0.089"/>
+  <testcase name="accept rejects an expired quote()" classname="com.aquinofroilan.tessera.domain.sales.service.QuotationServiceTest" time="0.001"/>
+  <testcase name="cancel rejects a converted quote()" classname="com.aquinofroilan.tessera.domain.sales.service.QuotationServiceTest" time="0.001"/>
+  <testcase name="create persists a draft with a generated number and computed total()" classname="com.aquinofroilan.tessera.domain.sales.service.QuotationServiceTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

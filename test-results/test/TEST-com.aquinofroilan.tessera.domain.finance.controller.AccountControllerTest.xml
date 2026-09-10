@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:49.819Z" hostname="runnervmgx7h7" time="15.385">
+  <properties/>
+  <testcase name="GET accounts should return 400 for invalid type query param()" classname="com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest" time="0.763"/>
+  <testcase name="GET accounts should return 200 with account list()" classname="com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest" time="0.039"/>
+  <testcase name="PUT accounts should return 200 when updated()" classname="com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest" time="1.273"/>
+  <testcase name="POST accounts should return 201 when created()" classname="com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest" time="0.069"/>
+  <testcase name="DELETE accounts should return 200 when deactivated()" classname="com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest" time="0.155"/>
+  <testcase name="POST accounts should return 400 when code is blank()" classname="com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest" time="0.128"/>
+  <testcase name="GET accounts by id should return 404 when not found()" classname="com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest" time="0.889"/>
+  <testcase name="GET accounts by id should return 200()" classname="com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest" time="1.861"/>
+  <testcase name="DELETE accounts should return 400 for system account()" classname="com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest" time="0.052"/>
+  <testcase name="POST accounts should return 400 when duplicate code()" classname="com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest" time="0.038"/>
+  <testcase name="DELETE accounts should return 403 without account delete permission()" classname="com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest" time="1.948"/>
+  <testcase name="POST accounts should return 403 without account create permission()" classname="com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest" time="0.048"/>
+  <system-out><![CDATA[2026-09-01 23:44:55.030 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.c.c.SupportTicketController - → Entering SupportTicketController.resolveTicket
+2026-09-01 23:44:55.033 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.c.c.SupportTicketController - ← Exiting SupportTicketController.resolveTicket (0ms)
+23:44:56.447 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.a.controller.AuthController - → Entering AuthController.login
+23:44:56.448 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.a.controller.AuthController - ← Exiting AuthController.login (1ms)
+23:44:56.449 [ForkJoinPool-1-worker-1] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.graphql.ProjectGraphqlControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+2026-09-01 23:44:56.494 [ForkJoinPool-1-worker-1] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+2026-09-01 23:44:56.495 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.ProjectGraphqlControllerTest - Starting ProjectGraphqlControllerTest using Java 26.0.2.1 with PID 3789 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+2026-09-01 23:44:56.495 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.ProjectGraphqlControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-09-01 23:45:00.061 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController.voidJournalEntry(java.util.UUID,java.util.UUID,com.aquinofroilan.tessera.domain.finance.dto.VoidJournalEntryRequest); target is of class [com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController]
+2026-09-01 23:45:00.345 [ForkJoinPool-1-worker-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> com.aquinofroilan.tessera.domain.auth.controller.AuthController.login(com.aquinofroilan.tessera.domain.auth.dto.LoginRequest,jakarta.servlet.http.HttpServletRequest): [Field error in object 'loginRequest' on field 'username': rejected value []; codes [NotBlank.loginRequest.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginRequest.username,username]; arguments []; default message [username]]; default message [Username is required]] ]
+2026-09-01 23:45:01.236 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/auth/forgot-password
+2026-09-01 23:45:01.237 [ForkJoinPool-1-worker-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-09-01 23:45:01.239 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/auth/forgot-password
+2026-09-01 23:45:01.244 [ForkJoinPool-1-worker-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/finance/journal/00000000-0000-0000-0000-000000000199
+2026-09-01 23:45:01.245 [ForkJoinPool-1-worker-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/finance/journal/00000000-0000-0000-0000-000000000199
+2026-09-01 23:45:01.246 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.a.controller.AuthController - → Entering AuthController.forgotPassword
+2026-09-01 23:45:01.246 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.a.controller.AuthController - ← Exiting AuthController.forgotPassword (0ms)
+2026-09-01 23:45:01.246 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController.getJournalEntry(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController]
+2026-09-01 23:45:03.101 [ForkJoinPool-1-worker-5] ERROR c.a.t.d.f.c.JournalEntryController - ✗ Exception in JournalEntryController.getJournalEntry: ResourceNotFoundException - Journal entry not found
+2026-09-01 23:45:03.099 [ForkJoinPool-1-worker-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> com.aquinofroilan.tessera.domain.auth.controller.AuthController.login(com.aquinofroilan.tessera.domain.auth.dto.LoginRequest,jakarta.servlet.http.HttpServletRequest): [Field error in object 'loginRequest' on field 'password': rejected value []; codes [NotBlank.loginRequest.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginRequest.password,password]; arguments []; default message [password]]; default message [Password is required]] ]
+2026-09-01 23:45:05.147 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/auth/organizations/switch
+2026-09-01 23:45:05.160 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/inventory/reorder-rules
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.organization.service.OrganizationAuditServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:13.903Z" hostname="runnervmgx7h7" time="0.438">
+  <properties/>
+  <testcase name="getAuditLogs returns paginated list of audit responses()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationAuditServiceTest" time="0.418"/>
+  <testcase name="getAuditLogById throws ResourceNotFoundException when not found()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationAuditServiceTest" time="0.002"/>
+  <testcase name="logEvent persists audit log entry with actor and serialized values()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationAuditServiceTest" time="0.016"/>
+  <testcase name="getAuditLogById returns audit log when found()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationAuditServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

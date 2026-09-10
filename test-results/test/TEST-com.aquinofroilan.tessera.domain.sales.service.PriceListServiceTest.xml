@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.sales.service.PriceListServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:13.706Z" hostname="runnervmgx7h7" time="0.649">
+  <properties/>
+  <testcase name="createPriceList throws BusinessRuleException on duplicate code()" classname="com.aquinofroilan.tessera.domain.sales.service.PriceListServiceTest" time="0.635"/>
+  <testcase name="createPriceList creates price list with lines successfully()" classname="com.aquinofroilan.tessera.domain.sales.service.PriceListServiceTest" time="0.006"/>
+  <testcase name="updatePriceList modifies attributes()" classname="com.aquinofroilan.tessera.domain.sales.service.PriceListServiceTest" time="0.001"/>
+  <testcase name="addOrUpdateLine updates existing line or creates new line()" classname="com.aquinofroilan.tessera.domain.sales.service.PriceListServiceTest" time="0.001"/>
+  <system-out><![CDATA[23:45:14.349 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.o.s.OrganizationLifecycleService - Transitioning organization 4abe9f6d-6df3-6e5c-953e-3695db9a5216 (acme-corp) from ACTIVE to ARCHIVED. Reason: Tenant archived
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.graphql.QuotationGraphqlControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:08.665Z" hostname="runnervmgx7h7" time="2.282">
+  <properties/>
+  <testcase name="createQuotation mutation should be denied without write authority()" classname="com.aquinofroilan.tessera.graphql.QuotationGraphqlControllerTest" time="0.067"/>
+  <testcase name="quotations query should return json payload()" classname="com.aquinofroilan.tessera.graphql.QuotationGraphqlControllerTest" time="0.073"/>
+  <testcase name="acceptQuotation mutation should bridge to controller()" classname="com.aquinofroilan.tessera.graphql.QuotationGraphqlControllerTest" time="0.101"/>
+  <system-out><![CDATA[23:44:08.736 [ForkJoinPool-1-worker-1] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.graphql.QuotationGraphqlControllerTest]: QuotationGraphqlControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-01 23:44:10.694 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/portal/orders
+2026-09-01 23:44:10.832 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.c.c.CustomerPortalController - → Entering CustomerPortalController.getMyInvoices
+2026-09-01 23:44:10.832 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.c.c.CustomerPortalController - ← Exiting CustomerPortalController.getMyInvoices (0ms)
+2026-09-01 23:44:10.833 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.auth.controller.ApiKeyController.createApiKey(com.aquinofroilan.tessera.domain.auth.dto.CreateApiKeyRequest); target is of class [com.aquinofroilan.tessera.domain.auth.controller.ApiKeyController]
+2026-09-01 23:44:10.834 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Failed to authorize ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.auth.controller.ApiKeyController.createApiKey(com.aquinofroilan.tessera.domain.auth.dto.CreateApiKeyRequest); target is of class [com.aquinofroilan.tessera.domain.auth.controller.ApiKeyController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@1e90c657 and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAuthority('apikey:manage')]
+2026-09-01 23:44:10.839 [ForkJoinPool-1-worker-5] DEBUG o.s.s.w.a.AccessDeniedHandlerImpl - Responding with 403 status code
+2026-09-01 23:44:10.952 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.a.c.InvitationController - ← Exiting InvitationController.acceptInvitation (13ms)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

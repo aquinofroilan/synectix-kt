@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" tests="26" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:11.297Z" hostname="runnervmgx7h7" time="1.288">
+  <properties/>
+  <testcase name="listProducts passes category through to repository()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.534"/>
+  <testcase name="getProduct should return product when org matches()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.001"/>
+  <testcase name="updateProduct should allow currency change()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.128"/>
+  <testcase name="listProducts combines category and isActive filters()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.001"/>
+  <testcase name="listProducts returns empty when repository search yields nothing()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.0"/>
+  <testcase name="deleteProduct should enforce cross-org isolation()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.003"/>
+  <testcase name="getProduct should throw 404 when org does not match (cross-org isolation)()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.001"/>
+  <testcase name="createProduct should uppercase currency code()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.001"/>
+  <testcase name="createProduct should throw on duplicate SKU in organization()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.103"/>
+  <testcase name="createProduct rejects blank name after trim()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.001"/>
+  <testcase name="updateProduct trims name when provided()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.009"/>
+  <testcase name="listProducts passes explicit isActive false for soft-deleted listing()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.0"/>
+  <testcase name="createProduct rejects blank sku after trim()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.001"/>
+  <testcase name="createProduct should save product with explicit currency()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.001"/>
+  <testcase name="updateProduct should throw when product inactive()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.019"/>
+  <testcase name="listProducts passes search term through to repository()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.001"/>
+  <testcase name="updateProduct should validate new tax group is active()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.144"/>
+  <testcase name="updateProduct should perform partial update()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.0"/>
+  <testcase name="createProduct trims surrounding whitespace from sku and name()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.0"/>
+  <testcase name="listProducts defaults to active-only with no other filters()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.0"/>
+  <testcase name="createProduct should validate tax group exists and is active()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.154"/>
+  <testcase name="deleteProduct should set isActive to false (soft delete)()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.001"/>
+  <testcase name="updateProduct rejects blank name()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.001"/>
+  <testcase name="createProduct should default priceCurrency to org base currency()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.015"/>
+  <testcase name="deleteProduct should throw when already inactive()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.002"/>
+  <testcase name="getProduct should throw 404 when product not found()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductServiceTest" time="0.007"/>
+  <system-out><![CDATA[23:45:12.072 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.ProductController - ← Exiting ProductController.listProducts (0ms)
+23:45:12.542 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.ProductController - ← Exiting ProductController.deleteProduct (1ms)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

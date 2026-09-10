@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.organization.controller.OrganizationBillingFeatureControllerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:13.412Z" hostname="runnervmgx7h7" time="9.879">
+  <properties/>
+  <testcase name="GET plan should return 403 when missing organization read()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationBillingFeatureControllerTest" time="4.302"/>
+  <testcase name="PUT plan should return 403 when missing organization write()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationBillingFeatureControllerTest" time="0.038"/>
+  <testcase name="PUT feature override should return 200()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationBillingFeatureControllerTest" time="0.028"/>
+  <testcase name="GET features should return 200 with effective features list()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationBillingFeatureControllerTest" time="0.039"/>
+  <testcase name="GET plan should return 200 with organization billing plan()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationBillingFeatureControllerTest" time="0.025"/>
+  <testcase name="PUT plan should return 200 when plan is updated()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationBillingFeatureControllerTest" time="0.042"/>
+  <testcase name="POST batch overrides should return 200()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationBillingFeatureControllerTest" time="2.511"/>
+  <testcase name="DELETE feature override should return 200()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationBillingFeatureControllerTest" time="0.284"/>
+  <system-out><![CDATA[23:45:13.414 [ForkJoinPool-1-worker-2] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.domain.organization.controller.OrganizationBillingFeatureControllerTest]: OrganizationBillingFeatureControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+23:45:15.999 [ForkJoinPool-1-worker-5] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+23:45:16.000 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.o.c.OrganizationLifecycleControllerTest - Starting OrganizationLifecycleControllerTest using Java 26.0.2.1 with PID 3789 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+23:45:16.000 [ForkJoinPool-1-worker-5] DEBUG c.a.t.d.o.c.OrganizationLifecycleControllerTest - Running with Spring Boot v4.0.1, Spring v7.0.2
+23:45:16.000 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.o.c.OrganizationLifecycleControllerTest - The following 1 profile is active: "test"
+23:45:16.848 [ForkJoinPool-1-worker-5] DEBUG c.a.t.c.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured for use
+23:45:16.848 [ForkJoinPool-1-worker-5] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:45:16.848 [ForkJoinPool-1-worker-5] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:45:16.849 [ForkJoinPool-1-worker-5] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+23:45:16.861 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.o.c.OrganizationLifecycleControllerTest - Started OrganizationLifecycleControllerTest in 0.877 seconds (process running for 91.418)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+23:45:16.879 [ForkJoinPool-1-worker-1] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+23:45:16.880 [ForkJoinPool-1-worker-1] INFO  c.a.t.d.s.c.SalesReturnControllerTest - Starting SalesReturnControllerTest using Java 26.0.2.1 with PID 3789 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+23:45:16.880 [ForkJoinPool-1-worker-1] DEBUG c.a.t.d.s.c.SalesReturnControllerTest - Running with Spring Boot v4.0.1, Spring v7.0.2
+23:45:16.880 [ForkJoinPool-1-worker-1] INFO  c.a.t.d.s.c.SalesReturnControllerTest - The following 1 profile is active: "test"
+23:45:17.883 [ForkJoinPool-1-worker-1] DEBUG c.a.t.c.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured for use
+23:45:17.884 [ForkJoinPool-1-worker-1] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:45:17.884 [ForkJoinPool-1-worker-1] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:45:17.885 [ForkJoinPool-1-worker-1] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+23:45:17.897 [ForkJoinPool-1-worker-1] INFO  c.a.t.d.s.c.SalesReturnControllerTest - Started SalesReturnControllerTest in 1.031 seconds (process running for 92.454)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+23:45:17.916 [ForkJoinPool-1-worker-4] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+23:45:17.917 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.p.c.VendorPerformanceControllerTest - Starting VendorPerformanceControllerTest using Java 26.0.2.1 with PID 3789 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+23:45:17.918 [ForkJoinPool-1-worker-4] DEBUG c.a.t.d.p.c.VendorPerformanceControllerTest - Running with Spring Boot v4.0.1, Spring v7.0.2
+23:45:17.919 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.p.c.VendorPerformanceControllerTest - The following 1 profile is active: "test"
+23:45:19.174 [ForkJoinPool-1-worker-4] DEBUG c.a.t.c.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured for use
+23:45:19.175 [ForkJoinPool-1-worker-4] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:45:19.175 [ForkJoinPool-1-worker-4] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:45:19.176 [ForkJoinPool-1-worker-4] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+23:45:19.184 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.p.c.VendorPerformanceControllerTest - Started VendorPerformanceControllerTest in 1.284 seconds (process running for 93.741)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+23:45:19.197 [ForkJoinPool-1-worker-3] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+23:45:19.198 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.CreditNoteControllerTest - Starting CreditNoteControllerTest using Java 26.0.2.1 with PID 3789 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+23:45:19.198 [ForkJoinPool-1-worker-3] DEBUG c.a.t.d.s.c.CreditNoteControllerTest - Running with Spring Boot v4.0.1, Spring v7.0.2
+23:45:19.198 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.CreditNoteControllerTest - The following 1 profile is active: "test"
+23:45:20.244 [ForkJoinPool-1-worker-3] DEBUG c.a.t.c.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured for use
+23:45:20.245 [ForkJoinPool-1-worker-3] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:45:20.245 [ForkJoinPool-1-worker-3] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:45:20.245 [ForkJoinPool-1-worker-3] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+23:45:20.254 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.CreditNoteControllerTest - Started CreditNoteControllerTest in 1.069 seconds (process running for 94.811)
+23:45:20.288 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.p.c.VendorPerformanceController - → Entering VendorPerformanceController.listEvaluations
+23:45:20.289 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.p.c.VendorPerformanceController - ← Exiting VendorPerformanceController.listEvaluations (1ms)
+23:45:20.363 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.p.c.VendorPerformanceController - → Entering VendorPerformanceController.listAllVendorPerformance
+23:45:20.363 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.p.c.VendorPerformanceController - ← Exiting VendorPerformanceController.listAllVendorPerformance (0ms)
+23:45:20.363 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.CreditNoteController - → Entering CreditNoteController.createCreditNote
+23:45:20.363 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.CreditNoteController - ← Exiting CreditNoteController.createCreditNote (0ms)
+23:45:20.365 [ForkJoinPool-1-worker-1] INFO  c.a.t.d.s.c.SalesReturnController - → Entering SalesReturnController.completeSalesReturn
+23:45:20.365 [ForkJoinPool-1-worker-1] INFO  c.a.t.d.s.c.SalesReturnController - ← Exiting SalesReturnController.completeSalesReturn (0ms)
+23:45:20.398 [ForkJoinPool-1-worker-1] INFO  c.a.t.d.s.c.SalesReturnController - → Entering SalesReturnController.approveSalesReturn
+23:45:20.402 [ForkJoinPool-1-worker-1] INFO  c.a.t.d.s.c.SalesReturnController - ← Exiting SalesReturnController.approveSalesReturn (0ms)
+23:45:20.449 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.CreditNoteController - → Entering CreditNoteController.listCreditNotes
+23:45:20.493 [ForkJoinPool-1-worker-1] INFO  c.a.t.d.s.c.SalesReturnController - → Entering SalesReturnController.receiveSalesReturn
+23:45:20.494 [ForkJoinPool-1-worker-1] INFO  c.a.t.d.s.c.SalesReturnController - ← Exiting SalesReturnController.receiveSalesReturn (0ms)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+23:45:20.515 [ForkJoinPool-1-worker-3] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+23:45:20.515 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.PriceListControllerTest - Starting PriceListControllerTest using Java 26.0.2.1 with PID 3789 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+23:45:20.515 [ForkJoinPool-1-worker-3] DEBUG c.a.t.d.s.c.PriceListControllerTest - Running with Spring Boot v4.0.1, Spring v7.0.2
+23:45:20.516 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.PriceListControllerTest - The following 1 profile is active: "test"
+23:45:22.984 [ForkJoinPool-1-worker-3] DEBUG c.a.t.c.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured for use
+23:45:22.984 [ForkJoinPool-1-worker-3] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:45:22.985 [ForkJoinPool-1-worker-3] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:45:22.985 [ForkJoinPool-1-worker-3] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+23:45:22.996 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.PriceListControllerTest - Started PriceListControllerTest in 2.499 seconds (process running for 97.553)
+23:45:23.292 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.o.c.OrganizationLifecycleController - ← Exiting OrganizationLifecycleController.activateOrganization (0ms)
+]]></system-out>
+  <system-err><![CDATA[23:45:20,509 |-WARN in Logger[com.aquinofroilan.tessera.domain.organization.controller.OrganizationBillingFeatureController] - No appenders present in context [default] for logger [com.aquinofroilan.tessera.domain.organization.controller.OrganizationBillingFeatureController].
+]]></system-err>
+</testsuite>

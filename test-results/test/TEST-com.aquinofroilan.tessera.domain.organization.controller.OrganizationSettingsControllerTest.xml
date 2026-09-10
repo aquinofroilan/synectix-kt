@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:59.509Z" hostname="runnervmgx7h7" time="13.026">
+  <properties/>
+  <testcase name="PATCH settings should return 200 when settings are updated()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsControllerTest" time="0.121"/>
+  <testcase name="PUT settings should return 400 when baseCurrency length is invalid()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsControllerTest" time="0.03"/>
+  <testcase name="PUT settings should return 403 when missing organization write permission()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsControllerTest" time="1.625"/>
+  <testcase name="PUT settings should return 200 when settings are updated()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsControllerTest" time="0.023"/>
+  <testcase name="GET settings should return 200 with organization settings()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsControllerTest" time="0.086"/>
+  <testcase name="GET settings should return 403 when missing organization read permission()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsControllerTest" time="0.035"/>
+  <system-out><![CDATA[2026-09-01 23:45:09.876 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/organization/audit-logs
+2026-09-01 23:45:09.877 [ForkJoinPool-1-worker-1] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.lang.Object com.aquinofroilan.tessera.graphql.AttendanceGraphqlController.attendance(java.util.UUID,java.lang.String,java.lang.String); target is of class [com.aquinofroilan.tessera.graphql.AttendanceGraphqlController]
+2026-09-01 23:45:09.881 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.organization.controller.OrganizationAuditLogController.getAuditLogs(java.util.UUID,com.aquinofroilan.tessera.domain.organization.model.AuditCategory,java.lang.String,java.lang.String,java.time.LocalDateTime,java.time.LocalDateTime,int,int); target is of class [com.aquinofroilan.tessera.domain.organization.controller.OrganizationAuditLogController]
+2026-09-01 23:45:09.881 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.organization.controller.OrganizationAuditLogController.getAuditLogs(java.util.UUID,com.aquinofroilan.tessera.domain.organization.model.AuditCategory,java.lang.String,java.lang.String,java.time.LocalDateTime,java.time.LocalDateTime,int,int); target is of class [com.aquinofroilan.tessera.domain.organization.controller.OrganizationAuditLogController]
+2026-09-01 23:45:09.882 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.o.c.OrganizationAuditLogController - → Entering OrganizationAuditLogController.getAuditLogs
+2026-09-01 23:45:09.882 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.o.c.OrganizationAuditLogController - ← Exiting OrganizationAuditLogController.getAuditLogs (0ms)
+2026-09-01 23:45:09.886 [ForkJoinPool-1-worker-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/mfg/subcontract-orders/11111111-2222-3333-4444-555555555555/dispatch
+2026-09-01 23:45:09.886 [ForkJoinPool-1-worker-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/mfg/subcontract-orders/11111111-2222-3333-4444-555555555555/dispatch
+2026-09-01 23:45:09.888 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Securing PUT /api/v1/organization/settings
+2026-09-01 23:45:09.889 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Secured PUT /api/v1/organization/settings
+2026-09-01 23:45:09.890 [ForkJoinPool-1-worker-3] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsController.updateSettingsPut(java.util.UUID,com.aquinofroilan.tessera.domain.organization.dto.UpdateOrganizationSettingsRequest); target is of class [com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsController]
+2026-09-01 23:45:09.890 [ForkJoinPool-1-worker-3] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsController.updateSettingsPut(java.util.UUID,com.aquinofroilan.tessera.domain.organization.dto.UpdateOrganizationSettingsRequest); target is of class [com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsController]
+2026-09-01 23:45:09.890 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.o.c.OrganizationSettingsController - → Entering OrganizationSettingsController.updateSettingsPut
+2026-09-01 23:45:09.890 [ForkJoinPool-1-worker-4] WARN  o.s.d.w.c.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-09-01 23:45:09.890 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.o.c.OrganizationSettingsController - ← Exiting OrganizationSettingsController.updateSettingsPut (0ms)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.execSync(ForkJoinPoolHierarchicalTestExecutorService.java:226) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeSync(ForkJoinPoolHierarchicalTestExecutorService.java:168) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:140) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:253) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.tryRemoveAndExec(ForkJoinPool.java:1490) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinPool.helpJoin(ForkJoinPool.java:2248) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinTask.awaitDone(ForkJoinTask.java:499) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:669) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.joinConcurrentTasksInReverseOrderToEnableWorkStealing(ForkJoinPoolHierarchicalTestExecutorService.java:175) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:141) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:253) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[na:na]
+2026-09-01 23:45:09.903 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderController.dispatch(java.util.UUID,java.util.UUID,java.util.UUID,com.aquinofroilan.tessera.domain.mfg.dto.DispatchSubcontractOrderRequest); target is of class [com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderController]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

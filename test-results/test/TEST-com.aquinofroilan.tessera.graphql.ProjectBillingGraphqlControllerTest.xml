@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.graphql.ProjectBillingGraphqlControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:00.245Z" hostname="runnervmgx7h7" time="2.921">
+  <properties/>
+  <testcase name="generateProjectInvoice mutation should be denied without write authority()" classname="com.aquinofroilan.tessera.graphql.ProjectBillingGraphqlControllerTest" time="1.863"/>
+  <testcase name="generateProjectInvoice mutation should bridge to controller()" classname="com.aquinofroilan.tessera.graphql.ProjectBillingGraphqlControllerTest" time="0.042"/>
+  <system-out><![CDATA[2026-09-01 23:45:00.338 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController.listJournalEntries(java.util.UUID,java.lang.String,java.time.LocalDate,java.time.LocalDate); target is of class [com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController]
+2026-09-01 23:45:00.338 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.f.c.JournalEntryController - → Entering JournalEntryController.listJournalEntries
+2026-09-01 23:45:00.339 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.f.c.JournalEntryController - ← Exiting JournalEntryController.listJournalEntries (0ms)
+2026-09-01 23:45:00.341 [ForkJoinPool-1-worker-1] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.graphql.ProjectBillingGraphqlControllerTest]: ProjectBillingGraphqlControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-01 23:45:01.253 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController.getJournalEntry(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController]
+2026-09-01 23:45:01.253 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.f.c.JournalEntryController - → Entering JournalEntryController.getJournalEntry
+2026-09-01 23:45:01.257 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.f.c.JournalEntryController - ← Exiting JournalEntryController.getJournalEntry (4ms)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+2026-09-01 23:45:01.305 [ForkJoinPool-1-worker-4] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+2026-09-01 23:45:01.306 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.InventoryReorderRuleControllerTest - Starting InventoryReorderRuleControllerTest using Java 26.0.2.1 with PID 3789 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+2026-09-01 23:45:01.306 [ForkJoinPool-1-worker-4] DEBUG c.a.t.d.i.c.InventoryReorderRuleControllerTest - Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-09-01 23:45:01.306 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.InventoryReorderRuleControllerTest - The following 1 profile is active: "test"
+2026-09-01 23:45:03.003 [ForkJoinPool-1-worker-4] DEBUG c.a.t.c.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured for use
+2026-09-01 23:45:03.004 [ForkJoinPool-1-worker-4] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-09-01 23:45:03.007 [ForkJoinPool-1-worker-4] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-09-01 23:45:03.008 [ForkJoinPool-1-worker-4] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-09-01 23:45:03.038 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.InventoryReorderRuleControllerTest - Started InventoryReorderRuleControllerTest in 1.796 seconds (process running for 77.595)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.project.service.ProjectServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:01.468Z" hostname="runnervmgx7h7" time="0.664">
+  <properties/>
+  <testcase name="create persists a planned project with a generated number()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectServiceTest" time="0.627"/>
+  <testcase name="create validates the customer belongs to the org()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectServiceTest" time="0.01"/>
+  <testcase name="hold requires an active project()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectServiceTest" time="0.007"/>
+  <testcase name="cancel rejects an already-closed project()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectServiceTest" time="0.001"/>
+  <testcase name="create rejects an end date before the start date()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectServiceTest" time="0.006"/>
+  <testcase name="get rejects cross-org access()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectServiceTest" time="0.001"/>
+  <testcase name="activate moves planned to active and rejects from other states()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectServiceTest" time="0.006"/>
+  <testcase name="update changes fields and validates end date()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

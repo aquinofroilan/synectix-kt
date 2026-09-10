@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.inventory.service.InventoryReorderRuleServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:54.125Z" hostname="runnervmgx7h7" time="0.366">
+  <properties/>
+  <testcase name="lowStockReport returns only pairs below reorder point()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryReorderRuleServiceTest" time="0.345"/>
+  <testcase name="createRule throws on duplicate (orgId, productId, warehouseId)()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryReorderRuleServiceTest" time="0.001"/>
+  <testcase name="lowStockReport treats missing on-hand as zero()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryReorderRuleServiceTest" time="0.004"/>
+  <testcase name="updateRule applies partial changes()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryReorderRuleServiceTest" time="0.001"/>
+  <testcase name="getRule enforces cross-org isolation()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryReorderRuleServiceTest" time="0.004"/>
+  <testcase name="createRule saves rule with provided fields()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryReorderRuleServiceTest" time="0.002"/>
+  <testcase name="createRule defaults safetyStock to zero when omitted()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryReorderRuleServiceTest" time="0.0"/>
+  <testcase name="deleteRule removes rule when org matches()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryReorderRuleServiceTest" time="0.003"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+2026-09-01 23:44:54.135 [ForkJoinPool-1-worker-1] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+2026-09-01 23:44:54.136 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.OrderGraphqlControllerTest - Starting OrderGraphqlControllerTest using Java 26.0.2.1 with PID 3792 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+2026-09-01 23:44:54.263 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.OrderGraphqlControllerTest - No active profile set, falling back to 1 default profile: "default"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

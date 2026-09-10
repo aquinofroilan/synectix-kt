@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.sales.service.SalesOrderServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:10.427Z" hostname="runnervmgx7h7" time="0.025">
+  <properties/>
+  <testcase name="generateInvoice invoices fulfilled quantity to the customer revenue account()" classname="com.aquinofroilan.tessera.domain.sales.service.SalesOrderServiceTest" time="0.009"/>
+  <testcase name="partial fulfill leaves the order PARTIALLY_FULFILLED()" classname="com.aquinofroilan.tessera.domain.sales.service.SalesOrderServiceTest" time="0.002"/>
+  <testcase name="fulfill posts an ISSUE stock movement per line and marks FULFILLED()" classname="com.aquinofroilan.tessera.domain.sales.service.SalesOrderServiceTest" time="0.003"/>
+  <testcase name="generateInvoice fails when customer has no default revenue account()" classname="com.aquinofroilan.tessera.domain.sales.service.SalesOrderServiceTest" time="0.004"/>
+  <testcase name="create computes totals and starts in DRAFT()" classname="com.aquinofroilan.tessera.domain.sales.service.SalesOrderServiceTest" time="0.0"/>
+  <testcase name="fulfill is rejected unless APPROVED()" classname="com.aquinofroilan.tessera.domain.sales.service.SalesOrderServiceTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

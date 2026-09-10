@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.inventory.service.ProductVariantServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:54.650Z" hostname="runnervmgx7h7" time="0.182">
+  <properties/>
+  <testcase name="create normalises code and persists attributes()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductVariantServiceTest" time="0.175"/>
+  <testcase name="create rejects duplicate code on the same product()" classname="com.aquinofroilan.tessera.domain.inventory.service.ProductVariantServiceTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

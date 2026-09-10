@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.procurement.service.PurchaseRequestServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:14.377Z" hostname="runnervmgx7h7" time="0.477">
+  <properties/>
+  <testcase name="convert uses a per-line cost override()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseRequestServiceTest" time="0.446"/>
+  <testcase name="convert builds a PO from estimated costs and marks the request converted()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseRequestServiceTest" time="0.001"/>
+  <testcase name="convert fails when a line has no cost and no override()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseRequestServiceTest" time="0.008"/>
+  <testcase name="submit moves a draft to submitted()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseRequestServiceTest" time="0.0"/>
+  <testcase name="cancel rejects a converted request()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseRequestServiceTest" time="0.001"/>
+  <testcase name="get rejects cross-org access()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseRequestServiceTest" time="0.004"/>
+  <testcase name="convert requires an approved request()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseRequestServiceTest" time="0.001"/>
+  <testcase name="create persists a draft with a generated number()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseRequestServiceTest" time="0.003"/>
+  <testcase name="create rejects a non-positive quantity()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseRequestServiceTest" time="0.001"/>
+  <testcase name="approve rejects a request that is not submitted()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseRequestServiceTest" time="0.001"/>
+  <system-out><![CDATA[23:45:14.849 [ForkJoinPool-1-worker-1] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.domain.sales.controller.SalesReturnControllerTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

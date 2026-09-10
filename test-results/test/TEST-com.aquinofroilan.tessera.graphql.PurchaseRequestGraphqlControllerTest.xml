@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.graphql.PurchaseRequestGraphqlControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:54.253Z" hostname="runnervmgx7h7" time="2.029">
+  <properties/>
+  <testcase name="approvePurchaseRequest mutation should bridge to controller()" classname="com.aquinofroilan.tessera.graphql.PurchaseRequestGraphqlControllerTest" time="0.032"/>
+  <testcase name="purchaseRequests query should return json payload()" classname="com.aquinofroilan.tessera.graphql.PurchaseRequestGraphqlControllerTest" time="0.035"/>
+  <testcase name="createPurchaseRequest mutation should be denied without write authority()" classname="com.aquinofroilan.tessera.graphql.PurchaseRequestGraphqlControllerTest" time="1.203"/>
+  <system-out><![CDATA[23:44:54.254 [ForkJoinPool-1-worker-4] DEBUG o.s.s.w.a.AccessDeniedHandlerImpl - Responding with 403 status code
+23:44:54.255 [ForkJoinPool-1-worker-1] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.graphql.PurchaseRequestGraphqlControllerTest]: PurchaseRequestGraphqlControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:44:54.258 [ForkJoinPool-1-worker-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/crm/tickets/1/messages
+23:44:54.258 [ForkJoinPool-1-worker-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/crm/tickets/1/messages
+2026-09-01 23:44:55.029 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.crm.controller.SupportTicketController.resolveTicket(java.util.UUID,long); target is of class [com.aquinofroilan.tessera.domain.crm.controller.SupportTicketController]
+2026-09-01 23:44:55.030 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.crm.controller.SupportTicketController.resolveTicket(java.util.UUID,long); target is of class [com.aquinofroilan.tessera.domain.crm.controller.SupportTicketController]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

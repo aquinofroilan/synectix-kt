@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.organization.controller.OrganizationLifecycleControllerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:13.694Z" hostname="runnervmgx7h7" time="9.603">
+  <properties/>
+  <testcase name="POST transition with body should return 200()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationLifecycleControllerTest" time="0.062"/>
+  <testcase name="POST suspend should return 403 when missing organization write()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationLifecycleControllerTest" time="0.032"/>
+  <testcase name="GET status should return 403 when missing organization read()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationLifecycleControllerTest" time="0.026"/>
+  <testcase name="POST archive should return 200 with ARCHIVED status()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationLifecycleControllerTest" time="0.026"/>
+  <testcase name="POST suspend should return 200 with SUSPENDED status()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationLifecycleControllerTest" time="0.027"/>
+  <testcase name="GET status should return 200 with organization status()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationLifecycleControllerTest" time="2.528"/>
+  <testcase name="POST activate should return 200 with ACTIVE status()" classname="com.aquinofroilan.tessera.domain.organization.controller.OrganizationLifecycleControllerTest" time="0.278"/>
+  <system-out><![CDATA[23:45:13.695 [ForkJoinPool-1-worker-5] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.domain.organization.controller.OrganizationLifecycleControllerTest]: OrganizationLifecycleControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:45:20.342 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.o.c.OrganizationBillingFeatureController - ← Exiting OrganizationBillingFeatureController.setFeatureOverride (0ms)
+23:45:20.407 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.p.c.VendorPerformanceController - → Entering VendorPerformanceController.deleteEvaluation
+23:45:20.407 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.p.c.VendorPerformanceController - ← Exiting VendorPerformanceController.deleteEvaluation (0ms)
+23:45:20.449 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.CreditNoteController - ← Exiting CreditNoteController.listCreditNotes (0ms)
+23:45:20.462 [ForkJoinPool-1-worker-1] INFO  c.a.t.d.s.c.SalesReturnController - → Entering SalesReturnController.listSalesReturns
+23:45:20.462 [ForkJoinPool-1-worker-1] INFO  c.a.t.d.s.c.SalesReturnController - ← Exiting SalesReturnController.listSalesReturns (0ms)
+23:45:20.468 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.o.c.OrganizationLifecycleController - → Entering OrganizationLifecycleController.suspendOrganization
+23:45:23.023 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.o.c.OrganizationBillingFeatureController - → Entering OrganizationBillingFeatureController.removeFeatureOverride
+23:45:23.280 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.o.c.OrganizationBillingFeatureController - ← Exiting OrganizationBillingFeatureController.removeFeatureOverride (1ms)
+23:45:23.284 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.PriceListController - → Entering PriceListController.updatePriceList
+23:45:23.284 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.PriceListController - ← Exiting PriceListController.updatePriceList (0ms)
+23:45:23.291 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.o.c.OrganizationLifecycleController - → Entering OrganizationLifecycleController.activateOrganization
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

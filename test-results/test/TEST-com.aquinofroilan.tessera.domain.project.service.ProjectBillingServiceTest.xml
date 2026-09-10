@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.project.service.ProjectBillingServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:00.818Z" hostname="runnervmgx7h7" time="0.65">
+  <properties/>
+  <testcase name="generate invoice fails when there is no billable time()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectBillingServiceTest" time="0.635"/>
+  <testcase name="generate invoice bills approved billable time and marks it invoiced()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectBillingServiceTest" time="0.009"/>
+  <testcase name="generate invoice fails when no revenue account can be resolved()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectBillingServiceTest" time="0.002"/>
+  <testcase name="generate invoice fails when the project has no customer()" classname="com.aquinofroilan.tessera.domain.project.service.ProjectBillingServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

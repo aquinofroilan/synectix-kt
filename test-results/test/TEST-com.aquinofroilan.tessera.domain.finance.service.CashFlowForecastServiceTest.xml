@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.finance.service.CashFlowForecastServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:56.900Z" hostname="runnervmgx7h7" time="0.456">
+  <properties/>
+  <testcase name="forecast nets future inflows and outflows()" classname="com.aquinofroilan.tessera.domain.finance.service.CashFlowForecastServiceTest" time="0.433"/>
+  <testcase name="forecast skips fully-settled items()" classname="com.aquinofroilan.tessera.domain.finance.service.CashFlowForecastServiceTest" time="0.002"/>
+  <testcase name="forecast rejects horizon at or before asOf()" classname="com.aquinofroilan.tessera.domain.finance.service.CashFlowForecastServiceTest" time="0.004"/>
+  <testcase name="forecast returns starting cash from active bank accounts()" classname="com.aquinofroilan.tessera.domain.finance.service.CashFlowForecastServiceTest" time="0.002"/>
+  <testcase name="forecast surfaces overdue AR and AP separately()" classname="com.aquinofroilan.tessera.domain.finance.service.CashFlowForecastServiceTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

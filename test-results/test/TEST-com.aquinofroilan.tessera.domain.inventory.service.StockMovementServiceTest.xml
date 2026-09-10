@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:11.315Z" hostname="runnervmgx7h7" time="1.413">
+  <properties/>
+  <testcase name="createMovement RECEIPT requires unitCost()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.871"/>
+  <testcase name="createMovement TRANSFER rejects same source and destination()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.001"/>
+  <testcase name="createMovement RECEIPT saves with provided unitCost()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.005"/>
+  <testcase name="createMovement ISSUE passes allowNegative=true through to counter when warehouse permits()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.002"/>
+  <testcase name="createMovement rejects when warehouse inactive()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.001"/>
+  <testcase name="createMovement rejects when warehouse from other org()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.005"/>
+  <testcase name="createMovement ISSUE rejects when applyDelta reports insufficient stock()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.002"/>
+  <testcase name="onHand reads from counter repository()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.004"/>
+  <testcase name="createMovement TRANSFER applies delta to both source and destination()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.019"/>
+  <testcase name="createMovement OPENING_BALANCE requires unitCost()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.142"/>
+  <testcase name="createMovement RECEIPT increments counter with positive delta()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.001"/>
+  <testcase name="createMovement ADJUSTMENT positive credits counter()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.006"/>
+  <testcase name="createMovement ISSUE decrements counter with negative delta()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.15"/>
+  <testcase name="reverseMovement rejects an already-reversed movement()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.002"/>
+  <testcase name="createMovement ADJUSTMENT negative rejects when applyDelta reports insufficient()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.043"/>
+  <testcase name="reverseMovement compensates a RECEIPT and marks the original reversed()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.012"/>
+  <testcase name="listMovements delegates to repository()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.124"/>
+  <testcase name="createMovement ADJUSTMENT zero is rejected()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.002"/>
+  <testcase name="createMovement uses occurredAt now when omitted()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.005"/>
+  <testcase name="createMovement TRANSFER requires destination warehouse()" classname="com.aquinofroilan.tessera.domain.inventory.service.StockMovementServiceTest" time="0.001"/>
+  <system-out><![CDATA[23:45:11.443 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/inventory/products
+23:45:11.444 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/inventory/products
+23:45:11.444 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.listProducts(java.util.UUID,java.lang.String,boolean,java.lang.String); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:11.445 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.listProducts(java.util.UUID,java.lang.String,boolean,java.lang.String); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:11.445 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.ProductController - → Entering ProductController.listProducts
+23:45:11.445 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.ProductController - ← Exiting ProductController.listProducts (0ms)
+23:45:12.214 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Securing DELETE /api/v1/inventory/products/00000000-0000-0000-0000-000000000199
+23:45:12.214 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Secured DELETE /api/v1/inventory/products/00000000-0000-0000-0000-000000000199
+23:45:12.541 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.deleteProduct(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:12.541 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.deleteProduct(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:12.541 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.ProductController - → Entering ProductController.deleteProduct
+23:45:12.720 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/inventory/products/00000000-0000-0000-0000-000000000000
+23:45:12.720 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/inventory/products/00000000-0000-0000-0000-000000000000
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

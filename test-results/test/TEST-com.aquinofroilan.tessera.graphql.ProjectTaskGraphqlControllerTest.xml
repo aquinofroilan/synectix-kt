@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.graphql.ProjectTaskGraphqlControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:10.956Z" hostname="runnervmgx7h7" time="6.339">
+  <properties/>
+  <testcase name="createProjectTask mutation should be denied without write authority()" classname="com.aquinofroilan.tessera.graphql.ProjectTaskGraphqlControllerTest" time="3.289"/>
+  <testcase name="projectTasks query should return json payload()" classname="com.aquinofroilan.tessera.graphql.ProjectTaskGraphqlControllerTest" time="0.058"/>
+  <system-out><![CDATA[2026-09-01 23:44:17.247 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.a.c.InvitationController - → Entering InvitationController.createInvitation
+2026-09-01 23:44:17.250 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.a.c.InvitationController - ← Exiting InvitationController.createInvitation (0ms)
+2026-09-01 23:44:17.258 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.InventoryReportsController - → Entering InventoryReportsController.stockOnHand
+2026-09-01 23:44:17.262 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.InventoryReportsController - ← Exiting InventoryReportsController.stockOnHand (3ms)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

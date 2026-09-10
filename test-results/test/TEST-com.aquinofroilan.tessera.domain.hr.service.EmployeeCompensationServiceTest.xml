@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.hr.service.EmployeeCompensationServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:59.220Z" hostname="runnervmgx7h7" time="0.345">
+  <properties/>
+  <testcase name="add normalizes currency and persists()" classname="com.aquinofroilan.tessera.domain.hr.service.EmployeeCompensationServiceTest" time="0.336"/>
+  <testcase name="current throws when no record is effective yet()" classname="com.aquinofroilan.tessera.domain.hr.service.EmployeeCompensationServiceTest" time="0.005"/>
+  <testcase name="current returns the latest record effective on or before the date()" classname="com.aquinofroilan.tessera.domain.hr.service.EmployeeCompensationServiceTest" time="0.001"/>
+  <system-out><![CDATA[2026-09-01 23:44:59.318 [ForkJoinPool-1-worker-1] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-09-01 23:44:59.555 [ForkJoinPool-1-worker-1] INFO  o.s.g.e.DefaultSchemaResourceGraphQlSourceBuilder - Loaded 16 resource(s) in the GraphQL schema.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

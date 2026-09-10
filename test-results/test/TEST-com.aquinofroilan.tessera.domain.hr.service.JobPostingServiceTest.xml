@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.hr.service.JobPostingServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:59.866Z" hostname="runnervmgx7h7" time="0.2">
+  <properties/>
+  <testcase name="update rejected when CLOSED()" classname="com.aquinofroilan.tessera.domain.hr.service.JobPostingServiceTest" time="0.186"/>
+  <testcase name="open is rejected for non-DRAFT()" classname="com.aquinofroilan.tessera.domain.hr.service.JobPostingServiceTest" time="0.007"/>
+  <testcase name="open flips to OPEN and stamps postedAt()" classname="com.aquinofroilan.tessera.domain.hr.service.JobPostingServiceTest" time="0.0"/>
+  <testcase name="create persists a DRAFT posting()" classname="com.aquinofroilan.tessera.domain.hr.service.JobPostingServiceTest" time="0.001"/>
+  <system-out><![CDATA[2026-09-01 23:44:59.870 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.ProjectGraphqlControllerTest - Started ProjectGraphqlControllerTest in 3.415 seconds (process running for 74.427)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

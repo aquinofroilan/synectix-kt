@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.sales.controller.CreditNoteControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:15.473Z" hostname="runnervmgx7h7" time="4.995">
+  <properties/>
+  <testcase name="POST apply credit note should return 200()" classname="com.aquinofroilan.tessera.domain.sales.controller.CreditNoteControllerTest" time="0.055"/>
+  <testcase name="POST credit note should return 201()" classname="com.aquinofroilan.tessera.domain.sales.controller.CreditNoteControllerTest" time="0.042"/>
+  <testcase name="POST approve credit note should return 200()" classname="com.aquinofroilan.tessera.domain.sales.controller.CreditNoteControllerTest" time="0.04"/>
+  <testcase name="GET credit notes should return 200 with list()" classname="com.aquinofroilan.tessera.domain.sales.controller.CreditNoteControllerTest" time="0.039"/>
+  <system-out><![CDATA[23:45:15.475 [ForkJoinPool-1-worker-3] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.domain.sales.controller.CreditNoteControllerTest]: CreditNoteControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:45:15.481 [ForkJoinPool-1-worker-3] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.domain.sales.controller.CreditNoteControllerTest
+23:45:15.971 [ForkJoinPool-1-worker-2] DEBUG c.a.t.c.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured for use
+23:45:15.972 [ForkJoinPool-1-worker-2] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:45:15.972 [ForkJoinPool-1-worker-2] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:45:15.972 [ForkJoinPool-1-worker-2] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+23:45:15.980 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.o.c.OrganizationBillingFeatureControllerTest - Started OrganizationBillingFeatureControllerTest in 1.864 seconds (process running for 90.537)
+23:45:20.320 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.p.c.VendorPerformanceController - → Entering VendorPerformanceController.getVendorPerformance
+23:45:20.320 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.p.c.VendorPerformanceController - ← Exiting VendorPerformanceController.getVendorPerformance (0ms)
+23:45:20.471 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.o.c.OrganizationLifecycleController - ← Exiting OrganizationLifecycleController.suspendOrganization (3ms)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

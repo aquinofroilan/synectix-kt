@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.auth.service.ApiKeyServiceTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:51.173Z" hostname="runnervmgx7h7" time="0.597">
+  <properties/>
+  <testcase name="createApiKey should throw when requesting permissions creator does not have()" classname="com.aquinofroilan.tessera.domain.auth.service.ApiKeyServiceTest" time="0.457"/>
+  <testcase name="createApiKey should throw when permissions are empty()" classname="com.aquinofroilan.tessera.domain.auth.service.ApiKeyServiceTest" time="0.007"/>
+  <testcase name="authenticateByApiKey should return null for inactive key()" classname="com.aquinofroilan.tessera.domain.auth.service.ApiKeyServiceTest" time="0.005"/>
+  <testcase name="authenticateByApiKey should return null for expired key()" classname="com.aquinofroilan.tessera.domain.auth.service.ApiKeyServiceTest" time="0.003"/>
+  <testcase name="createApiKey should throw when permissions are invalid()" classname="com.aquinofroilan.tessera.domain.auth.service.ApiKeyServiceTest" time="0.004"/>
+  <testcase name="createApiKey should create key and return raw key()" classname="com.aquinofroilan.tessera.domain.auth.service.ApiKeyServiceTest" time="0.018"/>
+  <testcase name="revokeApiKey should set isActive to false()" classname="com.aquinofroilan.tessera.domain.auth.service.ApiKeyServiceTest" time="0.012"/>
+  <testcase name="authenticateByApiKey should return null for unknown key()" classname="com.aquinofroilan.tessera.domain.auth.service.ApiKeyServiceTest" time="0.008"/>
+  <testcase name="authenticateByApiKey should return api key for valid key()" classname="com.aquinofroilan.tessera.domain.auth.service.ApiKeyServiceTest" time="0.009"/>
+  <testcase name="listApiKeys should return active keys for org()" classname="com.aquinofroilan.tessera.domain.auth.service.ApiKeyServiceTest" time="0.009"/>
+  <testcase name="revokeApiKey should throw when key not in same org()" classname="com.aquinofroilan.tessera.domain.auth.service.ApiKeyServiceTest" time="0.01"/>
+  <testcase name="revokeApiKey should throw when key already revoked()" classname="com.aquinofroilan.tessera.domain.auth.service.ApiKeyServiceTest" time="0.036"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

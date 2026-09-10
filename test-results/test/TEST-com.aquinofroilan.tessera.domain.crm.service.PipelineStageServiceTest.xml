@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.crm.service.PipelineStageServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:49.539Z" hostname="runnervmgx7h7" time="0.271">
+  <properties/>
+  <testcase name="update rejects setting both won and lost()" classname="com.aquinofroilan.tessera.domain.crm.service.PipelineStageServiceTest" time="0.231"/>
+  <testcase name="create rejects a stage flagged as both won and lost()" classname="com.aquinofroilan.tessera.domain.crm.service.PipelineStageServiceTest" time="0.002"/>
+  <testcase name="create normalises code and auto-increments sort order by 10()" classname="com.aquinofroilan.tessera.domain.crm.service.PipelineStageServiceTest" time="0.015"/>
+  <testcase name="create rejects duplicate code()" classname="com.aquinofroilan.tessera.domain.crm.service.PipelineStageServiceTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

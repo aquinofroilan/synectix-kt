@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.procurement.service.VendorServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:14.855Z" hostname="runnervmgx7h7" time="0.115">
+  <properties/>
+  <testcase name="update should reject inactive vendor()" classname="com.aquinofroilan.tessera.domain.procurement.service.VendorServiceTest" time="0.104"/>
+  <testcase name="get should return vendor for correct org()" classname="com.aquinofroilan.tessera.domain.procurement.service.VendorServiceTest" time="0.001"/>
+  <testcase name="delete should soft delete vendor()" classname="com.aquinofroilan.tessera.domain.procurement.service.VendorServiceTest" time="0.002"/>
+  <testcase name="get should throw when vendor belongs to different org()" classname="com.aquinofroilan.tessera.domain.procurement.service.VendorServiceTest" time="0.001"/>
+  <testcase name="delete should reject already inactive vendor()" classname="com.aquinofroilan.tessera.domain.procurement.service.VendorServiceTest" time="0.0"/>
+  <testcase name="list should return active vendors()" classname="com.aquinofroilan.tessera.domain.procurement.service.VendorServiceTest" time="0.0"/>
+  <testcase name="create should save vendor with correct fields()" classname="com.aquinofroilan.tessera.domain.procurement.service.VendorServiceTest" time="0.001"/>
+  <testcase name="update should apply partial changes()" classname="com.aquinofroilan.tessera.domain.procurement.service.VendorServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

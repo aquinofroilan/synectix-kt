@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.procurement.controller.VendorPerformanceControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:14.363Z" hostname="runnervmgx7h7" time="6.118">
+  <properties/>
+  <testcase name="GET evaluations should return 200 with list of evaluations()" classname="com.aquinofroilan.tessera.domain.procurement.controller.VendorPerformanceControllerTest" time="0.036"/>
+  <testcase name="GET single vendor performance should return 200 with summary()" classname="com.aquinofroilan.tessera.domain.procurement.controller.VendorPerformanceControllerTest" time="0.026"/>
+  <testcase name="GET performance should return 200 with list of vendor performances()" classname="com.aquinofroilan.tessera.domain.procurement.controller.VendorPerformanceControllerTest" time="0.042"/>
+  <testcase name="DELETE evaluation should return 204()" classname="com.aquinofroilan.tessera.domain.procurement.controller.VendorPerformanceControllerTest" time="0.033"/>
+  <testcase name="POST evaluation should return 201 with created evaluation()" classname="com.aquinofroilan.tessera.domain.procurement.controller.VendorPerformanceControllerTest" time="0.063"/>
+  <system-out><![CDATA[23:45:14.365 [ForkJoinPool-1-worker-4] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.domain.procurement.controller.VendorPerformanceControllerTest]: VendorPerformanceControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:45:20.301 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.CreditNoteController - → Entering CreditNoteController.applyCreditNote
+23:45:20.303 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.CreditNoteController - ← Exiting CreditNoteController.applyCreditNote (1ms)
+23:45:20.305 [ForkJoinPool-1-worker-1] INFO  c.a.t.d.s.c.SalesReturnController - → Entering SalesReturnController.createSalesReturn
+23:45:20.305 [ForkJoinPool-1-worker-1] INFO  c.a.t.d.s.c.SalesReturnController - ← Exiting SalesReturnController.createSalesReturn (0ms)
+23:45:20.308 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.o.c.OrganizationLifecycleController - → Entering OrganizationLifecycleController.transitionStatus
+23:45:20.309 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.o.c.OrganizationLifecycleController - ← Exiting OrganizationLifecycleController.transitionStatus (1ms)
+23:45:20.340 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.o.c.OrganizationBillingFeatureController - → Entering OrganizationBillingFeatureController.setFeatureOverride
+23:45:20.389 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.o.c.OrganizationBillingFeatureController - → Entering OrganizationBillingFeatureController.getEffectiveFeatures
+23:45:20.389 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.o.c.OrganizationBillingFeatureController - ← Exiting OrganizationBillingFeatureController.getEffectiveFeatures (0ms)
+23:45:20.395 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.CreditNoteController - → Entering CreditNoteController.approveCreditNote
+23:45:20.397 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.CreditNoteController - ← Exiting CreditNoteController.approveCreditNote (0ms)
+23:45:20.424 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.o.c.OrganizationBillingFeatureController - → Entering OrganizationBillingFeatureController.getPlan
+23:45:20.424 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.o.c.OrganizationBillingFeatureController - ← Exiting OrganizationBillingFeatureController.getPlan (0ms)
+23:45:20.426 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.o.c.OrganizationLifecycleController - → Entering OrganizationLifecycleController.archiveOrganization
+23:45:20.426 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.o.c.OrganizationLifecycleController - ← Exiting OrganizationLifecycleController.archiveOrganization (0ms)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

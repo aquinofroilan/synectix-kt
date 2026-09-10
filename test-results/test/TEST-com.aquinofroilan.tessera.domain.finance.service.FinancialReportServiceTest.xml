@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.finance.service.FinancialReportServiceTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:57.360Z" hostname="runnervmgx7h7" time="0.33">
+  <properties/>
+  <testcase name="getIncomeStatement with comparative period returns both totals()" classname="com.aquinofroilan.tessera.domain.finance.service.FinancialReportServiceTest" time="0.296"/>
+  <testcase name="getComparativeTrialBalance omits comparative when not requested()" classname="com.aquinofroilan.tessera.domain.finance.service.FinancialReportServiceTest" time="0.002"/>
+  <testcase name="getIncomeStatement rejects end before start()" classname="com.aquinofroilan.tessera.domain.finance.service.FinancialReportServiceTest" time="0.002"/>
+  <testcase name="getIncomeStatement returns empty lists when no accounts match()" classname="com.aquinofroilan.tessera.domain.finance.service.FinancialReportServiceTest" time="0.006"/>
+  <testcase name="getBalanceSheet flags imbalance without throwing()" classname="com.aquinofroilan.tessera.domain.finance.service.FinancialReportServiceTest" time="0.007"/>
+  <testcase name="getIncomeStatement computes net income and sorts by code()" classname="com.aquinofroilan.tessera.domain.finance.service.FinancialReportServiceTest" time="0.002"/>
+  <testcase name="getComparativeTrialBalance returns current and comparative()" classname="com.aquinofroilan.tessera.domain.finance.service.FinancialReportServiceTest" time="0.004"/>
+  <testcase name="getBalanceSheet computes totals and current earnings()" classname="com.aquinofroilan.tessera.domain.finance.service.FinancialReportServiceTest" time="0.002"/>
+  <testcase name="getIncomeStatement rejects partial comparative dates()" classname="com.aquinofroilan.tessera.domain.finance.service.FinancialReportServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

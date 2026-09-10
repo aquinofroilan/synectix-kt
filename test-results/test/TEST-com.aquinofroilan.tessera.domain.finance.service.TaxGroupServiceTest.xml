@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:58.545Z" hostname="runnervmgx7h7" time="0.378">
+  <properties/>
+  <testcase name="calculateTaxAmount should compute correctly with rounding()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" time="0.349"/>
+  <testcase name="update taxRateIds should recompute combinedRate()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" time="0.002"/>
+  <testcase name="calculateTaxAmount should round to 2 decimal places()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" time="0.001"/>
+  <testcase name="create should throw when taxRate belongs to different org()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" time="0.001"/>
+  <testcase name="create should compute combinedRate from member rates()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" time="0.001"/>
+  <testcase name="getTaxSummary should reject when start date is after end date()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" time="0.003"/>
+  <testcase name="getTaxGroupWithRates should throw when referenced rate is missing()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" time="0.001"/>
+  <testcase name="getTaxSummary should return zero when tax accounts not configured()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" time="0.002"/>
+  <testcase name="getTaxSummary should compute net liability from period totals()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" time="0.001"/>
+  <testcase name="getTaxGroupWithRates should preserve taxRateIds order()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" time="0.002"/>
+  <testcase name="update without taxRateIds should validate existing rates and reject cross-org()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" time="0.001"/>
+  <testcase name="calculateTaxAmount should return zero for null taxGroupId()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" time="0.001"/>
+  <testcase name="getTaxGroupWithRates should reject cross-org rate ids()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" time="0.001"/>
+  <testcase name="create should throw when taxRateId not found()" classname="com.aquinofroilan.tessera.domain.finance.service.TaxGroupServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
