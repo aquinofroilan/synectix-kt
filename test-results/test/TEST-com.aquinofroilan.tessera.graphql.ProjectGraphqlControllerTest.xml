@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.graphql.ProjectGraphqlControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:56.299Z" hostname="runnervmgx7h7" time="3.941">
+  <properties/>
+  <testcase name="createProject mutation should be denied without write authority()" classname="com.aquinofroilan.tessera.graphql.ProjectGraphqlControllerTest" time="0.06"/>
+  <testcase name="activateProject mutation should bridge to controller()" classname="com.aquinofroilan.tessera.graphql.ProjectGraphqlControllerTest" time="0.142"/>
+  <testcase name="projects query should return json payload()" classname="com.aquinofroilan.tessera.graphql.ProjectGraphqlControllerTest" time="0.031"/>
+  <system-out><![CDATA[23:44:56.301 [ForkJoinPool-1-worker-1] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.graphql.ProjectGraphqlControllerTest]: ProjectGraphqlControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

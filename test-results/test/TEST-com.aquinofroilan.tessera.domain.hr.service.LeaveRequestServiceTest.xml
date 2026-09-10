@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.hr.service.LeaveRequestServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:11.932Z" hostname="runnervmgx7h7" time="0.745">
+  <properties/>
+  <testcase name="create computes the inclusive day count and starts PENDING()" classname="com.aquinofroilan.tessera.domain.hr.service.LeaveRequestServiceTest" time="0.708"/>
+  <testcase name="approve exceeding entitlement is rejected()" classname="com.aquinofroilan.tessera.domain.hr.service.LeaveRequestServiceTest" time="0.008"/>
+  <testcase name="approving leave covering today places the employee on leave()" classname="com.aquinofroilan.tessera.domain.hr.service.LeaveRequestServiceTest" time="0.003"/>
+  <testcase name="balance reports entitlement minus approved used days()" classname="com.aquinofroilan.tessera.domain.hr.service.LeaveRequestServiceTest" time="0.006"/>
+  <testcase name="create rejects a terminated employee()" classname="com.aquinofroilan.tessera.domain.hr.service.LeaveRequestServiceTest" time="0.002"/>
+  <testcase name="approve within entitlement marks APPROVED without touching past-dated employee status()" classname="com.aquinofroilan.tessera.domain.hr.service.LeaveRequestServiceTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

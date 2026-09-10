@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.hr.service.JobApplicationServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:11.426Z" hostname="runnervmgx7h7" time="0.51">
+  <properties/>
+  <testcase name="advance to REJECTED is allowed from any stage()" classname="com.aquinofroilan.tessera.domain.hr.service.JobApplicationServiceTest" time="0.471"/>
+  <testcase name="advance follows the linear pipeline()" classname="com.aquinofroilan.tessera.domain.hr.service.JobApplicationServiceTest" time="0.001"/>
+  <testcase name="advance is rejected once terminal()" classname="com.aquinofroilan.tessera.domain.hr.service.JobApplicationServiceTest" time="0.011"/>
+  <testcase name="advance rejects skipping a stage()" classname="com.aquinofroilan.tessera.domain.hr.service.JobApplicationServiceTest" time="0.007"/>
+  <testcase name="create only allowed on OPEN postings()" classname="com.aquinofroilan.tessera.domain.hr.service.JobApplicationServiceTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.sales.controller.PriceListControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:20.475Z" hostname="runnervmgx7h7" time="2.882">
+  <properties/>
+  <testcase name="PUT price list should return 200()" classname="com.aquinofroilan.tessera.domain.sales.controller.PriceListControllerTest" time="0.296"/>
+  <testcase name="DELETE price list should return 204()" classname="com.aquinofroilan.tessera.domain.sales.controller.PriceListControllerTest" time="0.014"/>
+  <testcase name="GET price lists should return 200 with list()" classname="com.aquinofroilan.tessera.domain.sales.controller.PriceListControllerTest" time="0.012"/>
+  <testcase name="GET single price list should return 200()" classname="com.aquinofroilan.tessera.domain.sales.controller.PriceListControllerTest" time="0.009"/>
+  <testcase name="POST price list should return 201()" classname="com.aquinofroilan.tessera.domain.sales.controller.PriceListControllerTest" time="0.017"/>
+  <system-out><![CDATA[23:45:20.478 [ForkJoinPool-1-worker-3] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.domain.sales.controller.PriceListControllerTest]: PriceListControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:45:23.322 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.PriceListController - → Entering PriceListController.listPriceLists
+23:45:23.323 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.PriceListController - ← Exiting PriceListController.listPriceLists (0ms)
+23:45:23.335 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.PriceListController - → Entering PriceListController.getPriceList
+23:45:23.335 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.PriceListController - ← Exiting PriceListController.getPriceList (0ms)
+23:45:23.353 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.PriceListController - → Entering PriceListController.createPriceList
+23:45:23.354 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.s.c.PriceListController - ← Exiting PriceListController.createPriceList (1ms)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

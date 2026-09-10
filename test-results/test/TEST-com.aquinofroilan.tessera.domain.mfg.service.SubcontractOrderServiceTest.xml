@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.mfg.service.SubcontractOrderServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:58.442Z" hostname="runnervmgx7h7" time="1.083">
+  <properties/>
+  <testcase name="createSubcontractOrder with explicit components()" classname="com.aquinofroilan.tessera.domain.mfg.service.SubcontractOrderServiceTest" time="1.057"/>
+  <testcase name="cancelSubcontractOrder cancels draft order()" classname="com.aquinofroilan.tessera.domain.mfg.service.SubcontractOrderServiceTest" time="0.002"/>
+  <testcase name="createSubcontractOrder throws when work order not found()" classname="com.aquinofroilan.tessera.domain.mfg.service.SubcontractOrderServiceTest" time="0.001"/>
+  <testcase name="dispatchComponents creates stock movements and marks order DISPATCHED()" classname="com.aquinofroilan.tessera.domain.mfg.service.SubcontractOrderServiceTest" time="0.005"/>
+  <testcase name="cancelSubcontractOrder throws on completed order()" classname="com.aquinofroilan.tessera.domain.mfg.service.SubcontractOrderServiceTest" time="0.001"/>
+  <testcase name="receiveProcessedGoods handles partial receipt()" classname="com.aquinofroilan.tessera.domain.mfg.service.SubcontractOrderServiceTest" time="0.008"/>
+  <testcase name="createSubcontractOrder creates draft order and auto-populates WO components()" classname="com.aquinofroilan.tessera.domain.mfg.service.SubcontractOrderServiceTest" time="0.001"/>
+  <testcase name="receiveProcessedGoods updates received quantity, WO operation status and costs()" classname="com.aquinofroilan.tessera.domain.mfg.service.SubcontractOrderServiceTest" time="0.002"/>
+  <system-out><![CDATA[2026-09-01 23:44:58.439 [ForkJoinPool-1-worker-1] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.graphql.HrGraphqlControllerTest
+2026-09-01 23:44:58.607 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.m.c.SubcontractOrderController - → Entering SubcontractOrderController.cancel
+2026-09-01 23:44:59.515 [ForkJoinPool-1-worker-3] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsControllerTest]: OrganizationSettingsControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.sales.controller.PricingControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:09.936Z" hostname="runnervmgx7h7" time="2.671">
+  <properties/>
+  <testcase name="POST calculate should return 200 with price calculation response()" classname="com.aquinofroilan.tessera.domain.sales.controller.PricingControllerTest" time="0.1"/>
+  <system-out><![CDATA[2026-09-01 23:45:09.937 [ForkJoinPool-1-worker-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/mfg/subcontract-orders/11111111-2222-3333-4444-555555555555
+2026-09-01 23:45:09.938 [ForkJoinPool-1-worker-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/mfg/subcontract-orders/11111111-2222-3333-4444-555555555555
+2026-09-01 23:45:09.938 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/organization/settings
+2026-09-01 23:45:09.938 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/organization/settings
+2026-09-01 23:45:09.939 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderController.getById(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderController]
+2026-09-01 23:45:09.939 [ForkJoinPool-1-worker-3] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsController.getSettings(java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsController]
+2026-09-01 23:45:09.940 [ForkJoinPool-1-worker-3] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsController.getSettings(java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.organization.controller.OrganizationSettingsController]
+2026-09-01 23:45:09.940 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.o.c.OrganizationSettingsController - → Entering OrganizationSettingsController.getSettings
+2026-09-01 23:45:09.940 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.o.c.OrganizationSettingsController - ← Exiting OrganizationSettingsController.getSettings (0ms)
+23:45:12.522 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.s.c.DiscountRuleController - → Entering DiscountRuleController.listDiscountRules
+23:45:12.525 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.s.c.DiscountRuleController - ← Exiting DiscountRuleController.listDiscountRules (1ms)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

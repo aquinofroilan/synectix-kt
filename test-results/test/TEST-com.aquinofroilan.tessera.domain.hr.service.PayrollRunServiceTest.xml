@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.hr.service.PayrollRunServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:11.948Z" hostname="runnervmgx7h7" time="0.984">
+  <properties/>
+  <testcase name="pay posts wages payable debit and cash credit()" classname="com.aquinofroilan.tessera.domain.hr.service.PayrollRunServiceTest" time="0.879"/>
+  <testcase name="cannot cancel an approved run()" classname="com.aquinofroilan.tessera.domain.hr.service.PayrollRunServiceTest" time="0.008"/>
+  <testcase name="create snapshots active employees with monthly gross()" classname="com.aquinofroilan.tessera.domain.hr.service.PayrollRunServiceTest" time="0.083"/>
+  <testcase name="approve posts a salary accrual debiting expense and crediting wages payable()" classname="com.aquinofroilan.tessera.domain.hr.service.PayrollRunServiceTest" time="0.006"/>
+  <testcase name="create skips non-base-currency and hourly compensation()" classname="com.aquinofroilan.tessera.domain.hr.service.PayrollRunServiceTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

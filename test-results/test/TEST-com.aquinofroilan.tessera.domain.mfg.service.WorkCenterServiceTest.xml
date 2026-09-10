@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.mfg.service.WorkCenterServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:12.833Z" hostname="runnervmgx7h7" time="0.578">
+  <properties/>
+  <testcase name="deactivate rejects double-deactivation()" classname="com.aquinofroilan.tessera.domain.mfg.service.WorkCenterServiceTest" time="0.575"/>
+  <testcase name="create rejects duplicate code()" classname="com.aquinofroilan.tessera.domain.mfg.service.WorkCenterServiceTest" time="0.002"/>
+  <testcase name="create normalises code to upper-case()" classname="com.aquinofroilan.tessera.domain.mfg.service.WorkCenterServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

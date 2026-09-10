@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.crm.service.CrmActivityServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:48.492Z" hostname="runnervmgx7h7" time="0.802">
+  <properties/>
+  <testcase name="complete only allowed on TASK()" classname="com.aquinofroilan.tessera.domain.crm.service.CrmActivityServiceTest" time="0.75"/>
+  <testcase name="complete stamps completed audit fields on TASK()" classname="com.aquinofroilan.tessera.domain.crm.service.CrmActivityServiceTest" time="0.002"/>
+  <testcase name="create persists a NOTE linked to a lead()" classname="com.aquinofroilan.tessera.domain.crm.service.CrmActivityServiceTest" time="0.019"/>
+  <testcase name="create rejects activity with no related entity()" classname="com.aquinofroilan.tessera.domain.crm.service.CrmActivityServiceTest" time="0.01"/>
+  <testcase name="create TASK without dueAt is rejected()" classname="com.aquinofroilan.tessera.domain.crm.service.CrmActivityServiceTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

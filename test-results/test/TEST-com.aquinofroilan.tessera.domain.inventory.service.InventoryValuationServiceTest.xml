@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.inventory.service.InventoryValuationServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:54.492Z" hostname="runnervmgx7h7" time="0.158">
+  <properties/>
+  <testcase name="valuation aggregates per-pair quantities and costs()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryValuationServiceTest" time="0.146"/>
+  <testcase name="valuation omits zero-quantity pairs()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryValuationServiceTest" time="0.011"/>
+  <testcase name="valuation returns empty report for org with no stock()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryValuationServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

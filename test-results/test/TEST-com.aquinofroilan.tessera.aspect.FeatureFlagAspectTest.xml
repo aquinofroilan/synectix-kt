@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.aspect.FeatureFlagAspectTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:47.640Z" hostname="runnervmgx7h7" time="2.907">
+  <properties/>
+  <testcase name="checkFeature supports custom key string()" classname="com.aquinofroilan.tessera.aspect.FeatureFlagAspectTest" time="2.855"/>
+  <testcase name="checkFeature allows SUPER_ADMIN even if feature is disabled()" classname="com.aquinofroilan.tessera.aspect.FeatureFlagAspectTest" time="0.003"/>
+  <testcase name="checkFeature succeeds when feature is enabled()" classname="com.aquinofroilan.tessera.aspect.FeatureFlagAspectTest" time="0.01"/>
+  <testcase name="checkFeature throws FeatureNotEnabledException when feature is disabled()" classname="com.aquinofroilan.tessera.aspect.FeatureFlagAspectTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

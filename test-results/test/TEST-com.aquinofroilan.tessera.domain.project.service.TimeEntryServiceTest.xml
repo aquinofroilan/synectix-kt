@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.project.service.TimeEntryServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:02.133Z" hostname="runnervmgx7h7" time="0.166">
+  <properties/>
+  <testcase name="get rejects cross-org access()" classname="com.aquinofroilan.tessera.domain.project.service.TimeEntryServiceTest" time="0.145"/>
+  <testcase name="update is rejected once not draft()" classname="com.aquinofroilan.tessera.domain.project.service.TimeEntryServiceTest" time="0.001"/>
+  <testcase name="create rejects non-positive hours()" classname="com.aquinofroilan.tessera.domain.project.service.TimeEntryServiceTest" time="0.001"/>
+  <testcase name="create persists a draft entry()" classname="com.aquinofroilan.tessera.domain.project.service.TimeEntryServiceTest" time="0.001"/>
+  <testcase name="submit moves draft to submitted then approval is gated()" classname="com.aquinofroilan.tessera.domain.project.service.TimeEntryServiceTest" time="0.006"/>
+  <testcase name="approve sets approver on a submitted entry()" classname="com.aquinofroilan.tessera.domain.project.service.TimeEntryServiceTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.security.CurrentOrganizationIdArgumentResolverTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:47.887Z" hostname="runnervmgx7h7" time="3.216">
+  <properties/>
+  <testcase name="resolveArgument throws AuthenticationException when unauthenticated()" classname="com.aquinofroilan.tessera.security.CurrentOrganizationIdArgumentResolverTest" time="0.889"/>
+  <testcase name="supportsParameter returns false when annotation absent()" classname="com.aquinofroilan.tessera.security.CurrentOrganizationIdArgumentResolverTest" time="0.014"/>
+  <testcase name="resolveArgument returns orgId when authenticated()" classname="com.aquinofroilan.tessera.security.CurrentOrganizationIdArgumentResolverTest" time="0.003"/>
+  <testcase name="supportsParameter returns true when CurrentOrganizationId annotation present()" classname="com.aquinofroilan.tessera.security.CurrentOrganizationIdArgumentResolverTest" time="0.002"/>
+  <system-out><![CDATA[23:43:48.054 [ForkJoinPool-1-worker-2] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.aquinofroilan.tessera.TesseraApplicationTests]: TesseraApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:43:48.553 [ForkJoinPool-1-worker-2] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.TesseraApplicationTests
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/home/runner/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.8/f09415827a71be7ed621c7bd02550678f28bc81c/byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

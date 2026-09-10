@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.sales.controller.SalesReturnControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:14.483Z" hostname="runnervmgx7h7" time="8.522">
+  <properties/>
+  <testcase name="POST sales return should return 201()" classname="com.aquinofroilan.tessera.domain.sales.controller.SalesReturnControllerTest" time="0.063"/>
+  <testcase name="POST complete should return 200()" classname="com.aquinofroilan.tessera.domain.sales.controller.SalesReturnControllerTest" time="0.041"/>
+  <testcase name="POST approve should return 200()" classname="com.aquinofroilan.tessera.domain.sales.controller.SalesReturnControllerTest" time="0.031"/>
+  <testcase name="GET sales returns should return 200 with list()" classname="com.aquinofroilan.tessera.domain.sales.controller.SalesReturnControllerTest" time="0.037"/>
+  <testcase name="POST receive should return 200()" classname="com.aquinofroilan.tessera.domain.sales.controller.SalesReturnControllerTest" time="2.528"/>
+  <system-out><![CDATA[23:45:14.484 [ForkJoinPool-1-worker-1] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.domain.sales.controller.SalesReturnControllerTest]: SalesReturnControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:45:14.637 [ForkJoinPool-1-worker-4] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.domain.procurement.controller.VendorPerformanceControllerTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

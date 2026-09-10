@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.platform.service.CsvCodecTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:14.352Z" hostname="runnervmgx7h7" time="0.007">
+  <properties/>
+  <testcase name="decode parses headers + rows including quoted commas()" classname="com.aquinofroilan.tessera.domain.platform.service.CsvCodecTest" time="0.001"/>
+  <testcase name="decode skips blank trailing rows()" classname="com.aquinofroilan.tessera.domain.platform.service.CsvCodecTest" time="0.003"/>
+  <testcase name="encode quotes fields containing commas and quotes()" classname="com.aquinofroilan.tessera.domain.platform.service.CsvCodecTest" time="0.001"/>
+  <testcase name="encode round-trips simple rows()" classname="com.aquinofroilan.tessera.domain.platform.service.CsvCodecTest" time="0.0"/>
+  <testcase name="decode handles escaped quotes inside quoted field()" classname="com.aquinofroilan.tessera.domain.platform.service.CsvCodecTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

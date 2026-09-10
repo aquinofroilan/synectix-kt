@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.auth.service.LoginLinkServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:54.041Z" hostname="runnervmgx7h7" time="0.304">
+  <properties/>
+  <testcase name="consume on valid token mints session + refresh tokens()" classname="com.aquinofroilan.tessera.domain.auth.service.LoginLinkServiceTest" time="0.226"/>
+  <testcase name="request issues a raw token and wipes outstanding ones()" classname="com.aquinofroilan.tessera.domain.auth.service.LoginLinkServiceTest" time="0.016"/>
+  <testcase name="consume rejects expired token and cleans it up()" classname="com.aquinofroilan.tessera.domain.auth.service.LoginLinkServiceTest" time="0.009"/>
+  <testcase name="consume rejects already-consumed token()" classname="com.aquinofroilan.tessera.domain.auth.service.LoginLinkServiceTest" time="0.009"/>
+  <testcase name="request returns null for unknown email (uniform response)()" classname="com.aquinofroilan.tessera.domain.auth.service.LoginLinkServiceTest" time="0.002"/>
+  <testcase name="request returns null for inactive user()" classname="com.aquinofroilan.tessera.domain.auth.service.LoginLinkServiceTest" time="0.005"/>
+  <testcase name="consume rejects unknown token()" classname="com.aquinofroilan.tessera.domain.auth.service.LoginLinkServiceTest" time="0.016"/>
+  <testcase name="consume rejects when user has become inactive after request()" classname="com.aquinofroilan.tessera.domain.auth.service.LoginLinkServiceTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

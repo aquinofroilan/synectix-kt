@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" tests="39" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:51.414Z" hostname="runnervmgx7h7" time="2.621">
+  <properties/>
+  <testcase name="refresh should throw exception with expired refresh token()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="1.925"/>
+  <testcase name="register should create organization and user successfully()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.055"/>
+  <testcase name="refresh should return new token pair with valid refresh token()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.061"/>
+  <testcase name="forgotPassword should return null for unknown email()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.01"/>
+  <testcase name="login should throw exception with invalid password()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.014"/>
+  <testcase name="switchOrganization should return new token pair scoped to target org()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.022"/>
+  <testcase name="resetPassword should throw for expired token without consuming it permanently()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.018"/>
+  <testcase name="changePassword should update password with valid current password()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.011"/>
+  <testcase name="switchOrganization should throw when org is inactive()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.011"/>
+  <testcase name="register should throw exception when username already exists()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.012"/>
+  <testcase name="register should throw exception when organization name already exists()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.003"/>
+  <testcase name="login should return auth response with valid credentials()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.005"/>
+  <testcase name="register should encode password before saving()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.015"/>
+  <testcase name="switchOrganization should throw when org not found()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.04"/>
+  <testcase name="login should create session token with 24 hour expiry()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.019"/>
+  <testcase name="logout should delete both session token and refresh token()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.008"/>
+  <testcase name="register should throw exception when email already exists()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.011"/>
+  <testcase name="resetPassword should update password and invalidate all sessions()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.018"/>
+  <testcase name="listUserOrganizations should return orgs with current indicator()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.01"/>
+  <testcase name="refresh should throw exception with invalid refresh token()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.013"/>
+  <testcase name="logout should do nothing when session token is not found()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.068"/>
+  <testcase name="changePassword should throw when current password is incorrect()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.011"/>
+  <testcase name="revokeOtherSessions should keep current session and delete others in bulk()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.01"/>
+  <testcase name="resetPassword should throw for invalid token()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.009"/>
+  <testcase name="listSessions should return only non-expired sessions()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.012"/>
+  <testcase name="revokeSession should throw when session belongs to different user()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.009"/>
+  <testcase name="forgotPassword should return reset token for valid email()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.01"/>
+  <testcase name="listUserOrganizations should include inactive orgs with isActive false()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.005"/>
+  <testcase name="changePassword should throw when new password is same as current()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.006"/>
+  <testcase name="switchOrganization should throw when user has no role in target org()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.01"/>
+  <testcase name="login should return auth response with access token and refresh token()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.017"/>
+  <testcase name="login should throw exception with invalid username()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.007"/>
+  <testcase name="login should throw exception when user account is inactive()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.006"/>
+  <testcase name="revokeSession should delete session and its refresh token()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.005"/>
+  <testcase name="login should generate secure random token()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.015"/>
+  <testcase name="revokeSession should throw when attempting to revoke the current session()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.007"/>
+  <testcase name="refresh should throw exception when user is inactive()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.006"/>
+  <testcase name="forgotPassword should return null for inactive user()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.006"/>
+  <testcase name="register should throw exception when organization slug already exists()" classname="com.aquinofroilan.tessera.domain.auth.service.AuthServiceTest" time="0.006"/>
+  <system-out><![CDATA[23:43:51.544 [ForkJoinPool-1-worker-1] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.graphql.TimeEntryGraphqlControllerTest
+23:43:51.690 [ForkJoinPool-1-worker-2] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+23:43:51.725 [ForkJoinPool-1-worker-2] INFO  c.a.tessera.TesseraApplicationTests - Starting TesseraApplicationTests using Java 26.0.2.1 with PID 3789 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+23:43:51.728 [ForkJoinPool-1-worker-2] DEBUG c.a.tessera.TesseraApplicationTests - Running with Spring Boot v4.0.1, Spring v7.0.2
+23:43:51.728 [ForkJoinPool-1-worker-2] INFO  c.a.tessera.TesseraApplicationTests - The following 1 profile is active: "test"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

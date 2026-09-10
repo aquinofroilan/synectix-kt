@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.config.CurrencySeederTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:47.918Z" hostname="runnervmgx7h7" time="3.244">
+  <properties/>
+  <testcase name="does not save when currency exists with same fields()" classname="com.aquinofroilan.tessera.config.CurrencySeederTest" time="2.969"/>
+  <testcase name="seeds five currencies with JPY at zero decimals()" classname="com.aquinofroilan.tessera.config.CurrencySeederTest" time="0.172"/>
+  <testcase name="noop when nothing changes()" classname="com.aquinofroilan.tessera.config.CurrencySeederTest" time="0.014"/>
+  <testcase name="updates currency when stored fields drift()" classname="com.aquinofroilan.tessera.config.CurrencySeederTest" time="0.016"/>
+  <system-out><![CDATA[23:43:51.149 [ForkJoinPool-1-worker-4] INFO com.aquinofroilan.tessera.config.RoleSeeder -- Seeded role: SUPER_ADMIN (SYSTEM)
+23:43:51.153 [ForkJoinPool-1-worker-4] INFO com.aquinofroilan.tessera.config.RoleSeeder -- Seeded role: OWNER (ORGANIZATION)
+23:43:51.154 [ForkJoinPool-1-worker-4] INFO com.aquinofroilan.tessera.config.RoleSeeder -- Seeded role: ADMIN (ORGANIZATION)
+23:43:51.154 [ForkJoinPool-1-worker-4] INFO com.aquinofroilan.tessera.config.RoleSeeder -- Updated role: MEMBER
+23:43:51.154 [ForkJoinPool-1-worker-4] INFO com.aquinofroilan.tessera.config.RoleSeeder -- Seeded role: VIEWER (ORGANIZATION)
+23:43:51.157 [ForkJoinPool-1-worker-3] INFO com.aquinofroilan.tessera.config.CurrencySeeder -- Updated currency: USD
+23:43:51.158 [ForkJoinPool-1-worker-2] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.aquinofroilan.tessera.domain.auth.controller.InvitationControllerTest]: InvitationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:43:51.158 [ForkJoinPool-1-worker-3] INFO com.aquinofroilan.tessera.config.CurrencySeeder -- Seeded currency: EUR (Euro)
+23:43:51.160 [ForkJoinPool-1-worker-3] INFO com.aquinofroilan.tessera.config.CurrencySeeder -- Seeded currency: GBP (Pound Sterling)
+23:43:51.160 [ForkJoinPool-1-worker-3] INFO com.aquinofroilan.tessera.config.CurrencySeeder -- Seeded currency: JPY (Japanese Yen)
+23:43:51.161 [ForkJoinPool-1-worker-3] INFO com.aquinofroilan.tessera.config.CurrencySeeder -- Seeded currency: PHP (Philippine Peso)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+]]></system-err>
+</testsuite>

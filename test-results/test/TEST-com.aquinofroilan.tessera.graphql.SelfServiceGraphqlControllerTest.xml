@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.graphql.SelfServiceGraphqlControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:51.721Z" hostname="runnervmgx7h7" time="16.927">
+  <properties/>
+  <testcase name="me query is denied for an unauthenticated caller()" classname="com.aquinofroilan.tessera.graphql.SelfServiceGraphqlControllerTest" time="1.858"/>
+  <testcase name="me query returns the caller profile()" classname="com.aquinofroilan.tessera.graphql.SelfServiceGraphqlControllerTest" time="0.085"/>
+  <testcase name="submitMyLeave mutation bridges to controller()" classname="com.aquinofroilan.tessera.graphql.SelfServiceGraphqlControllerTest" time="0.161"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+23:44:06.611 [ForkJoinPool-1-worker-4] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+23:44:06.618 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.f.c.FinancialReportControllerTest - Starting FinancialReportControllerTest using Java 26.0.2.1 with PID 3792 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+23:44:06.618 [ForkJoinPool-1-worker-4] DEBUG c.a.t.d.f.c.FinancialReportControllerTest - Running with Spring Boot v4.0.1, Spring v7.0.2
+23:44:06.619 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.f.c.FinancialReportControllerTest - The following 1 profile is active: "test"
+23:44:07.921 [ForkJoinPool-1-worker-4] DEBUG c.a.t.c.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured for use
+23:44:07.922 [ForkJoinPool-1-worker-4] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:44:07.923 [ForkJoinPool-1-worker-4] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:44:07.926 [ForkJoinPool-1-worker-4] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+23:44:07.954 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.f.c.FinancialReportControllerTest - Started FinancialReportControllerTest in 1.412 seconds (process running for 22.505)
+23:44:08.504 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.f.c.FinancialReportController - → Entering FinancialReportController.getIncomeStatement
+23:44:08.505 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.f.c.FinancialReportController - ← Exiting FinancialReportController.getIncomeStatement (0ms)
+23:44:08.650 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.c.c.CustomerPortalController - ← Exiting CustomerPortalController.createMyTicket (0ms)
+23:44:08.658 [ForkJoinPool-1-worker-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'endDate' for method parameter type LocalDate is not present]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.crm.service.OpportunityServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:54.634Z" hostname="runnervmgx7h7" time="0.559">
+  <properties/>
+  <testcase name="create defaults currency to org base currency()" classname="com.aquinofroilan.tessera.domain.crm.service.OpportunityServiceTest" time="0.492"/>
+  <testcase name="close flips status to WON when stage is won()" classname="com.aquinofroilan.tessera.domain.crm.service.OpportunityServiceTest" time="0.013"/>
+  <testcase name="create rejects terminal stage as starting stage()" classname="com.aquinofroilan.tessera.domain.crm.service.OpportunityServiceTest" time="0.012"/>
+  <testcase name="close requires a won or lost terminal stage()" classname="com.aquinofroilan.tessera.domain.crm.service.OpportunityServiceTest" time="0.009"/>
+  <testcase name="create rejects a contact linked to a different customer()" classname="com.aquinofroilan.tessera.domain.crm.service.OpportunityServiceTest" time="0.018"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

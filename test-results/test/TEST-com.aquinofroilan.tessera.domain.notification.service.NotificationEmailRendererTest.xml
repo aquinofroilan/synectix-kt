@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.notification.service.NotificationEmailRendererTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:59.083Z" hostname="runnervmgx7h7" time="0.019">
+  <properties/>
+  <testcase name="html escapes user-supplied content to prevent injection()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationEmailRendererTest" time="0.008"/>
+  <testcase name="html body is omitted when the channel is configured plain-text only()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationEmailRendererTest" time="0.0"/>
+  <testcase name="html body is emitted when enabled and includes the title and CTA()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationEmailRendererTest" time="0.004"/>
+  <testcase name="plain text body composes body and link with a fallback to the title()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationEmailRendererTest" time="0.001"/>
+  <testcase name="subject mirrors the notification title()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationEmailRendererTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

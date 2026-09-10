@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:10.366Z" hostname="runnervmgx7h7" time="0.237">
+  <properties/>
+  <testcase name="approve should post journal entry and update status()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.124"/>
+  <testcase name="create with taxGroupId should compute and store tax()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.006"/>
+  <testcase name="recordReceipt should reject overpayment()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.006"/>
+  <testcase name="approve in foreign currency should post AR debit in base currency()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.008"/>
+  <testcase name="receipt in foreign currency should post base amount via locked rate()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.013"/>
+  <testcase name="approve should reject non-draft invoice()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.008"/>
+  <testcase name="create should save invoice as DRAFT with correct total()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.006"/>
+  <testcase name="recordReceipt should create receipt and update invoice status()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.007"/>
+  <testcase name="void should reject invoice with receipts()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.005"/>
+  <testcase name="approve with tax should include tax payable credit and correct AR debit()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.007"/>
+  <testcase name="void should allow voiding draft without journal entry()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.005"/>
+  <testcase name="void should void journal entry for approved invoice()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.005"/>
+  <testcase name="recordReceipt should mark invoice as PAID when fully paid()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.006"/>
+  <testcase name="recordReceipt should reject draft invoice()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.005"/>
+  <testcase name="create in foreign currency should lock rate and compute baseCurrencyAmount()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.006"/>
+  <testcase name="aging report should bucket invoices by overdue days()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.004"/>
+  <testcase name="create should reject inactive customer()" classname="com.aquinofroilan.tessera.domain.finance.service.InvoiceServiceTest" time="0.004"/>
+  <system-out><![CDATA[2026-09-01 23:44:10.455 [ForkJoinPool-1-worker-1] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-09-01 23:44:10.470 [ForkJoinPool-1-worker-1] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-09-01 23:44:10.546 [ForkJoinPool-1-worker-1] INFO  o.s.g.e.DefaultSchemaResourceGraphQlSourceBuilder - Loaded 16 resource(s) in the GraphQL schema.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

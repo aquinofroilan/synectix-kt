@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.procurement.service.PurchaseOrderServiceTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:00.147Z" hostname="runnervmgx7h7" time="0.531">
+  <properties/>
+  <testcase name="receive posts a RECEIPT stock movement per line and marks RECEIVED()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseOrderServiceTest" time="0.222"/>
+  <testcase name="match preview flags price variance and over-billing()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseOrderServiceTest" time="0.01"/>
+  <testcase name="partial receive leaves the order PARTIALLY_RECEIVED()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseOrderServiceTest" time="0.006"/>
+  <testcase name="cancel is blocked once a bill has been generated()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseOrderServiceTest" time="0.002"/>
+  <testcase name="generateBill rejects a unit cost beyond price tolerance()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseOrderServiceTest" time="0.009"/>
+  <testcase name="create computes line totals and order total and starts in DRAFT()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseOrderServiceTest" time="0.002"/>
+  <testcase name="generateBill bills received quantity to the inventory clearing account()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseOrderServiceTest" time="0.258"/>
+  <testcase name="receive is rejected unless APPROVED()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseOrderServiceTest" time="0.003"/>
+  <testcase name="cancel of a received order reverses stock by reference()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseOrderServiceTest" time="0.002"/>
+  <testcase name="create rejects inactive vendor()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseOrderServiceTest" time="0.001"/>
+  <testcase name="receiving more than ordered is rejected()" classname="com.aquinofroilan.tessera.domain.procurement.service.PurchaseOrderServiceTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

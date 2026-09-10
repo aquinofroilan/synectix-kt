@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.hr.service.DepartmentServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:11.144Z" hostname="runnervmgx7h7" time="0.197">
+  <properties/>
+  <testcase name="update changes name and description only()" classname="com.aquinofroilan.tessera.domain.hr.service.DepartmentServiceTest" time="0.147"/>
+  <testcase name="deactivate flips the active flag and rejects double-deactivation()" classname="com.aquinofroilan.tessera.domain.hr.service.DepartmentServiceTest" time="0.002"/>
+  <testcase name="setParent rejects self-parenting()" classname="com.aquinofroilan.tessera.domain.hr.service.DepartmentServiceTest" time="0.007"/>
+  <testcase name="create rejects a duplicate code()" classname="com.aquinofroilan.tessera.domain.hr.service.DepartmentServiceTest" time="0.002"/>
+  <testcase name="create with a parent validates the parent belongs to the org()" classname="com.aquinofroilan.tessera.domain.hr.service.DepartmentServiceTest" time="0.004"/>
+  <testcase name="get rejects cross-org access()" classname="com.aquinofroilan.tessera.domain.hr.service.DepartmentServiceTest" time="0.005"/>
+  <testcase name="setParent clears the parent when null()" classname="com.aquinofroilan.tessera.domain.hr.service.DepartmentServiceTest" time="0.004"/>
+  <testcase name="setParent rejects a move that would create a cycle()" classname="com.aquinofroilan.tessera.domain.hr.service.DepartmentServiceTest" time="0.007"/>
+  <testcase name="org chart nests children under their roots()" classname="com.aquinofroilan.tessera.domain.hr.service.DepartmentServiceTest" time="0.006"/>
+  <testcase name="create trims and persists an active department()" classname="com.aquinofroilan.tessera.domain.hr.service.DepartmentServiceTest" time="0.001"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+2026-09-01 23:44:11.272 [ForkJoinPool-1-worker-1] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+2026-09-01 23:44:11.273 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.ProjectTaskGraphqlControllerTest - Starting ProjectTaskGraphqlControllerTest using Java 26.0.2.1 with PID 3792 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+2026-09-01 23:44:11.277 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.ProjectTaskGraphqlControllerTest - No active profile set, falling back to 1 default profile: "default"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

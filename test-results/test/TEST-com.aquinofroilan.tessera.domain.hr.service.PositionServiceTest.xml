@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.hr.service.PositionServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:00.241Z" hostname="runnervmgx7h7" time="0.311">
+  <properties/>
+  <testcase name="create persists a position and validates the department when provided()" classname="com.aquinofroilan.tessera.domain.hr.service.PositionServiceTest" time="0.304"/>
+  <testcase name="deactivate rejects double-deactivation()" classname="com.aquinofroilan.tessera.domain.hr.service.PositionServiceTest" time="0.002"/>
+  <testcase name="create rejects a duplicate code()" classname="com.aquinofroilan.tessera.domain.hr.service.PositionServiceTest" time="0.004"/>
+  <system-out><![CDATA[2026-09-01 23:45:00.242 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/auth/signin
+2026-09-01 23:45:00.243 [ForkJoinPool-1-worker-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-09-01 23:45:00.243 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/auth/signin
+2026-09-01 23:45:00.546 [ForkJoinPool-1-worker-1] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+2026-09-01 23:45:00.547 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.ProjectBillingGraphqlControllerTest - Starting ProjectBillingGraphqlControllerTest using Java 26.0.2.1 with PID 3789 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+2026-09-01 23:45:00.547 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.ProjectBillingGraphqlControllerTest - No active profile set, falling back to 1 default profile: "default"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

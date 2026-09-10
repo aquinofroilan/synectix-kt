@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.workflow.service.WorkflowRuleEvaluatorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:09.989Z" hostname="runnervmgx7h7" time="0.438">
+  <properties/>
+  <testcase name="NOTIFY_USER rule produces one notification to the configured user()" classname="com.aquinofroilan.tessera.domain.workflow.service.WorkflowRuleEvaluatorTest" time="0.421"/>
+  <testcase name="NOTIFY_ROLE rule fans out to every user in org with that role()" classname="com.aquinofroilan.tessera.domain.workflow.service.WorkflowRuleEvaluatorTest" time="0.002"/>
+  <testcase name="no rules means no notification fan-out()" classname="com.aquinofroilan.tessera.domain.workflow.service.WorkflowRuleEvaluatorTest" time="0.001"/>
+  <testcase name="a failing rule does not block the next rule from firing()" classname="com.aquinofroilan.tessera.domain.workflow.service.WorkflowRuleEvaluatorTest" time="0.002"/>
+  <system-out><![CDATA[2026-09-01 23:45:09.990 [ForkJoinPool-1-worker-4] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.domain.sales.controller.PricingControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+23:45:10.423 [ForkJoinPool-1-worker-4] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+23:45:10.426 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.s.c.PricingControllerTest - Starting PricingControllerTest using Java 26.0.2.1 with PID 3792 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+23:45:10.426 [ForkJoinPool-1-worker-4] DEBUG c.a.t.d.s.c.PricingControllerTest - Running with Spring Boot v4.0.1, Spring v7.0.2
+23:45:10.426 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.s.c.PricingControllerTest - The following 1 profile is active: "test"
+23:45:10.427 [ForkJoinPool-1-worker-1] WARN  c.a.t.d.w.s.WorkflowRuleEvaluator - Workflow rule 00000000-0000-0000-0000-000000000209 (NOTIFY_USER=00000000-0000-0000-0000-000000000211) failed to evaluate event leave_request.approved: first one explodes
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.sales.service.DiscountRuleServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:10.877Z" hostname="runnervmgx7h7" time="0.156">
+  <properties/>
+  <testcase name="updateDiscountRule updates fields()" classname="com.aquinofroilan.tessera.domain.sales.service.DiscountRuleServiceTest" time="0.152"/>
+  <testcase name="createDiscountRule creates rule successfully()" classname="com.aquinofroilan.tessera.domain.sales.service.DiscountRuleServiceTest" time="0.001"/>
+  <testcase name="createDiscountRule throws BusinessRuleException on duplicate code()" classname="com.aquinofroilan.tessera.domain.sales.service.DiscountRuleServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

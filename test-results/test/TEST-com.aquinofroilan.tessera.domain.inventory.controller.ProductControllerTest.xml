@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:05.248Z" hostname="runnervmgx7h7" time="7.673">
+  <properties/>
+  <testcase name="POST products should return 201 when created()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.219"/>
+  <testcase name="PATCH products should support partial updates()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.184"/>
+  <testcase name="POST products should return 400 when SKU is blank()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.17"/>
+  <testcase name="GET products defaults isActive to true when param omitted()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.026"/>
+  <testcase name="PATCH products should return 403 without inventory write permission()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.123"/>
+  <testcase name="PATCH products should return 200 when updated()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.117"/>
+  <testcase name="GET products should return 403 without inventory read permission()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.013"/>
+  <testcase name="GET products should support category filter()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.014"/>
+  <testcase name="POST products should return 403 without inventory write permission()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.262"/>
+  <testcase name="POST products should return 400 when duplicate SKU in org()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.036"/>
+  <testcase name="GET products should return 200 with product list()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.432"/>
+  <testcase name="GET products by id should return 200()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.242"/>
+  <testcase name="GET products should support isActive filter()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.227"/>
+  <testcase name="DELETE products should return 403 without inventory write permission()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.037"/>
+  <testcase name="DELETE products should return 200 when soft deleted()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.176"/>
+  <testcase name="GET products by id should return 404 when not found()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.151"/>
+  <testcase name="GET products should support search filter()" classname="com.aquinofroilan.tessera.domain.inventory.controller.ProductControllerTest" time="0.181"/>
+  <system-out><![CDATA[2026-09-01 23:45:05.250 [ForkJoinPool-1-worker-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/finance/journal/00000000-0000-0000-0000-000000000199/post
+23:45:10.341 [ForkJoinPool-1-worker-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/inventory/warehouses
+23:45:10.354 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.a.controller.AuthController - → Entering AuthController.register
+23:45:10.544 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/auth/reset-password
+23:45:10.544 [ForkJoinPool-1-worker-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+23:45:10.544 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/auth/reset-password
+23:45:10.547 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Failed to authorize ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController.createWarehouse(java.util.UUID,com.aquinofroilan.tessera.domain.inventory.dto.CreateWarehouseRequest); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@48b5284 and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAuthority('inventory:write')]
+23:45:10.548 [ForkJoinPool-1-worker-2] DEBUG o.s.s.w.a.AccessDeniedHandlerImpl - Responding with 403 status code
+23:45:10.818 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/auth/signup
+23:45:10.818 [ForkJoinPool-1-worker-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+23:45:10.818 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/auth/signup
+23:45:10.822 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/inventory/products
+23:45:10.822 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.a.controller.AuthController - → Entering AuthController.register
+23:45:10.823 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/inventory/products
+23:45:10.823 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.a.controller.AuthController - ← Exiting AuthController.register (0ms)
+23:45:10.824 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.listProducts(java.util.UUID,java.lang.String,boolean,java.lang.String); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:10.832 [ForkJoinPool-1-worker-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/inventory/warehouses
+23:45:10.832 [ForkJoinPool-1-worker-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/inventory/warehouses
+23:45:11.101 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/auth/refresh
+23:45:11.101 [ForkJoinPool-1-worker-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+23:45:11.101 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/auth/refresh
+23:45:11.101 [ForkJoinPool-1-worker-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/inventory/warehouses
+23:45:11.110 [ForkJoinPool-1-worker-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/inventory/warehouses
+23:45:11.111 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController.createWarehouse(java.util.UUID,com.aquinofroilan.tessera.domain.inventory.dto.CreateWarehouseRequest); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController]
+23:45:11.112 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController.createWarehouse(java.util.UUID,com.aquinofroilan.tessera.domain.inventory.dto.CreateWarehouseRequest); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController]
+23:45:11.112 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.i.c.WarehouseController - → Entering WarehouseController.createWarehouse
+23:45:11.112 [ForkJoinPool-1-worker-2] ERROR c.a.t.d.i.c.WarehouseController - ✗ Exception in WarehouseController.createWarehouse: BusinessRuleException - Warehouse with code 'MAIN' already exists in this organization
+23:45:11.113 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.a.controller.AuthController - → Entering AuthController.refresh
+23:45:11.113 [ForkJoinPool-1-worker-3] ERROR c.a.t.d.a.controller.AuthController - ✗ Exception in AuthController.refresh: AuthenticationException - Invalid or expired refresh token
+23:45:11.119 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/inventory/products
+23:45:11.120 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/inventory/products
+23:45:11.127 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.createProduct(java.util.UUID,com.aquinofroilan.tessera.domain.inventory.dto.CreateProductRequest); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:11.127 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.createProduct(java.util.UUID,com.aquinofroilan.tessera.domain.inventory.dto.CreateProductRequest); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:11.127 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.ProductController - → Entering ProductController.createProduct
+23:45:11.128 [ForkJoinPool-1-worker-4] ERROR c.a.t.d.i.c.ProductController - ✗ Exception in ProductController.createProduct: BusinessRuleException - Product with SKU 'WIDGET-001' already exists in this organization
+23:45:11.578 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController.deleteWarehouse(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController]
+23:45:11.579 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Failed to authorize ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController.deleteWarehouse(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@48b5284 and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAuthority('inventory:write')]
+23:45:11.579 [ForkJoinPool-1-worker-2] DEBUG o.s.s.w.a.AccessDeniedHandlerImpl - Responding with 403 status code
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

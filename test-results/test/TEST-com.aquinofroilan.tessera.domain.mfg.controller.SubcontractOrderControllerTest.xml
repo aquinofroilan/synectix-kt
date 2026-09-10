@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:55.069Z" hostname="runnervmgx7h7" time="14.928">
+  <properties/>
+  <testcase name="POST subcontract-orders creates order and returns 201()" classname="com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderControllerTest" time="0.435"/>
+  <testcase name="POST cancel cancels order and returns 200()" classname="com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderControllerTest" time="5.144"/>
+  <testcase name="POST receive receives goods and returns 200()" classname="com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderControllerTest" time="0.137"/>
+  <testcase name="GET subcontract-orders returns list of orders()" classname="com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderControllerTest" time="0.03"/>
+  <testcase name="POST dispatch dispatches components and returns 200()" classname="com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderControllerTest" time="0.05"/>
+  <testcase name="GET subcontract-orders by id returns order details()" classname="com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderControllerTest" time="0.068"/>
+  <system-out><![CDATA[2026-09-01 23:44:55.074 [ForkJoinPool-1-worker-5] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderControllerTest]: SubcontractOrderControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-01 23:44:55.211 [ForkJoinPool-1-worker-5] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.domain.mfg.controller.SubcontractOrderControllerTest
+2026-09-01 23:44:55.982 [ForkJoinPool-1-worker-1] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-09-01 23:44:56.027 [ForkJoinPool-1-worker-1] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-09-01 23:44:56.098 [ForkJoinPool-1-worker-1] INFO  o.s.g.e.DefaultSchemaResourceGraphQlSourceBuilder - Loaded 16 resource(s) in the GraphQL schema.
+2026-09-01 23:44:56.143 [ForkJoinPool-1-worker-1] INFO  o.s.b.g.a.GraphQlAutoConfiguration - GraphQL schema inspection:
+	Unmapped fields: {Query=[_emptyQuery, attendance, attendanceRecord, customers, customer, currencies, exchangeRates, payrollRuns, payrollRun, departments, department, departmentOrgChart, employees, employee, positions, position, leaveTypes, leaveType, leaveRequests, leaveRequest, leaveBalance, employeeCompensations, currentEmployeeCompensation, products, product, warehouses, warehouse, stockMovements, stockOnHand, reorderRules, reorderRule, inventoryValuation, inventoryStockOnHand, inventoryMovementHistory, lowStockReport, me, myLeaveRequests, myLeaveBalance, myCompensation, myCurrentCompensation, projectBudgets, projectBudgetVsActual, projectTasks, projectTaskTree, projectTask, projects, project, purchaseRequests, purchaseRequest, quotations, quotation, health, simpleHealth, detailedHealth, environmentInfo, environmentVariables, organizations, sessions, invitations, apiKeys, accounts, account, accountBalance, fiscalYears, fiscalYear, journalEntries, journalEntry, journalTrialBalance, reportTrialBalance, reportIncomeStatement, reportBalanceSheet, taxRates, taxRate, taxGroups, taxGroup, taxSummary, vendors, vendor, bills, bill, billPayments, billAging, invoices, invoice, invoiceReceipts, invoiceAging, timeEntries, timeEntry], Mutation=[_emptyMutation, clockIn, clockOut, recordAttendance, createCustomer, updateCustomer, deleteCustomer, createExchangeRate, deleteExchangeRate, createPayrollRun, approvePayrollRun, payPayrollRun, cancelPayrollRun, createDepartment, updateDepartment, setDepartmentParent, deactivateDepartment, createEmployee, updateEmployee, assignEmployeeDepartment, placeEmployeeOnLeave, returnEmployeeFromLeave, terminateEmployee, createPosition, updatePosition, deactivatePosition, createLeaveType, updateLeaveType, deactivateLeaveType, createLeaveRequest, approveLeaveRequest, rejectLeaveRequest, cancelLeaveRequest, addEmployeeCompensation, createProduct, updateProduct, deleteProduct, createWarehouse, updateWarehouse, deleteWarehouse, createStockMovement, createReorderRule, updateReorderRule, deleteReorderRule, submitMyLeave, generateProjectInvoice, setProjectBudget, createProjectTask, updateProjectTask, setProjectTaskParent, createProject, updateProject, activateProject, holdProject, closeProject, cancelProject, createPurchaseRequest, submitPurchaseRequest, approvePurchaseRequest, rejectPurchaseRequest, cancelPurchaseRequest, convertPurchaseRequest, createQuotation, sendQuotation, acceptQuotation, rejectQuotation, cancelQuotation, convertQuotation, signup, signin, refresh, changePassword, forgotPassword, resetPassword, switchOrganization, logout, revokeSession, revokeOtherSessions, createInvitation, validateInvitation, acceptInvitation, revokeInvitation, createApiKey, revokeApiKey, createAccount, updateAccount, deleteAccount, createFiscalYear, closePeriod, reopenPeriod, closeYear, createJournalEntry, postJournalEntry, voidJournalEntry, createTaxRate, updateTaxRate, deleteTaxRate, createTaxGroup, updateTaxGroup, deleteTaxGroup, createVendor, updateVendor, deleteVendor, createBill, approveBill, voidBill, recordBillPayment, createInvoice, approveInvoice, voidInvoice, recordInvoiceReceipt, createTimeEntry, updateTimeEntry, submitTimeEntry, approveTimeEntry, rejectTimeEntry]}
+	Unmapped registrations: {}
+	Unmapped arguments: {}
+	Field nullness errors: {}
+	Argument nullness errors: {}
+	Skipped types: []
+2026-09-01 23:44:56.152 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.OrderGraphqlControllerTest - Started OrderGraphqlControllerTest in 2.201 seconds (process running for 70.703)
+2026-09-01 23:44:58.019 [ForkJoinPool-1-worker-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.aquinofroilan.tessera.domain.inventory.dto.CreateStockMovementRequest`, problem: Parameter specified as non-null is null: method com.aquinofroilan.tessera.domain.inventory.dto.CreateStockMovementRequest.<init>, parameter productId]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+2026-09-01 23:45:03.632 [ForkJoinPool-1-worker-2] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+2026-09-01 23:45:03.634 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.s.c.DiscountRuleControllerTest - Starting DiscountRuleControllerTest using Java 26.0.2.1 with PID 3792 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+2026-09-01 23:45:03.634 [ForkJoinPool-1-worker-2] DEBUG c.a.t.d.s.c.DiscountRuleControllerTest - Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-09-01 23:45:03.634 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.s.c.DiscountRuleControllerTest - The following 1 profile is active: "test"
+2026-09-01 23:45:04.895 [ForkJoinPool-1-worker-2] DEBUG c.a.t.c.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured for use
+2026-09-01 23:45:04.896 [ForkJoinPool-1-worker-2] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-09-01 23:45:04.899 [ForkJoinPool-1-worker-2] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-09-01 23:45:04.900 [ForkJoinPool-1-worker-2] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-09-01 23:45:04.930 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.s.c.DiscountRuleControllerTest - Started DiscountRuleControllerTest in 1.341 seconds (process running for 79.481)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+2026-09-01 23:45:04.972 [ForkJoinPool-1-worker-3] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+2026-09-01 23:45:04.973 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.o.c.OrganizationSettingsControllerTest - Starting OrganizationSettingsControllerTest using Java 26.0.2.1 with PID 3792 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+2026-09-01 23:45:04.973 [ForkJoinPool-1-worker-3] DEBUG c.a.t.d.o.c.OrganizationSettingsControllerTest - Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-09-01 23:45:04.973 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.o.c.OrganizationSettingsControllerTest - The following 1 profile is active: "test"
+2026-09-01 23:45:06.338 [ForkJoinPool-1-worker-3] DEBUG c.a.t.c.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured for use
+2026-09-01 23:45:06.339 [ForkJoinPool-1-worker-3] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-09-01 23:45:06.339 [ForkJoinPool-1-worker-3] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-09-01 23:45:06.340 [ForkJoinPool-1-worker-3] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-09-01 23:45:06.369 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.o.c.OrganizationSettingsControllerTest - Started OrganizationSettingsControllerTest in 1.436 seconds (process running for 80.92)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+2026-09-01 23:45:08.320 [ForkJoinPool-1-worker-1] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+2026-09-01 23:45:08.321 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.AttendanceGraphqlControllerTest - Starting AttendanceGraphqlControllerTest using Java 26.0.2.1 with PID 3792 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+2026-09-01 23:45:08.321 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.AttendanceGraphqlControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-09-01 23:45:09.726 [ForkJoinPool-1-worker-1] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-09-01 23:45:09.746 [ForkJoinPool-1-worker-1] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-09-01 23:45:09.800 [ForkJoinPool-1-worker-1] INFO  o.s.g.e.DefaultSchemaResourceGraphQlSourceBuilder - Loaded 16 resource(s) in the GraphQL schema.
+2026-09-01 23:45:09.843 [ForkJoinPool-1-worker-1] INFO  o.s.b.g.a.GraphQlAutoConfiguration - GraphQL schema inspection:
+	Unmapped fields: {Query=[_emptyQuery, customers, customer, currencies, exchangeRates, payrollRuns, payrollRun, departments, department, departmentOrgChart, employees, employee, positions, position, leaveTypes, leaveType, leaveRequests, leaveRequest, leaveBalance, employeeCompensations, currentEmployeeCompensation, products, product, warehouses, warehouse, stockMovements, stockOnHand, reorderRules, reorderRule, inventoryValuation, inventoryStockOnHand, inventoryMovementHistory, lowStockReport, me, myLeaveRequests, myLeaveBalance, myCompensation, myCurrentCompensation, purchaseOrders, purchaseOrder, salesOrders, salesOrder, projectBudgets, projectBudgetVsActual, projectTasks, projectTaskTree, projectTask, projects, project, purchaseRequests, purchaseRequest, quotations, quotation, health, simpleHealth, detailedHealth, environmentInfo, environmentVariables, organizations, sessions, invitations, apiKeys, accounts, account, accountBalance, fiscalYears, fiscalYear, journalEntries, journalEntry, journalTrialBalance, reportTrialBalance, reportIncomeStatement, reportBalanceSheet, taxRates, taxRate, taxGroups, taxGroup, taxSummary, vendors, vendor, bills, bill, billPayments, billAging, invoices, invoice, invoiceReceipts, invoiceAging, timeEntries, timeEntry], Mutation=[_emptyMutation, createCustomer, updateCustomer, deleteCustomer, createExchangeRate, deleteExchangeRate, createPayrollRun, approvePayrollRun, payPayrollRun, cancelPayrollRun, createDepartment, updateDepartment, setDepartmentParent, deactivateDepartment, createEmployee, updateEmployee, assignEmployeeDepartment, placeEmployeeOnLeave, returnEmployeeFromLeave, terminateEmployee, createPosition, updatePosition, deactivatePosition, createLeaveType, updateLeaveType, deactivateLeaveType, createLeaveRequest, approveLeaveRequest, rejectLeaveRequest, cancelLeaveRequest, addEmployeeCompensation, createProduct, updateProduct, deleteProduct, createWarehouse, updateWarehouse, deleteWarehouse, createStockMovement, createReorderRule, updateReorderRule, deleteReorderRule, submitMyLeave, createPurchaseOrder, approvePurchaseOrder, receivePurchaseOrder, matchPurchaseOrderBill, generatePurchaseOrderBill, closePurchaseOrder, cancelPurchaseOrder, createSalesOrder, approveSalesOrder, fulfillSalesOrder, generateSalesOrderInvoice, closeSalesOrder, cancelSalesOrder, generateProjectInvoice, setProjectBudget, createProjectTask, updateProjectTask, setProjectTaskParent, createProject, updateProject, activateProject, holdProject, closeProject, cancelProject, createPurchaseRequest, submitPurchaseRequest, approvePurchaseRequest, rejectPurchaseRequest, cancelPurchaseRequest, convertPurchaseRequest, createQuotation, sendQuotation, acceptQuotation, rejectQuotation, cancelQuotation, convertQuotation, signup, signin, refresh, changePassword, forgotPassword, resetPassword, switchOrganization, logout, revokeSession, revokeOtherSessions, createInvitation, validateInvitation, acceptInvitation, revokeInvitation, createApiKey, revokeApiKey, createAccount, updateAccount, deleteAccount, createFiscalYear, closePeriod, reopenPeriod, closeYear, createJournalEntry, postJournalEntry, voidJournalEntry, createTaxRate, updateTaxRate, deleteTaxRate, createTaxGroup, updateTaxGroup, deleteTaxGroup, createVendor, updateVendor, deleteVendor, createBill, approveBill, voidBill, recordBillPayment, createInvoice, approveInvoice, voidInvoice, recordInvoiceReceipt, createTimeEntry, updateTimeEntry, submitTimeEntry, approveTimeEntry, rejectTimeEntry]}
+	Unmapped registrations: {}
+	Unmapped arguments: {}
+	Field nullness errors: {}
+	Argument nullness errors: {}
+	Skipped types: []
+2026-09-01 23:45:09.856 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.AttendanceGraphqlControllerTest - Started AttendanceGraphqlControllerTest in 1.579 seconds (process running for 84.407)
+2026-09-01 23:45:09.928 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.sales.controller.DiscountRuleController.deleteDiscountRule(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.sales.controller.DiscountRuleController]
+2026-09-01 23:45:09.932 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.sales.controller.DiscountRuleController.deleteDiscountRule(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.sales.controller.DiscountRuleController]
+2026-09-01 23:45:09.932 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.s.c.DiscountRuleController - → Entering DiscountRuleController.deleteDiscountRule
+2026-09-01 23:45:09.933 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.s.c.DiscountRuleController - ← Exiting DiscountRuleController.deleteDiscountRule (1ms)
+2026-09-01 23:45:09.933 [ForkJoinPool-1-worker-1] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public java.lang.Object com.aquinofroilan.tessera.graphql.AttendanceGraphqlController.clockIn(java.lang.Object); target is of class [com.aquinofroilan.tessera.graphql.AttendanceGraphqlController]
+2026-09-01 23:45:09.933 [ForkJoinPool-1-worker-1] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public java.lang.Object com.aquinofroilan.tessera.graphql.AttendanceGraphqlController.clockIn(java.lang.Object); target is of class [com.aquinofroilan.tessera.graphql.AttendanceGraphqlController]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

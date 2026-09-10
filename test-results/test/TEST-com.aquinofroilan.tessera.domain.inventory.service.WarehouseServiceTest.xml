@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:11.838Z" hostname="runnervmgx7h7" time="0.536">
+  <properties/>
+  <testcase name="deleteWarehouse should set isActive to false (soft delete)()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.002"/>
+  <testcase name="createWarehouse should save warehouse with provided fields()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.224"/>
+  <testcase name="listWarehouses passes isActive false through to repository()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.0"/>
+  <testcase name="createWarehouse should honour allowNegativeStock when set()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.001"/>
+  <testcase name="getWarehouse should enforce cross-org isolation()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.011"/>
+  <testcase name="createWarehouse should throw on duplicate code in organization()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.001"/>
+  <testcase name="updateWarehouse should allow toggling allowNegativeStock()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.001"/>
+  <testcase name="getWarehouse should throw 404 when not found()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.013"/>
+  <testcase name="deleteWarehouse should throw when already inactive()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.005"/>
+  <testcase name="updateWarehouse should perform partial update()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.001"/>
+  <testcase name="listWarehouses defaults to active-only()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.001"/>
+  <testcase name="listWarehouses passes search term through to repository()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.0"/>
+  <testcase name="updateWarehouse should throw when warehouse inactive()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.011"/>
+  <testcase name="deleteWarehouse should enforce cross-org isolation()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.139"/>
+  <testcase name="getWarehouse should return warehouse when org matches()" classname="com.aquinofroilan.tessera.domain.inventory.service.WarehouseServiceTest" time="0.001"/>
+  <system-out><![CDATA[23:45:11.965 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/inventory/products
+23:45:11.965 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/inventory/products
+23:45:11.966 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.listProducts(java.util.UUID,java.lang.String,boolean,java.lang.String); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:12.070 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.listProducts(java.util.UUID,java.lang.String,boolean,java.lang.String); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:12.070 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.ProductController - → Entering ProductController.listProducts
+23:45:12.225 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.deleteProduct(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:12.226 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Failed to authorize ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.deleteProduct(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@618bd3a and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAuthority('inventory:write')]
+23:45:12.226 [ForkJoinPool-1-worker-4] DEBUG o.s.s.w.a.AccessDeniedHandlerImpl - Responding with 403 status code
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

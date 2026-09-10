@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.mfg.service.BillOfMaterialsServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:12.374Z" hostname="runnervmgx7h7" time="0.458">
+  <properties/>
+  <testcase name="activate marks bom ACTIVE and stamps audit fields()" classname="com.aquinofroilan.tessera.domain.mfg.service.BillOfMaterialsServiceTest" time="0.34"/>
+  <testcase name="delete is rejected when bom is not DRAFT()" classname="com.aquinofroilan.tessera.domain.mfg.service.BillOfMaterialsServiceTest" time="0.001"/>
+  <testcase name="update is rejected when bom is not DRAFT()" classname="com.aquinofroilan.tessera.domain.mfg.service.BillOfMaterialsServiceTest" time="0.002"/>
+  <testcase name="obsolete clears default flag()" classname="com.aquinofroilan.tessera.domain.mfg.service.BillOfMaterialsServiceTest" time="0.001"/>
+  <testcase name="create rejects component equal to parent()" classname="com.aquinofroilan.tessera.domain.mfg.service.BillOfMaterialsServiceTest" time="0.002"/>
+  <testcase name="create persists a draft bom with auto-incremented version()" classname="com.aquinofroilan.tessera.domain.mfg.service.BillOfMaterialsServiceTest" time="0.001"/>
+  <testcase name="create rejects duplicate component lines()" classname="com.aquinofroilan.tessera.domain.mfg.service.BillOfMaterialsServiceTest" time="0.002"/>
+  <testcase name="create rejects duplicate code()" classname="com.aquinofroilan.tessera.domain.mfg.service.BillOfMaterialsServiceTest" time="0.002"/>
+  <testcase name="create rejects inverted effective window()" classname="com.aquinofroilan.tessera.domain.mfg.service.BillOfMaterialsServiceTest" time="0.089"/>
+  <testcase name="activate with makeDefault demotes the previous default()" classname="com.aquinofroilan.tessera.domain.mfg.service.BillOfMaterialsServiceTest" time="0.002"/>
+  <system-out><![CDATA[23:45:12.394 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Securing DELETE /api/v1/inventory/products/00000000-0000-0000-0000-000000000199
+23:45:12.394 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Secured DELETE /api/v1/inventory/products/00000000-0000-0000-0000-000000000199
+23:45:12.733 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.getProduct(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:12.734 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.getProduct(java.util.UUID,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:12.734 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.ProductController - → Entering ProductController.getProduct
+23:45:12.734 [ForkJoinPool-1-worker-4] ERROR c.a.t.d.i.c.ProductController - ✗ Exception in ProductController.getProduct: ResourceNotFoundException - Product not found
+23:45:12.831 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/inventory/products
+23:45:12.831 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/inventory/products
+23:45:12.832 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.listProducts(java.util.UUID,java.lang.String,boolean,java.lang.String); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.finance.service.BankStatementServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:56.541Z" hostname="runnervmgx7h7" time="0.358">
+  <properties/>
+  <testcase name="import rejects zero-amount line()" classname="com.aquinofroilan.tessera.domain.finance.service.BankStatementServiceTest" time="0.33"/>
+  <testcase name="import rejects unsupported source()" classname="com.aquinofroilan.tessera.domain.finance.service.BankStatementServiceTest" time="0.004"/>
+  <testcase name="import rejects unbalanced statement()" classname="com.aquinofroilan.tessera.domain.finance.service.BankStatementServiceTest" time="0.002"/>
+  <testcase name="import accepts balanced statement, stamps source, applies balance delta()" classname="com.aquinofroilan.tessera.domain.finance.service.BankStatementServiceTest" time="0.005"/>
+  <testcase name="import rejects inactive bank account()" classname="com.aquinofroilan.tessera.domain.finance.service.BankStatementServiceTest" time="0.002"/>
+  <system-out><![CDATA[2026-09-01 23:44:56.730 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController.createJournalEntry(java.util.UUID,java.util.UUID,com.aquinofroilan.tessera.domain.finance.dto.CreateJournalEntryRequest); target is of class [com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController]
+2026-09-01 23:44:56.731 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Failed to authorize ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController.createJournalEntry(java.util.UUID,java.util.UUID,com.aquinofroilan.tessera.domain.finance.dto.CreateJournalEntryRequest); target is of class [com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@56d3c6b and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAuthority('journal:create')]
+2026-09-01 23:44:56.731 [ForkJoinPool-1-worker-5] DEBUG o.s.s.w.a.AccessDeniedHandlerImpl - Responding with 403 status code
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

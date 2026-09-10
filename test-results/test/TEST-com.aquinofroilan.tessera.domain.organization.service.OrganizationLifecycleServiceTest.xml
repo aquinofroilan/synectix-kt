@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.organization.service.OrganizationLifecycleServiceTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:14.320Z" hostname="runnervmgx7h7" time="0.029">
+  <properties/>
+  <testcase name="transitionStatus throws BusinessRuleException when target status is identical()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationLifecycleServiceTest" time="0.001"/>
+  <testcase name="getStatus returns ARCHIVED status and flags read-only()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationLifecycleServiceTest" time="0.011"/>
+  <testcase name="getStatus returns SUSPENDED status and flags access blocked()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationLifecycleServiceTest" time="0.001"/>
+  <testcase name="transitionStatus throws ResourceNotFoundException when org does not exist()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationLifecycleServiceTest" time="0.0"/>
+  <testcase name="getStatus returns ACTIVE status with allowed transitions()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationLifecycleServiceTest" time="0.0"/>
+  <testcase name="transitionStatus from ACTIVE to SUSPENDED sets status and deactivates isActive()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationLifecycleServiceTest" time="0.009"/>
+  <testcase name="transitionStatus from ARCHIVED to ACTIVE restores active status()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationLifecycleServiceTest" time="0.001"/>
+  <testcase name="transitionStatus from SUSPENDED to ACTIVE sets status and reactivates isActive()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationLifecycleServiceTest" time="0.001"/>
+  <testcase name="transitionStatus from ACTIVE to ARCHIVED sets status and marks read-only()" classname="com.aquinofroilan.tessera.domain.organization.service.OrganizationLifecycleServiceTest" time="0.003"/>
+  <system-out><![CDATA[23:45:14.340 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.o.s.OrganizationLifecycleService - Transitioning organization 4abe9f6d-6df3-6e5c-953e-3695db9a5216 (acme-corp) from ACTIVE to SUSPENDED. Reason: Administrative Hold
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+23:45:14.345 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.o.s.OrganizationLifecycleService - Transitioning organization 4abe9f6d-6df3-6e5c-953e-3695db9a5216 (acme-corp) from ARCHIVED to ACTIVE. Reason: Unarchived
+23:45:14.346 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.o.s.OrganizationLifecycleService - Transitioning organization 4abe9f6d-6df3-6e5c-953e-3695db9a5216 (acme-corp) from SUSPENDED to ACTIVE. Reason: Reactivation
+23:45:14.350 [ForkJoinPool-1-worker-2] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+23:45:14.351 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.o.c.OrganizationBillingFeatureControllerTest - Starting OrganizationBillingFeatureControllerTest using Java 26.0.2.1 with PID 3789 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+23:45:14.351 [ForkJoinPool-1-worker-2] DEBUG c.a.t.d.o.c.OrganizationBillingFeatureControllerTest - Running with Spring Boot v4.0.1, Spring v7.0.2
+23:45:14.351 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.o.c.OrganizationBillingFeatureControllerTest - The following 1 profile is active: "test"
+23:45:14.352 [ForkJoinPool-1-worker-5] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.domain.organization.controller.OrganizationLifecycleControllerTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

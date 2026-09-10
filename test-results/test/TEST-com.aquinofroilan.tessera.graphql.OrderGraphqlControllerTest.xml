@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.graphql.OrderGraphqlControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:53.805Z" hostname="runnervmgx7h7" time="4.517">
+  <properties/>
+  <testcase name="purchaseOrders query should return json payload()" classname="com.aquinofroilan.tessera.graphql.OrderGraphqlControllerTest" time="0.061"/>
+  <testcase name="purchaseOrders query should be denied without authority()" classname="com.aquinofroilan.tessera.graphql.OrderGraphqlControllerTest" time="0.067"/>
+  <testcase name="approveSalesOrder mutation should bridge to controller()" classname="com.aquinofroilan.tessera.graphql.OrderGraphqlControllerTest" time="0.196"/>
+  <system-out><![CDATA[2026-09-01 23:44:53.806 [ForkJoinPool-1-worker-1] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.graphql.OrderGraphqlControllerTest]: OrderGraphqlControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.auth.controller.SessionControllerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:50.585Z" hostname="runnervmgx7h7" time="65.708">
+  <properties/>
+  <testcase name="GET sessions should return empty list when no sessions()" classname="com.aquinofroilan.tessera.domain.auth.controller.SessionControllerTest" time="1.239"/>
+  <testcase name="GET sessions should return list with current session indicator()" classname="com.aquinofroilan.tessera.domain.auth.controller.SessionControllerTest" time="0.089"/>
+  <testcase name="DELETE session by id should return 200 on success()" classname="com.aquinofroilan.tessera.domain.auth.controller.SessionControllerTest" time="0.061"/>
+  <testcase name="DELETE session should return 403 without session delete permission()" classname="com.aquinofroilan.tessera.domain.auth.controller.SessionControllerTest" time="0.063"/>
+  <testcase name="GET sessions should return 403 without session read permission()" classname="com.aquinofroilan.tessera.domain.auth.controller.SessionControllerTest" time="2.779"/>
+  <testcase name="DELETE session by id should return 400 when revoking the current session()" classname="com.aquinofroilan.tessera.domain.auth.controller.SessionControllerTest" time="0.047"/>
+  <testcase name="DELETE session by id should return 404 for non-owned session()" classname="com.aquinofroilan.tessera.domain.auth.controller.SessionControllerTest" time="0.045"/>
+  <testcase name="DELETE sessions should revoke others and return 200()" classname="com.aquinofroilan.tessera.domain.auth.controller.SessionControllerTest" time="1.212"/>
+  <system-out><![CDATA[2026-09-01 23:44:49.827 [ForkJoinPool-1-worker-2] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.domain.finance.controller.AccountControllerTest]: AccountControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-01 23:44:49.880 [ForkJoinPool-1-worker-1] ERROR o.s.g.e.ExceptionResolversExceptionHandler - Unresolved AuthorizationDeniedException for executionId d3d53055-2041-c292-0cb9-20dc0066b716
+org.springframework.security.authorization.AuthorizationDeniedException: Access Denied
+	at org.springframework.security.authorization.method.ThrowingMethodAuthorizationDeniedHandler.handleDeniedInvocation(ThrowingMethodAuthorizationDeniedHandler.java:38) ~[spring-security-core-7.0.2.jar:7.0.2]
+	at org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager.handleDeniedInvocation(PreAuthorizeAuthorizationManager.java:96) ~[spring-security-core-7.0.2.jar:7.0.2]
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.handle(AuthorizationManagerBeforeMethodInterceptor.java:290) ~[spring-security-core-7.0.2.jar:7.0.2]
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:263) ~[spring-security-core-7.0.2.jar:7.0.2]
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:197) ~[spring-security-core-7.0.2.jar:7.0.2]
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44) ~[spring-security-config-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.2.jar:7.0.2]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719) ~[spring-aop-7.0.2.jar:7.0.2]
+	at com.aquinofroilan.tessera.graphql.TimeEntryGraphqlController$$SpringCGLIB$$0.createTimeEntry(<generated>) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.graphql.data.method.InvocableHandlerMethodSupport.doInvoke(InvocableHandlerMethodSupport.java:120) ~[spring-graphql-2.0.1.jar:2.0.1]
+	at org.springframework.graphql.data.method.annotation.support.DataFetcherHandlerMethod.validateAndInvoke(DataFetcherHandlerMethod.java:144) ~[spring-graphql-2.0.1.jar:2.0.1]
+	at org.springframework.graphql.data.method.annotation.support.DataFetcherHandlerMethod.invoke(DataFetcherHandlerMethod.java:128) ~[spring-graphql-2.0.1.jar:2.0.1]
+	at org.springframework.graphql.data.method.annotation.support.DataFetcherHandlerMethod.invoke(DataFetcherHandlerMethod.java:107) ~[spring-graphql-2.0.1.jar:2.0.1]
+	at org.springframework.graphql.data.method.annotation.support.AnnotatedControllerConfigurer$SchemaMappingDataFetcher.get(AnnotatedControllerConfigurer.java:522) ~[spring-graphql-2.0.1.jar:2.0.1]
+	at org.springframework.graphql.execution.ContextDataFetcherDecorator.lambda$get$0(ContextDataFetcherDecorator.java:92) ~[spring-graphql-2.0.1.jar:2.0.1]
+	at io.micrometer.context.ContextSnapshot.lambda$wrap$1(ContextSnapshot.java:106) ~[context-propagation-1.2.0.jar:1.2.0]
+	at org.springframework.graphql.execution.ContextDataFetcherDecorator.get(ContextDataFetcherDecorator.java:92) ~[spring-graphql-2.0.1.jar:2.0.1]
+	at graphql.execution.ExecutionStrategy.invokeDataFetcher(ExecutionStrategy.java:512) ~[graphql-java-25.0.jar:na]
+	at graphql.execution.ExecutionStrategy.fetchField(ExecutionStrategy.java:466) ~[graphql-java-25.0.jar:na]
+	at graphql.execution.ExecutionStrategy.fetchField(ExecutionStrategy.java:404) ~[graphql-java-25.0.jar:na]
+	at graphql.execution.ExecutionStrategy.resolveFieldWithInfo(ExecutionStrategy.java:360) ~[graphql-java-25.0.jar:na]
+	at graphql.execution.AsyncSerialExecutionStrategy.resolveSerialField(AsyncSerialExecutionStrategy.java:73) ~[graphql-java-25.0.jar:na]
+	at graphql.execution.AsyncSerialExecutionStrategy.lambda$execute$0(AsyncSerialExecutionStrategy.java:57) ~[graphql-java-25.0.jar:na]
+	at graphql.execution.Async.eachSequentiallyPolymorphicImpl(Async.java:332) ~[graphql-java-25.0.jar:na]
+	at graphql.execution.Async.eachSequentially(Async.java:320) ~[graphql-java-25.0.jar:na]
+	at graphql.execution.AsyncSerialExecutionStrategy.execute(AsyncSerialExecutionStrategy.java:52) ~[graphql-java-25.0.jar:na]
+	at graphql.execution.Execution.executeOperation(Execution.java:220) ~[graphql-java-25.0.jar:na]
+	at graphql.execution.Execution.execute(Execution.java:139) ~[graphql-java-25.0.jar:na]
+	at graphql.GraphQL.execute(GraphQL.java:620) ~[graphql-java-25.0.jar:na]
+	at graphql.GraphQL.lambda$parseValidateAndExecute$5(GraphQL.java:549) ~[graphql-java-25.0.jar:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1208) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2368) ~[na:na]
+	at graphql.EngineRunningState.compose(EngineRunningState.java:91) ~[graphql-java-25.0.jar:na]
+	at graphql.GraphQL.parseValidateAndExecute(GraphQL.java:544) ~[graphql-java-25.0.jar:na]
+	at graphql.GraphQL.lambda$executeAsync$1(GraphQL.java:504) ~[graphql-java-25.0.jar:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1208) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2368) ~[na:na]
+	at graphql.EngineRunningState.compose(EngineRunningState.java:91) ~[graphql-java-25.0.jar:na]
+	at graphql.GraphQL.lambda$executeAsync$2(GraphQL.java:493) ~[graphql-java-25.0.jar:na]
+	at graphql.EngineRunningState.engineRun(EngineRunningState.java:202) ~[graphql-java-25.0.jar:na]
+	at graphql.GraphQL.executeAsync(GraphQL.java:485) ~[graphql-java-25.0.jar:na]
+	at org.springframework.graphql.execution.DefaultExecutionGraphQlService.lambda$execute$0(DefaultExecutionGraphQlService.java:95) ~[spring-graphql-2.0.1.jar:2.0.1]
+	at reactor.core.publisher.MonoDeferContextual.subscribe(MonoDeferContextual.java:48) ~[reactor-core-3.8.1.jar:3.8.1]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4569) ~[reactor-core-3.8.1.jar:3.8.1]
+	at reactor.core.publisher.Mono.block(Mono.java:1799) ~[reactor-core-3.8.1.jar:3.8.1]
+	at org.springframework.graphql.test.tester.DefaultGraphQlTester$DefaultRequest.execute(DefaultGraphQlTester.java:179) ~[spring-graphql-test-2.0.1.jar:2.0.1]
+	at com.aquinofroilan.tessera.graphql.TimeEntryGraphqlControllerTest.createTimeEntry mutation should be denied without write authority(TimeEntryGraphqlControllerTest.kt:81) ~[test/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:701) ~[junit-platform-commons-6.0.1.jar:6.0.1]
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:502) ~[junit-platform-commons-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.support.MethodReflectionUtils.invoke(MethodReflectionUtils.java:45) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:61) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:124) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:163) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:148) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:123) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:105) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:99) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:66) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:47) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:39) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:104) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:98) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invokeVoid(InterceptingExecutableInvoker.java:71) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$0(TestMethodTestDescriptor.java:219) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:215) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:157) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:70) ~[junit-jupiter-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:176) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:253) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.execSync(ForkJoinPoolHierarchicalTestExecutorService.java:226) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeSync(ForkJoinPoolHierarchicalTestExecutorService.java:168) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:140) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:253) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.tryRemoveAndExec(ForkJoinPool.java:1490) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinPool.helpJoin(ForkJoinPool.java:2248) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinTask.awaitDone(ForkJoinTask.java:499) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:669) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.joinConcurrentTasksInReverseOrderToEnableWorkStealing(ForkJoinPoolHierarchicalTestExecutorService.java:175) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:141) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:253) ~[junit-platform-engine-6.0.1.jar:6.0.1]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[na:na]
+2026-09-01 23:44:49.887 [ForkJoinPool-1-worker-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> com.aquinofroilan.tessera.domain.auth.controller.AuthController.register(com.aquinofroilan.tessera.domain.auth.dto.RegisterRequest): [Field error in object 'registerRequest' on field 'email': rejected value [invalid-email]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@2b5e4509,.*]; default message [Email must be valid]] ]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+23:44:50.021 [ForkJoinPool-1-worker-2] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+23:44:50.025 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.f.c.AccountControllerTest - Starting AccountControllerTest using Java 26.0.2.1 with PID 3789 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+23:44:50.025 [ForkJoinPool-1-worker-2] DEBUG c.a.t.d.f.c.AccountControllerTest - Running with Spring Boot v4.0.1, Spring v7.0.2
+23:44:50.025 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.f.c.AccountControllerTest - The following 1 profile is active: "test"
+23:44:51.451 [ForkJoinPool-1-worker-2] DEBUG c.a.t.c.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured for use
+23:44:51.452 [ForkJoinPool-1-worker-2] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+23:44:51.452 [ForkJoinPool-1-worker-2] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+23:44:51.456 [ForkJoinPool-1-worker-2] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+23:44:51.485 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.f.c.AccountControllerTest - Started AccountControllerTest in 1.508 seconds (process running for 66.043)
+23:44:51.511 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.c.c.SupportTicketController - → Entering SupportTicketController.listTickets
+23:44:51.513 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.c.c.SupportTicketController - ← Exiting SupportTicketController.listTickets (1ms)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+23:44:51.545 [ForkJoinPool-1-worker-1] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+23:44:51.547 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.RestGraphqlControllerTest - Starting RestGraphqlControllerTest using Java 26.0.2.1 with PID 3789 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+23:44:51.551 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.RestGraphqlControllerTest - No active profile set, falling back to 1 default profile: "default"
+23:44:53.990 [ForkJoinPool-1-worker-1] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+23:44:54.014 [ForkJoinPool-1-worker-1] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+23:44:54.086 [ForkJoinPool-1-worker-1] INFO  o.s.g.e.DefaultSchemaResourceGraphQlSourceBuilder - Loaded 16 resource(s) in the GraphQL schema.
+23:44:54.205 [ForkJoinPool-1-worker-1] INFO  o.s.b.g.a.GraphQlAutoConfiguration - GraphQL schema inspection:
+	Unmapped fields: {Query=[_emptyQuery, attendance, attendanceRecord, customers, customer, currencies, exchangeRates, payrollRuns, payrollRun, departments, department, departmentOrgChart, employees, employee, positions, position, leaveTypes, leaveType, leaveRequests, leaveRequest, leaveBalance, employeeCompensations, currentEmployeeCompensation, products, product, warehouses, warehouse, stockMovements, stockOnHand, reorderRules, reorderRule, inventoryValuation, inventoryStockOnHand, inventoryMovementHistory, lowStockReport, me, myLeaveRequests, myLeaveBalance, myCompensation, myCurrentCompensation, purchaseOrders, purchaseOrder, salesOrders, salesOrder, projectBudgets, projectBudgetVsActual, projectTasks, projectTaskTree, projectTask, projects, project, purchaseRequests, purchaseRequest, quotations, quotation, timeEntries, timeEntry], Mutation=[_emptyMutation, clockIn, clockOut, recordAttendance, createCustomer, updateCustomer, deleteCustomer, createExchangeRate, deleteExchangeRate, createPayrollRun, approvePayrollRun, payPayrollRun, cancelPayrollRun, createDepartment, updateDepartment, setDepartmentParent, deactivateDepartment, createEmployee, updateEmployee, assignEmployeeDepartment, placeEmployeeOnLeave, returnEmployeeFromLeave, terminateEmployee, createPosition, updatePosition, deactivatePosition, createLeaveType, updateLeaveType, deactivateLeaveType, createLeaveRequest, approveLeaveRequest, rejectLeaveRequest, cancelLeaveRequest, addEmployeeCompensation, createProduct, updateProduct, deleteProduct, createWarehouse, updateWarehouse, deleteWarehouse, createStockMovement, createReorderRule, updateReorderRule, deleteReorderRule, submitMyLeave, createPurchaseOrder, approvePurchaseOrder, receivePurchaseOrder, matchPurchaseOrderBill, generatePurchaseOrderBill, closePurchaseOrder, cancelPurchaseOrder, createSalesOrder, approveSalesOrder, fulfillSalesOrder, generateSalesOrderInvoice, closeSalesOrder, cancelSalesOrder, generateProjectInvoice, setProjectBudget, createProjectTask, updateProjectTask, setProjectTaskParent, createProject, updateProject, activateProject, holdProject, closeProject, cancelProject, createPurchaseRequest, submitPurchaseRequest, approvePurchaseRequest, rejectPurchaseRequest, cancelPurchaseRequest, convertPurchaseRequest, createQuotation, sendQuotation, acceptQuotation, rejectQuotation, cancelQuotation, convertQuotation, createTimeEntry, updateTimeEntry, submitTimeEntry, approveTimeEntry, rejectTimeEntry]}
+	Unmapped registrations: {}
+	Unmapped arguments: {}
+	Field nullness errors: {}
+	Argument nullness errors: {}
+	Skipped types: []
+23:44:54.218 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.RestGraphqlControllerTest - Started RestGraphqlControllerTest in 2.72 seconds (process running for 68.775)
+23:44:54.280 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.finance.controller.AccountController.listAccounts(java.util.UUID,java.lang.String,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.finance.controller.AccountController]
+23:44:54.280 [ForkJoinPool-1-worker-1] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.graphql.PurchaseRequestGraphqlControllerTest
+23:44:54.281 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.finance.controller.AccountController.listAccounts(java.util.UUID,java.lang.String,java.util.UUID); target is of class [com.aquinofroilan.tessera.domain.finance.controller.AccountController]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+2026-09-01 23:44:54.309 [ForkJoinPool-1-worker-1] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+2026-09-01 23:44:54.310 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.PurchaseRequestGraphqlControllerTest - Starting PurchaseRequestGraphqlControllerTest using Java 26.0.2.1 with PID 3789 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+2026-09-01 23:44:54.310 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.PurchaseRequestGraphqlControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-09-01 23:44:54.312 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.a.controller.AuthController - → Entering AuthController.register
+2026-09-01 23:44:54.316 [ForkJoinPool-1-worker-3] ERROR c.a.t.d.a.controller.AuthController - ✗ Exception in AuthController.register: BusinessRuleException - Email already exists
+2026-09-01 23:44:54.891 [ForkJoinPool-1-worker-1] DEBUG o.s.s.c.a.a.c.AuthenticationConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-09-01 23:44:54.904 [ForkJoinPool-1-worker-1] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-09-01 23:44:54.928 [ForkJoinPool-1-worker-1] INFO  o.s.g.e.DefaultSchemaResourceGraphQlSourceBuilder - Loaded 16 resource(s) in the GraphQL schema.
+2026-09-01 23:44:54.962 [ForkJoinPool-1-worker-1] INFO  o.s.b.g.a.GraphQlAutoConfiguration - GraphQL schema inspection:
+	Unmapped fields: {Query=[_emptyQuery, attendance, attendanceRecord, customers, customer, currencies, exchangeRates, payrollRuns, payrollRun, departments, department, departmentOrgChart, employees, employee, positions, position, leaveTypes, leaveType, leaveRequests, leaveRequest, leaveBalance, employeeCompensations, currentEmployeeCompensation, products, product, warehouses, warehouse, stockMovements, stockOnHand, reorderRules, reorderRule, inventoryValuation, inventoryStockOnHand, inventoryMovementHistory, lowStockReport, me, myLeaveRequests, myLeaveBalance, myCompensation, myCurrentCompensation, purchaseOrders, purchaseOrder, salesOrders, salesOrder, projectBudgets, projectBudgetVsActual, projectTasks, projectTaskTree, projectTask, projects, project, quotations, quotation, health, simpleHealth, detailedHealth, environmentInfo, environmentVariables, organizations, sessions, invitations, apiKeys, accounts, account, accountBalance, fiscalYears, fiscalYear, journalEntries, journalEntry, journalTrialBalance, reportTrialBalance, reportIncomeStatement, reportBalanceSheet, taxRates, taxRate, taxGroups, taxGroup, taxSummary, vendors, vendor, bills, bill, billPayments, billAging, invoices, invoice, invoiceReceipts, invoiceAging, timeEntries, timeEntry], Mutation=[_emptyMutation, clockIn, clockOut, recordAttendance, createCustomer, updateCustomer, deleteCustomer, createExchangeRate, deleteExchangeRate, createPayrollRun, approvePayrollRun, payPayrollRun, cancelPayrollRun, createDepartment, updateDepartment, setDepartmentParent, deactivateDepartment, createEmployee, updateEmployee, assignEmployeeDepartment, placeEmployeeOnLeave, returnEmployeeFromLeave, terminateEmployee, createPosition, updatePosition, deactivatePosition, createLeaveType, updateLeaveType, deactivateLeaveType, createLeaveRequest, approveLeaveRequest, rejectLeaveRequest, cancelLeaveRequest, addEmployeeCompensation, createProduct, updateProduct, deleteProduct, createWarehouse, updateWarehouse, deleteWarehouse, createStockMovement, createReorderRule, updateReorderRule, deleteReorderRule, submitMyLeave, createPurchaseOrder, approvePurchaseOrder, receivePurchaseOrder, matchPurchaseOrderBill, generatePurchaseOrderBill, closePurchaseOrder, cancelPurchaseOrder, createSalesOrder, approveSalesOrder, fulfillSalesOrder, generateSalesOrderInvoice, closeSalesOrder, cancelSalesOrder, generateProjectInvoice, setProjectBudget, createProjectTask, updateProjectTask, setProjectTaskParent, createProject, updateProject, activateProject, holdProject, closeProject, cancelProject, createQuotation, sendQuotation, acceptQuotation, rejectQuotation, cancelQuotation, convertQuotation, signup, signin, refresh, changePassword, forgotPassword, resetPassword, switchOrganization, logout, revokeSession, revokeOtherSessions, createInvitation, validateInvitation, acceptInvitation, revokeInvitation, createApiKey, revokeApiKey, createAccount, updateAccount, deleteAccount, createFiscalYear, closePeriod, reopenPeriod, closeYear, createJournalEntry, postJournalEntry, voidJournalEntry, createTaxRate, updateTaxRate, deleteTaxRate, createTaxGroup, updateTaxGroup, deleteTaxGroup, createVendor, updateVendor, deleteVendor, createBill, approveBill, voidBill, recordBillPayment, createInvoice, approveInvoice, voidInvoice, recordInvoiceReceipt, createTimeEntry, updateTimeEntry, submitTimeEntry, approveTimeEntry, rejectTimeEntry]}
+	Unmapped registrations: {}
+	Unmapped arguments: {}
+	Field nullness errors: {}
+	Argument nullness errors: {}
+	Skipped types: []
+2026-09-01 23:44:54.973 [ForkJoinPool-1-worker-1] INFO  c.a.t.g.PurchaseRequestGraphqlControllerTest - Started PurchaseRequestGraphqlControllerTest in 0.689 seconds (process running for 69.53)
+2026-09-01 23:44:55.086 [ForkJoinPool-1-worker-2] DEBUG o.s.security.web.FilterChainProxy - Securing PUT /api/v1/finance/accounts/12a14436-99e0-5e9d-9396-3a670fc505c0
+2026-09-01 23:44:55.087 [ForkJoinPool-1-worker-2] DEBUG o.s.security.web.FilterChainProxy - Secured PUT /api/v1/finance/accounts/12a14436-99e0-5e9d-9396-3a670fc505c0
+2026-09-01 23:44:55.091 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Securing DELETE /api/v1/auth/sessions
+2026-09-01 23:44:55.091 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Secured DELETE /api/v1/auth/sessions
+2026-09-01 23:44:55.094 [ForkJoinPool-1-worker-5] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.domain.finance.controller.JournalEntryControllerTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

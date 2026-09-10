@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.notification.service.NotificationEventListenerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:13.114Z" hostname="runnervmgx7h7" time="0.579">
+  <properties/>
+  <testcase name="LeaveRequestRejected uses singular 'day' when needed and includes reason()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationEventListenerTest" time="0.393"/>
+  <testcase name="LeaveRequestApproved produces an APPROVAL notification to the requester()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationEventListenerTest" time="0.003"/>
+  <testcase name="PurchaseRequestApproved includes prNumber in title and links to detail()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationEventListenerTest" time="0.003"/>
+  <testcase name="LeaveRequestRejected leaves body null when reason is blank()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationEventListenerTest" time="0.003"/>
+  <testcase name="PurchaseRequestRejected forwards the rejection reason()" classname="com.aquinofroilan.tessera.domain.notification.service.NotificationEventListenerTest" time="0.088"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

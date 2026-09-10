@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.hr.service.SelfServiceServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:12.678Z" hostname="runnervmgx7h7" time="0.411">
+  <properties/>
+  <testcase name="my profile surfaces not-found when the user has no employee record()" classname="com.aquinofroilan.tessera.domain.hr.service.SelfServiceServiceTest" time="0.245"/>
+  <testcase name="my profile resolves the linked employee()" classname="com.aquinofroilan.tessera.domain.hr.service.SelfServiceServiceTest" time="0.004"/>
+  <testcase name="compensation history delegates with the caller's own employee id()" classname="com.aquinofroilan.tessera.domain.hr.service.SelfServiceServiceTest" time="0.001"/>
+  <testcase name="leave balance delegates with the caller's own employee id()" classname="com.aquinofroilan.tessera.domain.hr.service.SelfServiceServiceTest" time="0.005"/>
+  <testcase name="submit leave forces the caller's own employee id()" classname="com.aquinofroilan.tessera.domain.hr.service.SelfServiceServiceTest" time="0.155"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

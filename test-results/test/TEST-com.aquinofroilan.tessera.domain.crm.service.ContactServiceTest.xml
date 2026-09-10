@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.crm.service.ContactServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:53.071Z" hostname="runnervmgx7h7" time="0.352">
+  <properties/>
+  <testcase name="create rejects when both names are blank()" classname="com.aquinofroilan.tessera.domain.crm.service.ContactServiceTest" time="0.31"/>
+  <testcase name="create allows just lastName()" classname="com.aquinofroilan.tessera.domain.crm.service.ContactServiceTest" time="0.013"/>
+  <testcase name="deactivate rejects double-deactivation()" classname="com.aquinofroilan.tessera.domain.crm.service.ContactServiceTest" time="0.004"/>
+  <testcase name="create persists a contact and trims whitespace()" classname="com.aquinofroilan.tessera.domain.crm.service.ContactServiceTest" time="0.01"/>
+  <testcase name="update validates new customer when reassigning()" classname="com.aquinofroilan.tessera.domain.crm.service.ContactServiceTest" time="0.009"/>
+  <system-out><![CDATA[23:43:53.117 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.a.c.ApiKeyControllerTest - Starting ApiKeyControllerTest using Java 26.0.2.1 with PID 3792 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+23:43:53.122 [ForkJoinPool-1-worker-5] DEBUG c.a.t.d.a.c.ApiKeyControllerTest - Running with Spring Boot v4.0.1, Spring v7.0.2
+23:43:53.123 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.a.c.ApiKeyControllerTest - The following 1 profile is active: "test"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

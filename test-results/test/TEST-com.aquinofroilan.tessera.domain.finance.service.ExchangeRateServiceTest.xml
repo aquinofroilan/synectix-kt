@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.finance.service.ExchangeRateServiceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:09.934Z" hostname="runnervmgx7h7" time="0.158">
+  <properties/>
+  <testcase name="createManualRate updates existing rate on same date()" classname="com.aquinofroilan.tessera.domain.finance.service.ExchangeRateServiceTest" time="0.132"/>
+  <testcase name="getRate returns direct rate when present()" classname="com.aquinofroilan.tessera.domain.finance.service.ExchangeRateServiceTest" time="0.001"/>
+  <testcase name="getRate throws when no direct or inverse exists()" classname="com.aquinofroilan.tessera.domain.finance.service.ExchangeRateServiceTest" time="0.007"/>
+  <testcase name="createManualRate rejects same-currency request()" classname="com.aquinofroilan.tessera.domain.finance.service.ExchangeRateServiceTest" time="0.001"/>
+  <testcase name="deleteRate rejects cross-org()" classname="com.aquinofroilan.tessera.domain.finance.service.ExchangeRateServiceTest" time="0.005"/>
+  <testcase name="getRate returns ONE for same currency()" classname="com.aquinofroilan.tessera.domain.finance.service.ExchangeRateServiceTest" time="0.005"/>
+  <testcase name="getRate falls back to inverse with 1 over rate()" classname="com.aquinofroilan.tessera.domain.finance.service.ExchangeRateServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

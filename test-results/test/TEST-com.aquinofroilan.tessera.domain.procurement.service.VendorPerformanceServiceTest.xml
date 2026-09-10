@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.procurement.service.VendorPerformanceServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:00.679Z" hostname="runnervmgx7h7" time="0.138">
+  <properties/>
+  <testcase name="getVendorPerformance throws ResourceNotFoundException when vendor does not exist()" classname="com.aquinofroilan.tessera.domain.procurement.service.VendorPerformanceServiceTest" time="0.131"/>
+  <testcase name="recordEvaluation creates and calculates overall score()" classname="com.aquinofroilan.tessera.domain.procurement.service.VendorPerformanceServiceTest" time="0.002"/>
+  <testcase name="getVendorPerformance returns default score when vendor has no orders()" classname="com.aquinofroilan.tessera.domain.procurement.service.VendorPerformanceServiceTest" time="0.001"/>
+  <testcase name="getVendorPerformance calculates accurate on-time delivery rate and fulfillment()" classname="com.aquinofroilan.tessera.domain.procurement.service.VendorPerformanceServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

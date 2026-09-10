@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.inventory.service.UnitOfMeasureServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:54.833Z" hostname="runnervmgx7h7" time="0.235">
+  <properties/>
+  <testcase name="create non-base requires a real base UoM()" classname="com.aquinofroilan.tessera.domain.inventory.service.UnitOfMeasureServiceTest" time="0.221"/>
+  <testcase name="create rejects chained conversion (base must itself be a base)()" classname="com.aquinofroilan.tessera.domain.inventory.service.UnitOfMeasureServiceTest" time="0.001"/>
+  <testcase name="convert between same-base units works()" classname="com.aquinofroilan.tessera.domain.inventory.service.UnitOfMeasureServiceTest" time="0.004"/>
+  <testcase name="create rejects a base UoM with a non-1 conversion factor()" classname="com.aquinofroilan.tessera.domain.inventory.service.UnitOfMeasureServiceTest" time="0.001"/>
+  <testcase name="create base UoM normalises code and defaults factor to 1()" classname="com.aquinofroilan.tessera.domain.inventory.service.UnitOfMeasureServiceTest" time="0.001"/>
+  <testcase name="convert rejects cross-base UoMs()" classname="com.aquinofroilan.tessera.domain.inventory.service.UnitOfMeasureServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

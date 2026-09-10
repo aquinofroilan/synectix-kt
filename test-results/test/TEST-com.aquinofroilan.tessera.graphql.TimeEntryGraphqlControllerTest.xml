@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.graphql.TimeEntryGraphqlControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:51.110Z" hostname="runnervmgx7h7" time="58.818">
+  <properties/>
+  <testcase name="approveTimeEntry mutation should bridge to controller()" classname="com.aquinofroilan.tessera.graphql.TimeEntryGraphqlControllerTest" time="3.028"/>
+  <testcase name="timeEntries query should return json payload()" classname="com.aquinofroilan.tessera.graphql.TimeEntryGraphqlControllerTest" time="0.036"/>
+  <testcase name="createTimeEntry mutation should be denied without write authority()" classname="com.aquinofroilan.tessera.graphql.TimeEntryGraphqlControllerTest" time="0.128"/>
+  <system-out><![CDATA[23:43:51.302 [ForkJoinPool-1-worker-3] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.aquinofroilan.tessera.TesseraApplication for test class com.aquinofroilan.tessera.domain.auth.controller.AuthControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.1)
+
+2026-09-01 23:44:46.763 [ForkJoinPool-1-worker-5] INFO  c.a.t.config.EnvironmentInitializer - No .env file found in project root: /home/runner/work/tessera-kt/tessera-kt/.env
+2026-09-01 23:44:46.764 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.c.c.SupportTicketControllerTest - Starting SupportTicketControllerTest using Java 26.0.2.1 with PID 3789 (started by runner in /home/runner/work/tessera-kt/tessera-kt)
+2026-09-01 23:44:46.764 [ForkJoinPool-1-worker-5] DEBUG c.a.t.d.c.c.SupportTicketControllerTest - Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-09-01 23:44:46.764 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.c.c.SupportTicketControllerTest - The following 1 profile is active: "test"
+2026-09-01 23:44:48.460 [ForkJoinPool-1-worker-5] DEBUG c.a.t.c.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured for use
+2026-09-01 23:44:48.460 [ForkJoinPool-1-worker-5] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-09-01 23:44:48.461 [ForkJoinPool-1-worker-5] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-09-01 23:44:48.462 [ForkJoinPool-1-worker-5] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-09-01 23:44:48.478 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.c.c.SupportTicketControllerTest - Started SupportTicketControllerTest in 1.752 seconds (process running for 63.035)
+2026-09-01 23:44:49.762 [ForkJoinPool-1-worker-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Object> com.aquinofroilan.tessera.domain.auth.controller.AuthController.forgotPassword(com.aquinofroilan.tessera.domain.auth.dto.ForgotPasswordRequest): [Field error in object 'forgotPasswordRequest' on field 'email': rejected value []; codes [NotBlank.forgotPasswordRequest.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [forgotPasswordRequest.email,email]; arguments []; default message [email]]; default message [Email is required]] ]
+2026-09-01 23:44:49.776 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.c.c.SupportTicketController - → Entering SupportTicketController.createTicket
+2026-09-01 23:44:49.776 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.c.c.SupportTicketController - ← Exiting SupportTicketController.createTicket (0ms)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

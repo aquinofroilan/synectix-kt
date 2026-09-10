@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.inventory.service.InventoryPostingServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:10.520Z" hostname="runnervmgx7h7" time="0.323">
+  <properties/>
+  <testcase name="does not post zero-cost movements()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryPostingServiceTest" time="0.147"/>
+  <testcase name="does not post when an entry already exists for the movement()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryPostingServiceTest" time="0.004"/>
+  <testcase name="does not post transfers()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryPostingServiceTest" time="0.001"/>
+  <testcase name="does not post when GL posting is disabled()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryPostingServiceTest" time="0.107"/>
+  <testcase name="throws when a posting account is missing()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryPostingServiceTest" time="0.008"/>
+  <testcase name="receipt debits inventory and credits inventory clearing()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryPostingServiceTest" time="0.036"/>
+  <testcase name="issue debits COGS and credits inventory()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryPostingServiceTest" time="0.011"/>
+  <testcase name="negative adjustment debits adjustment and credits inventory()" classname="com.aquinofroilan.tessera.domain.inventory.service.InventoryPostingServiceTest" time="0.006"/>
+  <system-out><![CDATA[23:45:10.521 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/v1/inventory/products
+23:45:10.521 [ForkJoinPool-1-worker-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/v1/inventory/products
+23:45:10.670 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController.updateWarehouse(java.util.UUID,java.util.UUID,com.aquinofroilan.tessera.domain.inventory.dto.UpdateWarehouseRequest); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController]
+23:45:10.674 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Failed to authorize ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController.updateWarehouse(java.util.UUID,java.util.UUID,com.aquinofroilan.tessera.domain.inventory.dto.UpdateWarehouseRequest); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController] with authorization manager org.springframework.security.authorization.method.PreAuthorizeAuthorizationManager@48b5284 and result ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAuthority('inventory:write')]
+23:45:10.674 [ForkJoinPool-1-worker-2] DEBUG o.s.s.w.a.AccessDeniedHandlerImpl - Responding with 403 status code
+23:45:10.775 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/auth/signin
+23:45:10.775 [ForkJoinPool-1-worker-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+23:45:10.775 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/auth/signin
+23:45:10.783 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.a.controller.AuthController - → Entering AuthController.login
+23:45:10.783 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.updateProduct(java.util.UUID,java.util.UUID,com.aquinofroilan.tessera.domain.inventory.dto.UpdateProductRequest); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:10.785 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.updateProduct(java.util.UUID,java.util.UUID,com.aquinofroilan.tessera.domain.inventory.dto.UpdateProductRequest); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:10.785 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.ProductController - → Entering ProductController.updateProduct
+23:45:10.785 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.ProductController - ← Exiting ProductController.updateProduct (0ms)
+23:45:10.784 [ForkJoinPool-1-worker-2] DEBUG o.s.security.web.FilterChainProxy - Securing PATCH /api/v1/inventory/warehouses/22a14436-99e0-5e9d-9396-3a670fc505c0
+23:45:10.786 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.a.controller.AuthController - ← Exiting AuthController.login (3ms)
+23:45:10.786 [ForkJoinPool-1-worker-2] DEBUG o.s.security.web.FilterChainProxy - Secured PATCH /api/v1/inventory/warehouses/22a14436-99e0-5e9d-9396-3a670fc505c0
+23:45:10.787 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController.updateWarehouse(java.util.UUID,java.util.UUID,com.aquinofroilan.tessera.domain.inventory.dto.UpdateWarehouseRequest); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController]
+23:45:10.787 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController.updateWarehouse(java.util.UUID,java.util.UUID,com.aquinofroilan.tessera.domain.inventory.dto.UpdateWarehouseRequest); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController]
+23:45:10.787 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.i.c.WarehouseController - → Entering WarehouseController.updateWarehouse
+23:45:10.787 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.i.c.WarehouseController - ← Exiting WarehouseController.updateWarehouse (0ms)
+23:45:10.827 [ForkJoinPool-1-worker-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.ProductController.listProducts(java.util.UUID,java.lang.String,boolean,java.lang.String); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.ProductController]
+23:45:10.827 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.ProductController - → Entering ProductController.listProducts
+23:45:10.827 [ForkJoinPool-1-worker-4] INFO  c.a.t.d.i.c.ProductController - ← Exiting ProductController.listProducts (0ms)
+23:45:10.838 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController.listWarehouses(java.util.UUID,boolean,java.lang.String); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController]
+23:45:10.839 [ForkJoinPool-1-worker-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController.listWarehouses(java.util.UUID,boolean,java.lang.String); target is of class [com.aquinofroilan.tessera.domain.inventory.controller.WarehouseController]
+23:45:10.839 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.i.c.WarehouseController - → Entering WarehouseController.listWarehouses
+23:45:10.839 [ForkJoinPool-1-worker-2] INFO  c.a.t.d.i.c.WarehouseController - ← Exiting WarehouseController.listWarehouses (0ms)
+23:45:10.841 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/auth/reset-password
+23:45:10.841 [ForkJoinPool-1-worker-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+23:45:10.841 [ForkJoinPool-1-worker-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/auth/reset-password
+23:45:10.842 [ForkJoinPool-1-worker-3] INFO  c.a.t.d.a.controller.AuthController - → Entering AuthController.resetPassword
+23:45:10.843 [ForkJoinPool-1-worker-3] ERROR c.a.t.d.a.controller.AuthController - ✗ Exception in AuthController.resetPassword: BusinessRuleException - Invalid or expired reset token
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

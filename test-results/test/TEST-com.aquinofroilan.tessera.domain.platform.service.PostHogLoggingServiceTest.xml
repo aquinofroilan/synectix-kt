@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.platform.service.PostHogLoggingServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:59.960Z" hostname="runnervmgx7h7" time="0.186">
+  <properties/>
+  <testcase name="captureException should no-op when disabled()" classname="com.aquinofroilan.tessera.domain.platform.service.PostHogLoggingServiceTest" time="0.148"/>
+  <testcase name="captureException must not throw when the PostHog SDK fails()" classname="com.aquinofroilan.tessera.domain.platform.service.PostHogLoggingServiceTest" time="0.012"/>
+  <testcase name="captureException should send metadata-only event when enabled()" classname="com.aquinofroilan.tessera.domain.platform.service.PostHogLoggingServiceTest" time="0.022"/>
+  <system-out><![CDATA[2026-09-01 23:45:00.118 [ForkJoinPool-1-worker-2] WARN  c.a.t.d.p.s.PostHogLoggingService - Failed to forward exception to PostHog: SDK down
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

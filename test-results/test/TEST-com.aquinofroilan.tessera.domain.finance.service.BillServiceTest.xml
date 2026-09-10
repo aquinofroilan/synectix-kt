@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:09.390Z" hostname="runnervmgx7h7" time="0.543">
+  <properties/>
+  <testcase name="create should reject inactive vendor()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.39"/>
+  <testcase name="approve should post journal entry and update status()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.018"/>
+  <testcase name="create with taxGroupId should compute and store tax()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.011"/>
+  <testcase name="aging report should bucket bills by overdue days()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.007"/>
+  <testcase name="approve should reject non-draft bill()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.005"/>
+  <testcase name="recordPayment should reject draft bill()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.004"/>
+  <testcase name="recordPayment should mark bill as PAID when fully paid()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.012"/>
+  <testcase name="void should void journal entry for approved bill()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.007"/>
+  <testcase name="recordPayment should create payment and update bill status()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.004"/>
+  <testcase name="recordPayment should reject overpayment()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.002"/>
+  <testcase name="payment in foreign currency should post base amount via locked rate()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.01"/>
+  <testcase name="final payment should clear baseCurrencyAmountPaid to bill baseCurrencyAmount exactly()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.005"/>
+  <testcase name="void should allow voiding draft without journal entry()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.004"/>
+  <testcase name="void should reject bill with payments()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.003"/>
+  <testcase name="create in foreign currency should lock rate and compute baseCurrencyAmount()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.008"/>
+  <testcase name="approve in foreign currency should post AP credit in base currency()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.011"/>
+  <testcase name="approve with tax should include tax input debit and correct AP credit()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.01"/>
+  <testcase name="create should save bill as DRAFT with correct total()" classname="com.aquinofroilan.tessera.domain.finance.service.BillServiceTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

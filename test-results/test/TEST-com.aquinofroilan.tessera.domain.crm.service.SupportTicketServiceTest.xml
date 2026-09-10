@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.crm.service.SupportTicketServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:55.194Z" hostname="runnervmgx7h7" time="0.153">
+  <properties/>
+  <testcase name="addMessage updates ticket status to IN_PROGRESS when agent responds()" classname="com.aquinofroilan.tessera.domain.crm.service.SupportTicketServiceTest" time="0.121"/>
+  <testcase name="closeTicket sets status to CLOSED and populates closedAt()" classname="com.aquinofroilan.tessera.domain.crm.service.SupportTicketServiceTest" time="0.009"/>
+  <testcase name="resolveTicket sets status to RESOLVED and populates resolvedAt()" classname="com.aquinofroilan.tessera.domain.crm.service.SupportTicketServiceTest" time="0.008"/>
+  <testcase name="addMessage throws exception when ticket is closed()" classname="com.aquinofroilan.tessera.domain.crm.service.SupportTicketServiceTest" time="0.006"/>
+  <testcase name="createTicket creates ticket in OPEN status with initial message()" classname="com.aquinofroilan.tessera.domain.crm.service.SupportTicketServiceTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

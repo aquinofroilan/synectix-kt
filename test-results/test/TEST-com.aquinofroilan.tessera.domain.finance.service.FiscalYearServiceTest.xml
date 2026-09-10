@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:10.094Z" hostname="runnervmgx7h7" time="0.263">
+  <properties/>
+  <testcase name="closePeriod should update period status to CLOSED()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.169"/>
+  <testcase name="closeYear should skip closing entry when no revenue or expense activity()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.009"/>
+  <testcase name="create should reject if dates overlap existing fiscal year()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.004"/>
+  <testcase name="create should reject if active fiscal year already exists()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.004"/>
+  <testcase name="reopenPeriod should reject if subsequent period is open()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.003"/>
+  <testcase name="reopenPeriod should reject if fiscal year is closed()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.003"/>
+  <testcase name="closeYear should reject if any period is not closed()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.003"/>
+  <testcase name="findPeriodForDate should return reopened period()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.006"/>
+  <testcase name="closePeriod should reject if period is already closed()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.002"/>
+  <testcase name="findPeriodForDate should return NoFiscalYears when no fiscal year exists()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.001"/>
+  <testcase name="closeYear should create closing journal entry zeroing revenue and expense()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.009"/>
+  <testcase name="closePeriod should reject if preceding period is still open()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.004"/>
+  <testcase name="findPeriodForDate should return NotFound when date is outside fiscal year()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.001"/>
+  <testcase name="create should auto-generate 12 monthly periods for calendar year()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.017"/>
+  <testcase name="create should reject if startDate is not before endDate()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.001"/>
+  <testcase name="reopenPeriod should set status to REOPENED()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.002"/>
+  <testcase name="closeYear should handle net loss correctly()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.006"/>
+  <testcase name="create should handle partial months at boundaries()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.001"/>
+  <testcase name="findPeriodForDate should return matching open period()" classname="com.aquinofroilan.tessera.domain.finance.service.FiscalYearServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

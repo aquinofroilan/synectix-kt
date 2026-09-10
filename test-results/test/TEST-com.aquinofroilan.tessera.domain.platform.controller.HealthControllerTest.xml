@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.platform.controller.HealthControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:14.346Z" hostname="runnervmgx7h7" time="0.03">
+  <properties/>
+  <testcase name="simpleHealth returns 200()" classname="com.aquinofroilan.tessera.domain.platform.controller.HealthControllerTest" time="0.004"/>
+  <testcase name="detailedHealth includes system info()" classname="com.aquinofroilan.tessera.domain.platform.controller.HealthControllerTest" time="0.017"/>
+  <testcase name="health returns 200 when DB ping succeeds()" classname="com.aquinofroilan.tessera.domain.platform.controller.HealthControllerTest" time="0.004"/>
+  <testcase name="health returns 503 when DB ping fails()" classname="com.aquinofroilan.tessera.domain.platform.controller.HealthControllerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

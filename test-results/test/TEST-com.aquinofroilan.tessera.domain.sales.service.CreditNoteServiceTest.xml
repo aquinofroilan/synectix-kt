@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.sales.service.CreditNoteServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:10.006Z" hostname="runnervmgx7h7" time="0.87">
+  <properties/>
+  <testcase name="applyCreditNoteToInvoice allocates credit and updates invoice and credit note status()" classname="com.aquinofroilan.tessera.domain.sales.service.CreditNoteServiceTest" time="0.858"/>
+  <testcase name="applyCreditNoteToInvoice throws error when amount exceeds unallocated credit()" classname="com.aquinofroilan.tessera.domain.sales.service.CreditNoteServiceTest" time="0.001"/>
+  <testcase name="createCreditNote creates draft credit note()" classname="com.aquinofroilan.tessera.domain.sales.service.CreditNoteServiceTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

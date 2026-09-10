@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.crm.service.LeadServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:49.294Z" hostname="runnervmgx7h7" time="0.244">
+  <properties/>
+  <testcase name="convert rejects already-converted leads()" classname="com.aquinofroilan.tessera.domain.crm.service.LeadServiceTest" time="0.215"/>
+  <testcase name="update rejects setting status to CONVERTED directly()" classname="com.aquinofroilan.tessera.domain.crm.service.LeadServiceTest" time="0.008"/>
+  <testcase name="convert flips status and stamps converted_to_opportunity_id()" classname="com.aquinofroilan.tessera.domain.crm.service.LeadServiceTest" time="0.011"/>
+  <testcase name="create persists a lead with NEW status()" classname="com.aquinofroilan.tessera.domain.crm.service.LeadServiceTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

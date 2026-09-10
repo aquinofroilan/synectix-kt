@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.assets.service.DepreciationCalculatorTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:43:48.097Z" hostname="runnervmgx7h7" time="0.143">
+  <properties/>
+  <testcase name="straight line monthly amount is (cost minus salvage) over useful life()" classname="com.aquinofroilan.tessera.domain.assets.service.DepreciationCalculatorTest" time="0.118"/>
+  <testcase name="DISPOSED or FULLY_DEPRECIATED assets contribute zero()" classname="com.aquinofroilan.tessera.domain.assets.service.DepreciationCalculatorTest" time="0.003"/>
+  <testcase name="zero before acquisition month even when the asset is otherwise eligible()" classname="com.aquinofroilan.tessera.domain.assets.service.DepreciationCalculatorTest" time="0.001"/>
+  <testcase name="a fully accumulated asset stops accruing further depreciation()" classname="com.aquinofroilan.tessera.domain.assets.service.DepreciationCalculatorTest" time="0.003"/>
+  <testcase name="the final month is partial when the salvage floor would be exceeded()" classname="com.aquinofroilan.tessera.domain.assets.service.DepreciationCalculatorTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

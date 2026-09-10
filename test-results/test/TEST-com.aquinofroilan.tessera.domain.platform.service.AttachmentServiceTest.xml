@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.domain.platform.service.AttachmentServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:44:59.787Z" hostname="runnervmgx7h7" time="0.17">
+  <properties/>
+  <testcase name="upload rejects empty file()" classname="com.aquinofroilan.tessera.domain.platform.service.AttachmentServiceTest" time="0.146"/>
+  <testcase name="upload persists metadata and writes bytes to disk()" classname="com.aquinofroilan.tessera.domain.platform.service.AttachmentServiceTest" time="0.011"/>
+  <testcase name="delete removes both row and bytes()" classname="com.aquinofroilan.tessera.domain.platform.service.AttachmentServiceTest" time="0.008"/>
+  <testcase name="upload sanitises path-escaping filename()" classname="com.aquinofroilan.tessera.domain.platform.service.AttachmentServiceTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aquinofroilan.tessera.graphql.InventoryGraphqlControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-09-01T23:45:03.168Z" hostname="runnervmgx7h7" time="2.085">
+  <properties/>
+  <testcase name="lowStockReport query should return json payload()" classname="com.aquinofroilan.tessera.graphql.InventoryGraphqlControllerTest" time="0.032"/>
+  <testcase name="products query should return json payload()" classname="com.aquinofroilan.tessera.graphql.InventoryGraphqlControllerTest" time="0.071"/>
+  <system-out><![CDATA[2026-09-01 23:45:03.177 [ForkJoinPool-1-worker-1] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.aquinofroilan.tessera.graphql.InventoryGraphqlControllerTest]: InventoryGraphqlControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-01 23:45:05.183 [ForkJoinPool-1-worker-2] DEBUG o.s.s.w.a.AccessDeniedHandlerImpl - Responding with 403 status code
+2026-09-01 23:45:05.186 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController.createJournalEntry(java.util.UUID,java.util.UUID,com.aquinofroilan.tessera.domain.finance.dto.CreateJournalEntryRequest); target is of class [com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController]
+2026-09-01 23:45:05.187 [ForkJoinPool-1-worker-5] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController.createJournalEntry(java.util.UUID,java.util.UUID,com.aquinofroilan.tessera.domain.finance.dto.CreateJournalEntryRequest); target is of class [com.aquinofroilan.tessera.domain.finance.controller.JournalEntryController]
+2026-09-01 23:45:05.187 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.f.c.JournalEntryController - → Entering JournalEntryController.createJournalEntry
+2026-09-01 23:45:05.188 [ForkJoinPool-1-worker-5] INFO  c.a.t.d.f.c.JournalEntryController - ← Exiting JournalEntryController.createJournalEntry (0ms)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
